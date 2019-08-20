@@ -3,7 +3,7 @@ layout: post
 title: "The Governance of Epidemic Responses in Conflict Zones"
 date: 2017-10-30
 description: A reflection on Rittel and Webber's "Wicked Problems" (1973) applied to a complex humanitarian emergency.
-img: ebola.jpg # Add image post (optional)
+img: ebola.JPG # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [water, humanitarian, ethics, culture]
 ---
