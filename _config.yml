@@ -11,7 +11,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Author Settings
 author: Shannon M. Gross # add your name
 author-img: shannon-gross.png # add your photo
-about-author: Hi, I'm Shannon, an engineer and computer science enthusiast. This site contains my thoughts on using technology to improve global public health around the world. Read more <a href="/about">About me</a>. 
+about-author: Hi, I'm Shannon, an engineer and computer science enthusiast. This site contains my thoughts on using technology to improve global public health around the world. Read more <a href="/about">About me</a>.
 social-twitter: shannonmgross
 social-facebook: # add your Facebook handle
 social-github: shannongross # add your Github handle
@@ -30,6 +30,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+highlighter: rouge
+
+collections:
+  vectors:
+    output: true
+  diseases:
+    output: true
 
 paginate: 8
 paginate_path: "/page/:num"

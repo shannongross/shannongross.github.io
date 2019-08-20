@@ -446,7 +446,7 @@ template {
 .highlighter-rouge {
   color: #ce887b;
   font-weight: 400;
-  border: 1px solid #607D8B;
+  /* border: 1px solid #607D8B; */
   -webkit-border-radius: 3px;
           border-radius: 3px;
   padding: 0.1rem 0.5rem;
@@ -1478,4 +1478,37 @@ a.newer-posts:hover {
   .post .post-content .post-title a {
     font-size: 21px;
   }
+}
+
+
+
+.disease-wrapper {
+  display: grid;
+  grid-template-columns: 180px auto;
+  grid-gap: 10px;
+  /* background-color: #fff; */
+  color: #444;
+  /* border-style: solid;
+  border-width: thin;
+  border-color: red; */
+}
+
+.box {
+  border-style: solid;
+  border-width: thin;
+  border-color: #ddd;
+  /* background-color: #444;
+  color: #fff; */
+  border-radius: 5px;
+  padding: .2em;
+  font-size: 0.8em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.summary-sheet {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 5px;
+  padding: .5em;
 }
