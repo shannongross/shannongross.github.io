@@ -17,7 +17,6 @@ This is a simple example of modeling population growth in Uganda using system dy
 * Elderly
 <br>
 
-![Alt text](/images/tagimages/pop_model.png)
 
 If you are beginner in continuous modeling and/or Vensim, this example may be helpful for your own studies.
-[View the full model here](https://github.com/shannongross/code_support/tree/master/vensim_population_model). (Note: Requires Vensim to run).
+[View the full model here](https://github.com/shannongross/code_support/tree/master/vensim_population_model). (Note: Requires [Vensim](https://vensim.com/vensim-software/) to run).

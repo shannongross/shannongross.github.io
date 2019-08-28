@@ -2,21 +2,21 @@
 layout: post
 title: "Vensim and EMA Workbench"
 date: 2019-06-27
-description: Tips and tricks for the intermediate to advanced Vensim user. Covers connecting quantitative models to the exploratory modeling analysis (EMA workbench) tool # Add post description (optional)
-img: SD.jpg # Add image post (optional)
+description: Tips and tricks for the intermediate to advanced Vensim user. Covers connecting quantitative models to the exploratory modeling analysis (EMA workbench) tool
+img: SD.jpg
 fig-caption: # Add figcaption (optional)
-tags: [Modeling, EMA]
+tags: [Modeling, EMA, programming, python]
 
 ---
 
 ## Vensim and EMA Workbench: Advanced Windows Setup
-This post contains setup help for the intermediate to advanced Vensim user. The following information is for users that are interested in connecting their Vensim model to the python library known as the Exploratory Modeling and Analysis (EMA) workbench, but are experiencing difficulty setting up the connection. As explained in the [EMA documentation](https://emaworkbench.readthedocs.io/en/latest/installation.html), installing the workbench is straightforward (``pip install ema_workbench``). Often, difficulty occurs when users want to use Vensim (which is 32-bit) and EMA workbench in python (which is often run on 64-bit machines).
+This post contains setup help for the intermediate to advanced Vensim user. The following information is for users that are interested in connecting their Vensim model to the python library known as the **Exploratory Modeling and Analysis (EMA) workbench**, but are experiencing difficulty setting up the connection. As explained in the [EMA documentation](https://emaworkbench.readthedocs.io/en/latest/installation.html), installing the workbench is straightforward (``pip install ema_workbench``). Often, difficulty occurs when users want to use Vensim (which is 32-bit) and EMA workbench in python (which is often run on 64-bit machines).
 
 ### Why does 32 vs 64 bit matter?
-(Note: Written for Windows users) There are two major categories of computer processors: 32-bit and 64-bit. Older operating systems (e.g. Windows 98) all use 32-bit processors. After about the late 1990s-early 2000s, home computers had 64-bit processors. The \"-bit\" terminology just means that the computer works in data units that are either 32 or 64 bits wide. Computers with 64-bit processors can run more calculations per second and are also capable of running 32-bit versions of programs. The opposite is not true (a 32-bit operating system can\'t run a 64-bit program). Finally, 64-bit processors can come in multiple cores (for regular computers, generally 2, 4, 6, or 8 cores are possible) which allow for faster computations.
+(Note: Written for Windows users) There are two major categories of computer processors: **32-bit and 64-bit**. Older operating systems (e.g. Windows 98) all use 32-bit processors. After about the late 1990s-early 2000s, home computers had 64-bit processors. The \"-bit\" terminology just means that the computer works in data units that are either 32 or 64 bits wide. Computers with 64-bit processors can run more calculations per second and are also capable of running 32-bit versions of programs. The opposite is not true (a 32-bit operating system can\'t run a 64-bit program). Finally, 64-bit processors can come in multiple cores (for regular computers, generally 2, 4, 6, or 8 cores are possible) which allow for faster computations.
 
 ### Vensim is 32-bit
-Because Vensim is a 32-bit program, you also need a 32-bit version of Python.  More than likely, however, you may have 64-bit Python installed on your machine, which is generally offers you more speed and performance. So that leaves you with two options: downgrade to 32-bit Python, or set up virtual environments so that you can have multiple versions on your system.
+Because [Vensim](https://vensim.com/vensim-software/) is a 32-bit program, you also need a 32-bit version of Python.  More than likely, however, you may have 64-bit Python installed on your machine, which is generally offers you more speed and performance. So that leaves you with two options: downgrade to 32-bit Python, or set up virtual environments so that you can have multiple versions on your system.
 
 ### How do I make virtual environments so I can use both 32 and 64 bit?
 If you have a 64-bit Windows machine, but want to be able to run 32-bit programs (like Vensim) on your machine - a virtual environment is an good way to do it. You can do this with conda environment. Note that non-conda virtual environments are also possible, though I find conda easier to work with.
