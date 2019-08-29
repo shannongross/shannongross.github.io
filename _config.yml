@@ -32,6 +32,7 @@ plugins:
   - jekyll-paginate
   - jemoji
   - jekyll-gist
+  - jekyll-twitter-plugin
 highlighter: rouge
 
 collections:
