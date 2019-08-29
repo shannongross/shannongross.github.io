@@ -22,7 +22,8 @@ social-email: shannon-gross@outlook.com # add your Email address
 # discus-identifier: shannongrss # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: UA-146671307-1 # Google Analytics
+
 
 # Build Settings
 markdown: kramdown
