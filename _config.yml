@@ -31,6 +31,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+  - jekyll-gist
 highlighter: rouge
 
 collections:
