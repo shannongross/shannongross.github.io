@@ -1514,6 +1514,28 @@ a.newer-posts:hover {
   margin-left: 3rem;
 }
 
+.wash-header{
+  text-align:center;
+}
+.return-to {
+  text-align: right;
+}
+
+.disease-preview  {
+  width: 75%;
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: #ddd;
+  background-color: #ebf2eb;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  /* padding-left: 2em; */
+  /* padding-right: 2em; */
+}
+
+
 .image-gallery {
   overflow: auto; margin-left: -1%!important;
   }
