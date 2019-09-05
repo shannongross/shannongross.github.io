@@ -5,10 +5,10 @@ date: 2019-06-27
 description: Tips and tricks for the intermediate to advanced Vensim user. Covers connecting quantitative models to the exploratory modeling analysis (EMA workbench) tool
 img: SD.jpg
 fig-caption: # Add figcaption (optional)
-tags: [Modeling, EMA, programming, python]
+tags: [Modeling, EMA, programming, python, Vensim, system dynamics]
 
 ---
-
+<br>
 ## Vensim and EMA Workbench: Advanced Windows Setup
 This post contains setup help for the intermediate to advanced Vensim user. The following information is for those that are interested in connecting their Vensim model to the python library known as the **Exploratory Modeling and Analysis (EMA) workbench**, but are experiencing difficulty setting up the connection. As explained in the [EMA documentation](https://emaworkbench.readthedocs.io/en/latest/installation.html), installing the workbench is straightforward (``pip install ema_workbench``). Often, difficulty occurs when users want to use Vensim (which is 32-bit) and EMA workbench in python (which is often run on 64-bit machines).
 
