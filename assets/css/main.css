@@ -1508,7 +1508,7 @@ a.newer-posts:hover {
 .summary-sheet {
   border-style: solid;
   border-width: thin;
-  border-color: red;
+  border-color: black;
   border-radius: 5px;
   padding-left: 2em;
   margin-left: 3rem;
@@ -1542,11 +1542,13 @@ a.newer-posts:hover {
 .image-gallery a {
   float: left;
   display: block;
-  margin: 0 0 1% 1%; width: 19%; text-align: center;
+  margin: 0 0 1% 1%; width: 19%;
+  text-align: center;
   text-decoration: none!important;
 }
 .image-gallery a span {
-  display: block; text-overflow: ellipsis; overflow: hidden;
+  display: block; text-overflow:
+  ellipsis; overflow: hidden;
   white-space: nowrap; padding: 3px 0;
 }
 .image-gallery a img {
