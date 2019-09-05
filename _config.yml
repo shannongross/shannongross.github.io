@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   program at TU Delft.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.shannonmgross.com" # the base hostname & protocol for your site, e.g. http://example.com
 # site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
@@ -32,7 +32,7 @@ plugins:
   - jekyll-paginate
   - jemoji
   - jekyll-gist
-  - jekyll-twitter-plugin
+  #- jekyll-twitter-plugin
 highlighter: rouge
 
 collections:
