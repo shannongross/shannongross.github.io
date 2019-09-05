@@ -1,0 +1,34 @@
+---
+layout: post
+title: "The politicization of big data"
+date: 2019-09-05
+description: Big data and politics. # Add post description (optional)
+img: divide.jpg  # Add image post (optional)
+---
+A common definition of "big data" is based on multiple "V's" that each denote a characteristic of big data: volume, variety, velocity, etc. However, this definition presents a operational problem because we can’t have a meaningful threshold for any of these (i.e. what is a "big" volume?). Instead, it may be more useful to think of **Big Data** analysis as the:
+> combination of multiple, large datasets from various sources (unstructured and structured, internal and external) and the application of advanced analytic techniques to gain new insights beyond the applications that the data were originally collected for.
+
+
+**Datafication**: an increasing number of activities are conducted in a (partially) digital environment, where sensors, devices, and apps collect data about these activities. As a result, there are more and different datasets one can use to (partially) answer the same question (for instance, what is the current unemployment rate?).
+
+Policymaking and strategy development occured long before the advent of big data. There is a great deal of research to support the idea that policy decisions are often not based on evidence, but instead made by "gut feeling" or by following precedent. So why do we need data for policy? We don’t really. But they can be tremendously useful for solving policy problems. A major problem, however, is that people are often unaware of the assumptions behind the data they use. Data is assumed to be objective because we have institutionalized its use, however, we must understand that no analysis is truly ‘objective’ and all data collection and modelling captures just part of the picture. Failing to fully understand the context of information can lead to **big data discrimination**, where models are trained on historical data which codifies patterns of discrimination.
+
+## The role of big data analysts in policymaking
+- To get insight from big data you need computational skills that politicians lack. They often rely on analysts from the private sector
+- To analyze big data, there are usually more ‘political’ decisions to be made than in ‘normal’ data
+- Most policy questions are not terribly specific. Specifying them requires understanding of available data. This gives ‘power’ to analysts
+- Consider the important shortcomings of big data. Interrogate your measures, assumptions and results - or your opponents will do it for you!
+- Tempering the optimism about big data and data analysis
+- Correlations can fall victim to lurking variables and other errors e.g. google flu trends.
+- Big data is often not consistent, reduces value for policymaking
+- In the world of big data, it is getting easier to make the claim that there are different sets of facts (alternative facts)
+- Easier to criticize data, bring up competing data, criticize system boundaries
+
+## Convincing policymakers of big data evidence
+- Construct the facts along with the stakeholders to make agreement more likely
+- Strategies for making your work attractive to policymakers:
+- Solve stalemates
+- Create new options for decision makers
+- Redefine and broaden problems
+- Present a variety of solutions or solutions that have wiggle room
+- Scientist evolves from external expert toward policy facilitator role

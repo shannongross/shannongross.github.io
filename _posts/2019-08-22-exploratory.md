@@ -5,8 +5,9 @@ date: 2019-08-22
 description: Justification for greater use of exploratory modeling in public health policymaking.
 img:  exp.png
 fig-caption: # Add figcaption (optional)
-tags: [public health, systems thinking, deep uncertainty, exploratory modeling]
+tags: [public health, systems thinking, deep uncertainty, exploratory modeling, multi-disease modeling]
 ---
+<br>
 Evidence-based public health policymaking is difficult. One reason for this difficulty is because the “evidence” presented to decision makers is often too specialized to address broad policy concerns. This is especially the case in low-income countries, where evidence to support health policymaking is often lacking or inappropriate (e.g. suggesting overly-technical solutions). Furthermore, low-income countries not only have less resources but a far higher burden of infectious disease than the rest of the world. Policymakers in such settings are pressured to use finite resources to control a large number of different public health issues.
 
 ## Models to support policy decisions
