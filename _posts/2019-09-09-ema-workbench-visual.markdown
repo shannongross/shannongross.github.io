@@ -33,7 +33,7 @@ ema_logging.log_to_stderr(ema_logging.INFO)
 from disease_model_problems import get_model_for_problem_formulation
 {% endhighlight %}
 
-I use the function `get_model_for_problem_formulation` to retrieve the Vensim model. One of the advantages of importing the model from a .py file is that it makes it easier to incorporate **multiple problem formulations**. I won't cover the benefits of using more than one problem formulation here, but will dedicate a later blog post to it. For readers interested in how I have formulated the problems, you can view the full file [here](www.shannonmgross.com). Otherwise, we can move to the open exploration section:
+I use the function `get_model_for_problem_formulation` to retrieve the Vensim model. One of the advantages of importing the model from a .py file is that it makes it easier to incorporate **multiple problem formulations**. I won't cover the benefits of using more than one problem formulation here, but will dedicate a later blog post to it. For readers interested in how I have formulated the problems, you can view the full file [here](https://github.com/shannongross/code_support/blob/master/disease_model_problems.py). Otherwise, we can move to the open exploration section:
 
 <br>
 # Open Exploration Using Randomly Generated Policies
@@ -163,6 +163,6 @@ plt.show()
 ![MOEAs](../assets/img/rotav_OE_fs.png)
 
 <br>
-You can view jupyter notebook containing this code at: [link](www.github.com/shannongross)
+You can view jupyter notebook containing this code at: [link](https://github.com/shannongross/code_support/blob/master/OE_Visualization_Example.ipynb)
 
 In an upcoming blog post, I'll dive deeper into the pros and cons of different visualization methods. I'll also discuss the use of multiple problem formulations.
