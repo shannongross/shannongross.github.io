@@ -40,6 +40,9 @@ collections:
     output: true
   diseases:
     output: true
+  books:
+    output: true
+    permalink: /:collection/:title/
 
 paginate: 10
 paginate_path: "/page/:num"

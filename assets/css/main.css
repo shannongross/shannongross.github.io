@@ -1196,7 +1196,7 @@ a.newer-posts:hover {
 
 /* - - - - - - - - - - Post Page Styles - - - - - - - - - - */
 .wrap-content {
-  padding: 20px;
+  padding: 50px;
 }
 
 .header-page {
@@ -1221,7 +1221,7 @@ a.newer-posts:hover {
   position: relative;
   padding: 0;
   margin: 0;
-  max-height: 500px;
+  max-height: 350px;
   background-color: #fafafa;
   overflow: hidden;
 }
@@ -1554,4 +1554,50 @@ a.newer-posts:hover {
 }
 .image-gallery a img {
   width: 100%; display: block;
+}
+
+
+
+
+.review-page-cover-image {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  max-height: 500px;
+  background-color: #fafafa;
+  overflow: hidden;
+
+}
+
+.review-page-cover-image figure {
+  text-align:center;
+  position: relative;
+  margin: 0;
+
+}
+
+.review-page-cover-image figcaption {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+
+}
+
+.review-page-cover-image .review-page-image {
+  /* width: 50%;
+  height: 50%; */
+  max-height: 350px;
+
+}
+.review-wrap-content {
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 0px;
 }

@@ -3,7 +3,7 @@ layout: post
 title: "The politicization of big data"
 date: 2019-09-05
 description: Big data and politics. # Add post description (optional)
-img: divide.jpg  # Add image post (optional)
+img: divide2.jpg  # Add image post (optional)
 tags: [big data, policy analysis]
 ---
 We live in an age of data. **Datafication** refers to the increasing number of activities conducted in a semi-digital environment, where sensors, devices, and apps collect data about these activities. As a result, there are more and different datasets one can use to (partially) answer the same question. For instance, the question *what is the current unemployment rate?*  seems simple enough at face value to provide a scientific answer. Yet, there are many different definitions, techniques, and datasets used to calculate the unemployment rate, making this seemingly straightforward metric highly contested.
