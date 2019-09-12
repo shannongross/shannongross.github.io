@@ -1570,6 +1570,7 @@ a.newer-posts:hover {
 }
 
 .review-page-cover-image figure {
+  display: block;
   text-align:center;
   position: relative;
   margin: 0;
