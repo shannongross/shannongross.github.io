@@ -792,9 +792,9 @@ img {
 }
 
 img + em {
-  text-align: justify;
+  text-align: center;
   display: block;
-  margin-top: 10px;
+  margin-top: 12px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -804,8 +804,13 @@ blockquote {
   border-left: 5px solid #000;
   padding-left: 1.1rem;
   margin-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left:1.5rem;
+  padding-right:1.5rem;
   /* font-style: italic; */
-  color: darkblue;
+  background-color: lightblue;
+  /* color: darkblue; */
 }
 
 pre {
@@ -830,7 +835,7 @@ table {
   border: 1px solid #aaa;
   background-color: #eee;
   width: 100%;
-  text-align: left;
+  text-align: justify; /* center */
   border-collapse: collapse;
 }
 
