@@ -792,7 +792,7 @@ img {
 }
 
 img + em {
-  text-align: center;
+  text-align: justify;
   display: block;
   margin-top: 10px;
   font-style: normal;
