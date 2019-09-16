@@ -1,11 +1,11 @@
 ---
-published: false
+published: true
 
 layout: post
 title: "SQL Indexing"
 date: 2018-04-04
 description: Introduction to SQL indexing and clustering # Add post description (optional)
-img:  # Add image post (optional)
+img: dbi.jpg  # Add image post (optional)
 ---
 # Indexing
 * An index is an example of an access path that allows direct access to data using an index term or a keyword. It is similar to the index at the end of this book, except that it may be organized in a linear, hierarchical (tree-structured), or some other fashion.

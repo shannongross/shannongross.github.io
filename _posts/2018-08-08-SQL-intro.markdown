@@ -1,16 +1,17 @@
 ---
-published: false
+published: true
 
 layout: post
 title: "SQL for beginners"
 date: 2018-08-08
 description: Introduction to SQL # Add post description (optional)
-img:  # Add image post (optional)
+img: db.jpg  # Add image post (optional)
 ---
 # Basic concepts
 * A **database management system (DBMS)** is a collection of programs that enables users to create and maintain a database. The DBMS is a general-purpose software system for implementing and maintaining a computerized database. The database and software together form a database system.
 
-* Advantages of using a DBMS:
+## When to use (or not use) a DBMS:
+* DBMS Advantages:
   * Insulation between programs and data, and data abstraction
   * Support of multiple views of the data
   * Sharing of data and multiuser transaction processing
@@ -23,7 +24,7 @@ img:  # Add image post (optional)
   * When you have a simple, well-defined database application that isn’t expected to change at all
   * When you don’t need multiple-user access to data
 
-# What is different about NoSQL (Not Only SQL) databases?
+## What is different about NoSQL (Not Only SQL) databases?
 
 SQL |	NoSQL
 ---|---
@@ -39,6 +40,7 @@ Better for complex queries |	Better for big data
 ---|---
 
 **Object-oriented databases (OODBs)**: initially seemed like they would be a competitor to relational databases, since they were more general and used OO principles. However, the complexity of the model and the lack of an early standard meant that they weren’t really adopted.
+
 <br>
 
 # What does SQL DDL (schema definition) mean?
