@@ -3,7 +3,7 @@ layout: post
 title: Using Exploratory Modeling to Support Public Health Policy
 date: 2019-08-22
 description: Justification for greater use of exploratory modeling in public health policymaking.
-img:  exp.png
+img:  public-health.jpg
 fig-caption: # Add figcaption (optional)
 tags: [public health, systems thinking, deep uncertainty, exploratory modeling, multi-disease modeling]
 ---
@@ -29,6 +29,10 @@ A critical instance of models failing to support policy decisions occurs when th
 Modelling assumptions are necessary in cases of uncertainty. Uncertain parameters – such as how often people come into contact with infectious material and what proportion of infected individuals are likely to die – cannot be known exactly, but the modeler may use literature estimates and probability distributions to make an acceptable approximation. In some cases, the uncertainty can be reduced through further laboratory experimentation or data collection. In other cases, the uncertain parameter is so unknown that it is irreducible even if additional data is collected – greatly increasing the difficulty for modelers and decision makers alike. In multi-actor situations, policymakers may disagree about what values or structures best represent these parameters, leading to a situation of “deep uncertainty.”
 
 **Deep uncertainty** refers to a situation where the various parties to a decision do not know or cannot agree on how the system works; how likely various possible future states of the world are; and how important the various outcomes of interest are (Lempert et al., 2003). Accordingly, deep uncertainty problems are often contentious. From a  modeler’s perspective, this means that there are many plausible model structures that could be used; a variety of perspectives on how to formulate the main objectives; and different ideas about what the optimal solution sets are (J. H. Kwakkel, Walker, & Haasnoot, 2016). In situations of deep uncertainty, traditional decision analysis methods may be insufficient to assist decision makers in coming up with strategies to achieve their objectives.
+
+<br>
+![exploratory](../assets/img/exp.png)
+<br>
 
 The classic use of modelling to support decision making tries to predict future outcomes with computational simulation, but such approaches are ill-equipped to handle deep uncertainty (J. H. Kwakkel, 2017). If even forming a “best-guess” probability distribution of a particular uncertainty is unsuitable or impossible, then traditional models may be unable to support decision-making. Thus, rather than falsely trying to reduce an irreducible uncertainty – or avoiding creating a model about the topic at all – modelling techniques that are able to systematically explore deep uncertainty values are needed.
 
