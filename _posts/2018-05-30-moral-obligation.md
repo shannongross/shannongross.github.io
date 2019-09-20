@@ -3,7 +3,7 @@ layout: post
 title: "The Moral Obligation of Engineers to Fight Global Poverty"
 date: 2018-05-30
 description: A critical reflection of technology in humanitarian and development work.
-img: water.jpg
+img: poverty.jpg
 fig-caption: # Add figcaption (optional)
 tags: [ethics, water, humanitarian, engineering, technology, development]
 ---
