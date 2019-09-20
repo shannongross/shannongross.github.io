@@ -1,0 +1,123 @@
+---
+published: true
+
+layout: post
+title: "SQL for beginners"
+date: 2018-04-04
+description: Introduction to SQL # Add post description (optional)
+img: db.jpg  # Add image post (optional)
+---
+# Basic concepts
+* A **database management system (DBMS)** is a collection of programs that enables users to create and maintain a database. The DBMS is a general-purpose software system for implementing and maintaining a computerized database. The database and software together form a database system.
+
+## When to use (or not use) a DBMS:
+* DBMS Advantages:
+  * Insulation between programs and data, and data abstraction
+  * Support of multiple views of the data
+  * Sharing of data and multiuser transaction processing
+  * Controls redundancy / duplication of effort
+  * Multiple user interfaces
+  * meta-data describes the structure of the primary database
+
+* When should you NOT use a DBMS?
+  * Initial investment in hardware, software and training are too high
+  * When you have a simple, well-defined database application that isn’t expected to change at all
+  * When you don’t need multiple-user access to data
+
+## What is different about NoSQL (Not Only SQL) databases?
+
+SQL |	NoSQL
+---|---
+Relational Databases (RDBMS)	| non-relational or distributed database
+---|---
+table based databases |	document based, key-value pairs, graph databases or wide-column stores
+---|---
+predefined schema | dynamic schema for unstructured data
+---|---
+MySql, Oracle, Sqlite, Postgres	| MongoDB, Neo4j
+---|---
+Better for complex queries |	Better for big data
+---|---
+
+**Object-oriented databases (OODBs)**: initially seemed like they would be a competitor to relational databases, since they were more general and used OO principles. However, the complexity of the model and the lack of an early standard meant that they weren’t really adopted.
+
+<br>
+
+# What does SQL DDL (schema definition) mean?
+**DDL** is short for Data Definition Language, which deals with database schemas and descriptions, of how the data should reside in the database.
+* CREATE – to create database and its objects like (table, index, views, store procedure, function and triggers)
+* ALTER – alters the structure of the existing database
+* DROP – delete objects from the database
+
+
+
+{% highlight ruby %}
+### Example - creating a table
+CREATE TABLE table_name (
+	field_name data_type constraint_name,
+	field_name data_type constraint_name);
+{% endhighlight %}
+
+
+# What are DML (queries)?
+**DML** is short for Data Manipulation Language which deals with data manipulation, and includes most common SQL statements such SELECT, INSERT, UPDATE, DELETE etc, and it is used to store, modify, retrieve, delete and update data in database.
+* SELECT – retrieve data from the a database
+* INSERT – insert data into a table
+* UPDATE – updates existing data within a table
+* DELETE – Delete all records from a database table
+
+### Basic selection query
+{% highlight ruby %}
+SELECT * FROM Employee WHERE Salary > 30000;
+{% endhighlight %}
+
+Remember to use UPDATE to update existing rows, INSERT for is adding new rows.
+
+<br>
+# More Complex Operations & Join Types
+
+### Cross Join (aka Cartesian Product)
+* Combine every row in table1 with every row in table2 (result is a very large table).
+* Equals sign here denotes an EQUIJOIN.
+{% highlight ruby %}
+SELECT * FROM Employee, Department WHERE Depname = Dname;
+{% endhighlight %}
+* Note: Disadvantage to this is - what happens when the department name changes?
+* Solution: reference should be a key for a Dnumber is Unique and Not Null
+
+### Natural Join
+* Applies when you have the same column names in both tables, can be redundant
+* **NULL values in a Join**
+  * Foreign key can have nulls. If you use a foreign key to join and one of the entries is null, then that row will be dropped from the query result.
+
+### Outer Join
+* Preserves rows (inserts NULLs in the missing fields instead of dropping the whole row)
+* **Query using LIKE**
+{% highlight ruby %}
+SELECT Mgr_ssn
+FROM DEPARTMENT NATURAL JOIN DEPT_LOCATIONS
+WHERE Dlocation LIKE ‘%d’;
+{% endhighlight %}
+
+### Remove duplicates
+{% highlight ruby %}
+SELECT DISTINCT Salary FROM Employee;
+{% endhighlight %}
+
+### Aliasing
+{% highlight ruby %}
+SELECT Fname, 1.1*Salary as NewSalary
+FROM Employee WHERE  Salary > 30000;
+{% endhighlight %}
+
+### Sorting
+{% highlight ruby %}
+SELECT * FROM Employee ORDER BY Lname ASC, Salary DESC;
+{% endhighlight %}
+
+
+
+<br>
+
+# Reference
+* Database Systems (Elmasri and Navathe)

@@ -444,13 +444,13 @@ template {
 }
 
 .highlighter-rouge {
-  color: #565756;
-  background-color: #affc51;
+  color: #6e1212;
+  background-color: #f7e6e6;
   font-weight: 400;
   /* border: 1px solid #607D8B; */
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  padding: 0.25rem 0.65rem;
+  padding: 0.25rem 0.6rem;
 }
 
 .highlight .hll {

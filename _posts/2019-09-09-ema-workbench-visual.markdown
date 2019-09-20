@@ -5,9 +5,11 @@ date: 2019-09-09
 description: Visualization tips for open exploration of model objectives using EMA workbench # Add post description (optional)
 img: rotav_OE_title.png # Add image post (optional)
 ---
-This post is intended for readers with an intermediate knowledge of the [ema workbench](https://github.com/quaquel/EMAworkbench) by Jan Kwakkel at TU Delft. The ema workbench documentation and GitHub tutorials contain many examples of how to implement the module. Here, emphasis is placed on visualization techniques.
+This post is intended for readers with an intermediate to advanced knowledge of the [ema workbench](https://github.com/quaquel/EMAworkbench) by Jan Kwakkel at TU Delft. The ema workbench documentation and GitHub tutorials contain many examples of how to implement the module. Here, emphasis is placed on multidimensional visualization techniques for open exploration of the objective space.
 
-In this example, I am using a model that simulates the burden of disease caused by four different infectious pathogens in a community. Users are interested in finding combinations of public health policy levers (e.g. providing clean water, sanitation, vaccination, medical treatment) that reduce the burden of disease. The model was created in Vensim (although you can substitute your own model made in python, Netlogo, etc). The first step in exploring this **multi-disease model** is to import the model and standard packages:
+In this example, I am using a model that simulates the burden of disease caused by four different infectious pathogens in a community. Here, users are interested in finding combinations of public health policy levers (e.g. providing clean water, sanitation, vaccination, medical treatment) that reduce the burden of disease. The model was created in Vensim (although you can substitute your own model made in python, Netlogo, etc). Readers interested in this multi-disease model can find more details [here](https://github.com/shannongross/multi_disease_model).
+
+The first step to performing open exploration on the model is to import it (in this case, using a `.py` file), along with some standard packages. In this case, I use the function `get_model_for_problem_formulation` to retrieve the Vensim model.
 
 
 {% highlight ruby %}
@@ -31,10 +33,12 @@ ema_logging.log_to_stderr(ema_logging.INFO)
 from disease_model_problems import get_model_for_problem_formulation
 {% endhighlight %}
 
-I use the function `get_model_for_problem_formulation` to retrieve the Vensim model. One of the advantages of importing the model from a .py file is that it makes it easier to incorporate **multiple problem formulations**. I won't cover the benefits of using more than one problem formulation here, but will dedicate a later blog post to it. For readers interested in how I have formulated the problems, you can view the full file [here](https://github.com/shannongross/code_support/blob/master/disease_model_problems.py). Otherwise, we can move to the open exploration section, which will give us an initial understanding of the solution space.
+ One of the advantages of importing the model from a `.py` file is that it makes it easier to incorporate **multiple problem formulations**. I won't cover the benefits of using more than one problem formulation here, but will dedicate a later blog post to it. For readers interested in how I have formulated the problems, you can download the full python file [here](https://github.com/shannongross/code_support/blob/master/disease_model_problems.py).
+
+ Once we have the model and necessary packages imported into our environment, we can move on to the next section where we perform some investigative experiments. This open exploration will allow us to gain an initial understanding of the solution space.
 
 <br>
-# Open Exploration
+# Open Exploration in EMA workbench
 {% highlight ruby %}
 # First, retrieve the model. Here, I have more than one way of formulating the model, but we will just use problem formulation 1 in this example.
 disease_model = get_model_for_problem_formulation(1)
@@ -56,13 +60,14 @@ str(round((end - start)/60)) + ' minutes')
 print('Simulation time for Problem Formulation 1 is '+
 {% endhighlight %}
 
-Using 20 scenarios and 6 policies, 120 experiments will be performed. Unless your machine is extremely slow, this should not take more than few minutes. Next, we can visualize the results using a [pairs plot](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/pairs_plotting.html) in order to gain a general first impression of the objective space. The ema workbench pairs plot functionality creates an R-style scatter multiplot, where each objective is paired against every other objective.
+Using 20 scenarios and 6 policies, 120 experiments will be performed. Unless your machine is extremely slow, this should not take more than few minutes.
+
+Next, we can visualize the results using a [pairs plot](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/pairs_plotting.html) in order to gain a general first impression of the objective space. The ema workbench pairs plot functionality creates an R-style scatter multiplot, where each objective is paired against every other objective.
 
 ## Visualization 1: Pairs Plotting
 
 {% highlight ruby %}
-# Pairs Plot Example
-
+# PAIRS PLOT EXAMPLE
 # First, retrieve the results from the previous step
 file_name = './results/open_exploration/PF1_scenarios'.format(n_scenarios) + '.tar.gz'
 results = load_results(file_name)
@@ -86,17 +91,20 @@ The result of this is something like the following:
 <br>
 ![MOEAs](../assets/img/rotav_OE_para.png)
 
-Readers should realize that each objective of the problem formulation is plotted against the other objectives, so the x- and y-axes are duplicated.
+Readers should realize that each objective of the problem formulation is plotted against the other objectives, so the x- and y-axes are duplicated. These scatter plots are useful for providing visual insight into the relations between the different objectives.
 
 <br>
 ## Visualization 2: 3D Plots
 To look at more than one objective at a time
 
 {% highlight ruby %}
+## 3D PLOT EXAMPLE
 df_outcomes = pd.DataFrame(outcomes)
 fig = plt.figure(figsize=(8,8))
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(df_outcomes.iloc[:,0], df_outcomes.iloc[:,1],df_outcomes.iloc[:,4], depthshade=100)
+
+# Figure formatting
 ax.set_xlabel(list(df_outcomes)[0])
 ax.set_ylabel(list(df_outcomes)[1])
 ax.set_zlabel(list(df_outcomes)[4])
@@ -104,18 +112,20 @@ plt.title('Problem Formulation 1: {}'.format(disease_model.name), fontsize=16)
 plt.show()
 {% endhighlight %}
 
+As expected, the resulting 3D plot shows the solution space of our three objectives (in this case, *Mortality*, *Morbidity* and *OpEx costs*). In some cases, 3D plots can be useful for identifying interesting clusters of the objective space. In other cases, however, it may be difficult to distinguish meaningful trends - 3D plots may even obfuscate important information if you're not careful.
+
 ![MOEAs](../assets/img/rotav_OE_3d.png)
 
 <br>
 
 ## Visualization 3: Parallel Coordinate Plots
 
-Using 3D plotting may not be an effective visualization strategy for high-dimensional objective spaces. Instead, we can try using [parallel coordinate plotting](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/parcoords.html), which is a technique that is better equipped to handle 3+ objectives.
+Sometimes, using 3D plotting may not be an effective visualization strategy for high-dimensional spaces. An alternative is to try using [parallel coordinate plotting](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/parcoords.html), which is often better equipped to handle 3+ objectives.
 
 {% highlight ruby %}
-# Parallel Coordinates Plot Example
+# PARALLEL COORDINATE PLOT EXAMPLE
 
-# Begin by rescaling objectives. Get the maximum and minimum value of each objective result.
+# Begin by rescaling objectives. Get the maximum and minimum value of each result.
 limits = parcoords.get_limits(df_outcomes)
 # Set the lower limit of all objectives to zero.
 lower_lim = limits.loc[0, list(df_outcomes)]
@@ -147,21 +157,22 @@ plt.title('Problem Formulation 1: {}'.format(disease_model.name), fontsize=16, y
 plt.show()
 {% endhighlight %}
 
-The result of this resembles the following:
+Each line represents a possible policy option, with lines closest to the bottom of the y-axis being performing more favorably in terms of the decision maker’s objectives. The result of the previous code resembles the following:
 
 <br>
 ![MOEAs](../assets/img/rotav_OE_paraplot.png)
 
-Each line represents a possible policy option, with lines closest to the bottom of the y-axis being performing more favorably in terms of the decision maker’s objectives.
 
 <br>
 ## Visualization 4: Feature Scoring
 A final visualization strategy for open exploration is known as [feature scoring](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/feature_scoring.html#module-ema_workbench.analysis.feature_scoring). Feature scoring is a method for testing the effect that different regressors have on a target variable. It is a simple first pass function to help understand the data and to assist with feature selection.
 
 {% highlight ruby %}
+# FEATURE SCORES EXAMPLE
 x = experiments
 y = outcomes
 fs = feature_scoring.get_feature_scores_all(x, y)
+
 levers = [l.name for l in disease_model.levers]
 df_levers = fs.copy()         
 df_levers = df_levers[df_levers.index.isin(levers)]
@@ -170,6 +181,11 @@ ax = sns.heatmap(df_levers, cmap='viridis', annot=True)
 plt.title('Problem Formulation 1 {}'.format(disease_model.name), fontsize=16)
 plt.show()
 {% endhighlight %}
+
+<br>
+The resulting heatmap shows features that have relatively higher/lower levels of influence on our five objectives. Here for instance, the number of wells constructed (i.e. *Well construction*) has a big effect on the Capital Expenditure outcome (i.e. *CapEx*).
+
+<br>
 
 ![MOEAs](../assets/img/rotav_OE_fs.png)
 

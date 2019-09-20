@@ -6,10 +6,16 @@ description: Big data and politics. # Add post description (optional)
 img: divide2.jpg  # Add image post (optional)
 tags: [big data, policy analysis]
 ---
-We live in an age of data. **Datafication** refers to the increasing number of activities conducted in a semi-digital environment, where sensors, devices, and apps collect data about these activities. As a result, there are more and different datasets one can use to (partially) answer the same question. For instance, the question *what is the current unemployment rate?*  seems simple enough at face value to provide a scientific answer. Yet, there are many different definitions, techniques, and datasets used to calculate the unemployment rate, making this seemingly straightforward metric highly contested.
+We live in an age of data. **Datafication** refers to the increasing number of activities conducted in a semi-digital environment, where sensors, devices, and apps collect data about these activities. As a result, there are more and different datasets one can use to (partially) answer the same question. Scientific questions that seem simple enough to quantify at face value become "politicized" based on the techniques or datasets used to calculate them. For instance:
+* How much have global surface temperatures risen in recent years? ([Taking Politics Out of Climate Change](https://www.pbs.org/wgbh/nova/article/depoliticizing-climate-change/))
+* What is the current unemployment rate? ([The Politics Surrounding Jobless Data](https://amstat.tandfonline.com/doi/full/10.1080/2330443X.2016.1241061))
+* How old is the human race? ([Kitzmiller v. Dover Area School District](https://berkleycenter.georgetown.edu/cases/kitzmiller-v-dover-area-school-district))
 
-A common definition of "big data" is based on multiple "V's" that each denote a characteristic of big data: volume, variety, velocity, etc. However, this definition presents a operational problem because we can’t have a meaningful threshold for any of these (i.e. what is a "big" volume?). Instead, it may be more useful to think of **Big Data** analysis as the:
-> combination of multiple, large datasets from various sources (unstructured and structured, internal and external) and the application of advanced analytic techniques to gain new insights beyond the applications that the data were originally collected for.
+These questions seem to lie squarely in the domain of scientific study, yet because of their political or social ramifications they become highly contested. Each side argues that their opponent is using a flawed techniques, definitions, or datasets in order to generate results that are favorable to them. In such highly-charged environments, big data analysts must be careful and transparent in their modeling choices and assumptions.
+
+# What do we mean by "Big Data"?
+A common definition of **Big Data** is based on multiple "V's" that each denote a characteristic of big data: volume, variety, velocity, etc. However, this definition presents a operational problem because we can’t have a meaningful threshold for any of these (i.e. what is a "big" volume?). Instead, it may be more useful to think of Big Data analysis as the:
+> Combination of multiple, large datasets from various sources (unstructured and structured, internal and external) and the application of advanced analytic techniques to gain new insights beyond the applications that the data were originally collected for.
 
 Large datasets can be extremely useful to inform and guide strategy development. Yet, policymaking occurred long before the advent of big data. So how have decisions been guided historically? Perhaps with little evidence behind them, a phenomenon which still occurs. There is a substantial body of research to support the idea that policy decisions are often not based on evidence, but instead made by "gut feeling" or by following precedent.
 
