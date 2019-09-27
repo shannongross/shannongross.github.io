@@ -43,6 +43,9 @@ collections:
   books:
     output: true
     permalink: /:collection/:title/
+  sciencebooks:
+    output: true
+    permalink: /:collection/:title/
 
 paginate: 10
 paginate_path: "/page/:num"

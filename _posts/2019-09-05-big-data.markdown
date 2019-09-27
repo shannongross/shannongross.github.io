@@ -6,18 +6,24 @@ description: Big data and politics. # Add post description (optional)
 img: divide2.jpg  # Add image post (optional)
 tags: [big data, policy analysis]
 ---
-We live in an age of data. **Datafication** refers to the increasing number of activities conducted in a semi-digital environment, where sensors, devices, and apps collect data about these activities. As a result, there are more and different datasets one can use to (partially) answer the same question. Scientific questions that seem simple enough to quantify at face value become "politicized" based on the techniques or datasets used to calculate them. For instance:
-* How much have global surface temperatures risen in recent years? ([Taking Politics Out of Climate Change](https://www.pbs.org/wgbh/nova/article/depoliticizing-climate-change/))
-* What is the current unemployment rate? ([The Politics Surrounding Jobless Data](https://amstat.tandfonline.com/doi/full/10.1080/2330443X.2016.1241061))
-* How old is the human race? ([Kitzmiller v. Dover Area School District](https://berkleycenter.georgetown.edu/cases/kitzmiller-v-dover-area-school-district))
+We live in an age of data. **Datafication** refers to the increasing number of activities conducted in a semi-digital environment, where sensors, devices, and apps collect data about our activities. As a result, there are more and different datasets one can use to (partially) answer the same question.
 
-These questions seem to lie squarely in the domain of scientific study, yet because of their political or social ramifications they become highly contested. Each side argues that their opponent is using a flawed techniques, definitions, or datasets in order to generate results that are favorable to them. In such highly-charged environments, big data analysts must be careful and transparent in their modeling choices and assumptions.
+With these seemingly endless data streams being collected, the decision surrounding *which* data sets to use in *what way* are increasingly coming to light for large-scale decisions. Scientific questions that seem simple enough to quantify at face value become "politicized" based on the techniques or datasets used to calculate them. For instance:
+* How much have global surface temperatures risen in recent years? <br> (*[Taking Politics Out of Climate Change](https://www.pbs.org/wgbh/nova/article/depoliticizing-climate-change/)*)
+* What is the current unemployment rate? <br>
+(*[The Politics Surrounding Jobless Data](https://amstat.tandfonline.com/doi/full/10.1080/2330443X.2016.1241061)*)
+* How old is the human race? <br>
+(*[Kitzmiller v. Dover Area School District](https://berkleycenter.georgetown.edu/cases/kitzmiller-v-dover-area-school-district)*)
+
+These questions seem to lie squarely in the domain of scientific study, yet because of their political or social ramifications they become highly contested. Each side argues that their opponent is using a flawed techniques, definitions, or datasets in order to generate favorable results. In such highly-charged environments, big data analysts must be careful and transparent in their modeling choices and assumptions.
 
 # What do we mean by "Big Data"?
-A common definition of **Big Data** is based on multiple "V's" that each denote a characteristic of big data: volume, variety, velocity, etc. However, this definition presents a operational problem because we can’t have a meaningful threshold for any of these (i.e. what is a "big" volume?). Instead, it may be more useful to think of Big Data analysis as the:
+The term "Big Data" is relatively new but increasingly becoming an everyday term. It encompasses the idea that many of today's datasets do not fit comfortably on a single disk, let alone on main memory. A common definition of Big Data is based on multiple "V's" that each denote a characteristic of big data: **variety**, **velocity** and **volume**.
+
+However, the multiple V definition presents an operational problem because there isn't a meaningful threshold for any of these characteristics (i.e. what is a "big" volume?). Instead, it may be more useful to think of **Big Data Analysis** as the:
 > Combination of multiple, large datasets from various sources (unstructured and structured, internal and external) and the application of advanced analytic techniques to gain new insights beyond the applications that the data were originally collected for.
 
-Large datasets can be extremely useful to inform and guide strategy development. Yet, policymaking occurred long before the advent of big data. So how have decisions been guided historically? Perhaps with little evidence behind them, a phenomenon which still occurs. There is a substantial body of research to support the idea that policy decisions are often not based on evidence, but instead made by "gut feeling" or by following precedent.
+Large datasets can be extremely useful to inform and guide strategy development. Yet, policymaking occurred long before the advent of big data. So how have decisions been guided historically? Perhaps with less evidence behind them than we would like there to be. There is a growing body of research to support the idea that policy decisions are often not based on evidence, but instead made by "gut feeling" or by following precedent.
 
 But big data can be tremendously useful for solving policy problems. A major problem, however, is that people are often unaware of the **assumptions** behind the data they use. Data is often assumed to be objective, however, we must understand that no analysis is truly "objective" and all data collection and modelling captures just part of the picture. Failing to fully understand the context of information can lead to **big data discrimination**, where models are trained on historical data which codifies patterns of discrimination.
 
@@ -27,9 +33,10 @@ Analysts provide computational skills that can support politicians in gaining in
 As an analyst working on policy-relevant concerns, it is important to consider the shortcomings behind big data. Analysts must take care not to take data only at their face value, but to interrogate the assumptions and methods used to create them. This is especially the case for contentious political issues. If you (as the analyst) do not question the characteristics behind your assumptions, then your political opponent is sure to!
 
 ## Convincing policymakers of big data evidence
-In the world of big data, it is getting easier to make the claim that there are different sets of facts (alternative facts). It is easier to criticize data, bring up competing data, and argue system boundaries. In order to provide policy support in this increasingly complex and data-driven world, the following are recommended:
-- Construct the facts along with the stakeholders to make agreement more likely.
-- Make work more attractive to policymakers by showing strategies that can help solve stalemates.
+In the world of big data, it is getting easier to make the claim that there are different sets of facts. It is easier to criticize data, bring up competing data, and argue system boundaries. In order to provide policy support in this increasingly complex and data-driven world, data analysts are recommended to do the following:
+
+- Evolve from a solely "objective/scientific" external expert toward a policy facilitator role. Construct the facts along with the stakeholders to make agreement more likely.
+- Present a variety of solutions or solutions that have wiggle room. Make work more attractive to policymakers by showing strategies that can help solve stalemates.
+- Big data is potentially powerful but not necessarily better than a smaller, well-chosen sample set. Don't forget the basics!
 - Redefine and broaden problems. Create new options for decision makers.
-- Present a variety of solutions or solutions that have wiggle room.
-- Evolve from a solely "objective/scientific" external expert toward a policy facilitator role.
+ 
