@@ -5,7 +5,7 @@ date: 2015-04-04
 description: Reflection on the United Nation's role in the cholera outbreak in Haiti.
 img: haiti.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [WASH, cholera]
+tags: [water, WASH, cholera, policy, public health, writing sample]
 
 ---
 
@@ -22,6 +22,3 @@ The victims have tried relentlessly to fight the United Nations on legal grounds
 Still, without a formal commission to recognize their grievances, victims may never achieve recognition and redress for their suffering. Even worse, suspicions against foreign aid workers have risen to xenophobic levels that make cholera treatment and eradication more difficult. Thus, a collaborative process is required in order to repair the broken trust between the Haitian people and the U.N., particularly in this time of intense humanitarian need.
 
 A joint initiative focused on establishing a forum to recognize the victims’ claims is instrumental to begin the healing process. Such a commission would bring legitimacy to Haitian claims while repairing the U.N.’s tarnished moral credibility in the region, and could be done in a non-adversarial manner. Doing so would be politically feasible for the U.N. and would move away from fault-finding toward a direction that focuses on the common goals shared by each side, namely: stopping the epidemic, guaranteeing treatment for the sick and ensuring that a similar tragedy does not happen in the future. To be truly effective, a joint initiative requires the meaningful participation of local populations in the humanitarian aid process, and recognition that feedback from those receiving aid is inherently valuable.
-
-<img src="/images/tagimages/haiti.jpg" alt="drawing" width="90%"/>
-<!-- ![Alt text](/images/tagimages/haiti.jpg) -->

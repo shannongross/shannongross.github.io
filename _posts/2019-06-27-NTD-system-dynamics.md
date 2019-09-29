@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "System Dynamics Modeling for Neglected Tropical Diseases"
-date: 2018-01-01
+date: 2019-06-27
 description: For beginners to system dynamics modeling
 img: ascaris_sfd.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)

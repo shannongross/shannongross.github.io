@@ -5,7 +5,7 @@ date: 2014-10-09
 description: Student newspaper story discusses the rise in students from Saudi Arabia on Gannon's campus and their struggles to integrate with native students.
 img:  gannonuniversity.JPG # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: #
+tags: feature story, writing sample, foreign policy #
 
 ---
 

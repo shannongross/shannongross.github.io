@@ -13,7 +13,7 @@ author: Shannon M. Gross # add your name
 author-img: shannon-gross.png # add your photo
 about-author: Hi, I'm Shannon, an engineer and computer science enthusiast. This site contains my thoughts on using technology to overcome large-scale societal challenges. <br>Read more <a href="/about">About me</a>.
 social-twitter: shannonmgross
-social-facebook: # add your Facebook handle
+social-facebook: https://www.shannonmgross.com/cv/ # add your Facebook handle #CV INSTEAD
 social-github: shannongross # add your Github handle
 social-linkedin: shannonmgross # add your Linkedin handle
 social-email: shannon-gross@outlook.com # add your Email address
