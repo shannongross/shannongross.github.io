@@ -64,6 +64,9 @@ The experienced data analyst should have enough familiarity with statistical con
 
 When you think your data is not symmetric and/or has significant outliers, it is better to use **median and percentile** instead of **mean and standard deviation**. While mean and variance has historically been more popular because of how simple it is to calculate by hand, the rise in computing availability today means that it is often more practical and useful to work with percentiles.
 
+- *variation* describes the behavior within a variable
+- *covariation* describes the behavior between variables
+
 ### Box and Whisker Plots
 The popularity of box and whisker plots lies in its ability to convey a lot of statistical information in one compact visualization.
 
@@ -114,6 +117,23 @@ See: [Intro to R](/intro-to-R/)
 Let's say you want to track the number of people who get sick over time.
 
 
+# High Dimensionality/Multivariate Analysis
+Many common methods of visualization become impractical after datasets exceed a 2-3 dimensions. Multidimensional visualization is an emerging topic - a great deal of ongoing work is attempting to improve existing methods.  
+
+Things to keep in mind:
+- Difficult (but important) to come up with an appropriate palette
+    - Tip: use a very simple color palette (e.g. blue - white - red works well)
+    - Tip: map low values to cool colors and high values to warm colors to make visualization intuitive
+
+## Trivariate Plot options
+- Surface Plots (3D contour plots)
+  - often visually impressive, not that useful practically (hard to read numbers off them)
+- False Color Plots
+- Contour Plots
+
+
+
+
 # Hypothesis Testing
 Whenever we are doing statistics, we have the following:
 - a **population**, or the set of all possible outcomes
@@ -162,3 +182,14 @@ A **p-value** represents the strength of the evidence in a hypothesis test (and 
   - in contrast to hypothesis testing (which relates to a single conclusion of significance vs no significance), confidence intervals provide a range of plausible values for your population
 (2) **likelihood relationship**:
 (3) **Bayes factors**:
+
+
+
+# Bayes
+## Probability distributions
+### Discrete
+When the probability distribution function (Z) is discrete, then the distribution takes the form of P(Z = k), measuring the probability that Z takes on value k.
+- Popular **probability mass functions** that consistently appear (e.g. Poisson)
+
+### Continuous
+When Z is continuous, use a **probability density function** (e.g. exponential density)

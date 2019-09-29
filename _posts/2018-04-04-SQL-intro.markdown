@@ -130,5 +130,9 @@ Better for complex queries |	Better for big data
 
 <br>
 
+(Note: page under development)
+
+<br>
+
 # Reference
-* Database Systems (Elmasri and Navathe)
+<!-- * Database Systems (Elmasri and Navathe) -->

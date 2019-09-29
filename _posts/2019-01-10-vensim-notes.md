@@ -19,7 +19,7 @@ This post contains setup help for the intermediate to advanced Vensim user. The 
 Because [Vensim](https://vensim.com/vensim-software/) is a 32-bit program, you also need a 32-bit version of Python.  More than likely, however, you may have 64-bit Python installed on your machine, which is generally offers you more speed and performance. So that leaves you with two options: downgrade to 32-bit Python, or set up virtual environments so that you can have multiple versions on your system.
 
 ### How do I make virtual environments so I can use both 32 and 64 bit?
-If you have a 64-bit Windows machine, but want to be able to run 32-bit programs (like Vensim) on your machine - a virtual environment is an good way to do it. You can do this with conda environment. Note that non-conda virtual environments are also possible, though I find conda easier to work with.
+If you have a 64-bit Windows machine, but want to be able to run 32-bit programs (like Vensim) on your machine - a virtual environment is an good way to do it. You can do this with [conda environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). Note that non-conda virtual environments are also possible, though I find conda easier to work with.
 
 ### What\'s the deal with Vensim DSS and DLL?
 __DSS:__ The DSS version of Vensim gives you additional control over Vensim compared to the PLE version. It enables you to link to external functions or programming software through the Vensim Dynamic Link Library (DLL). By default, Vensim DSS installs DLL support files in the DLL subdirectory of Vensim (usually in ``C:\Windows\System32`` or ``C:\Windows\SysWOW64``), with the name ``vendll32.dll``. Do not rename the Vensim DLL or it will not work.
