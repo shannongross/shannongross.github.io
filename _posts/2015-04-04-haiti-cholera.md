@@ -3,8 +3,8 @@ layout: post
 title: "Legitimizing Haitian Water Grievances"
 date: 2015-04-04
 description: Reflection on the United Nation's role in the cholera outbreak in Haiti.
-img: haiti.jpg # Add image post (optional)
-fig-caption: # Add figcaption (optional)
+img: haiti.jpg
+fig-caption: cholera in Haiti
 tags: [water, WASH, cholera, policy, public health, writing sample]
 
 ---

@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "The politicization of big data"
+title: "The Politicization of Big Data"
 date: 2019-09-05
-description: Big data and politics. # Add post description (optional)
-img: divide2.jpg  # Add image post (optional)
+description: How subjective preferences and subtle politics influences the success of a big data analysis project.
+img: divide2.jpg  
+fig-caption: Big data in policy analysis
 tags: [big data, policy analysis, uncertainty, analytics]
 ---
 We live in an age of data. **Datafication** refers to the increasing number of activities conducted in a semi-digital environment, where sensors, devices, and apps collect information about our activities.
@@ -38,5 +39,6 @@ As an analyst working on policy-relevant concerns, it is important to consider t
 In the world of big data, it is easier to criticize data, bring up alternative data, and argue system boundaries. Therefore, in order to provide policy support in this increasingly complex and data-driven world, data analysts are recommended to keep in mind the following:
 
 - Evolve from being a solely "objective/scientific" external expert toward a policy facilitator role. Try to construct the facts *along with* the stakeholders in order to make it more likely that consensus surrounding the results will be attained.
+- Be sensitive to concerns about open data privacy and management.
 - Rather than prescribing a single or narrowly defined strategy, present a variety of potentially strong options or solutions that have wiggle room. Make work more attractive to policymakers by showing strategies that can help solve stalemates. By redefining and broadening the problem, you may create new options for decision makers.
 - Big data is potentially powerful but not necessarily better than a smaller, well-chosen sample set. Don't forget the basics!

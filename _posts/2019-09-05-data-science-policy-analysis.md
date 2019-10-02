@@ -4,7 +4,10 @@ published: false
 layout: post
 title: "Learning data science for policy analysis"
 date: 2019-09-05
-description: Learning data science for policy analysis
+description: Tips and tricks about learning data science for policy analysis problems.
+img:
+fig-caption:
+tags:
 ---
 # Why Python?
 Python is a free and powerful scripting language that will be your bread & butter as a data scientist. It's short and intuitive commands make reading the code simple, while its open-source nature means that powerful modules built by others are at your disposal. Because it is popular and widely used, there are many help guides and stack overflow answers to support your questions. Python's capability for policy analysis problems rests largely with its ability to handle huge amounts of data. Policymakers may have large-scale questions about future trends among their constituents and key issues, and python makes it easy to perform powerful tasks to answer their questions. Because python connects well with geospatial tools, database systems, and other applications, it is powerful and easily extendable.
@@ -100,16 +103,6 @@ Two types:
 2. Double or Log-Log Plots
 - both axes are scaled logarithmically
 
-# Linear Regression
-Use this when you have a set of input values and want to measure the output (response) value. You are trying to determine a linear function that describes the control variable with the least amount of error. The purpose of this is to try and predict the value of the response variable, given some input.
-
-In order to minimize the overall error of a linear regression function, you try to minimize the error of each of the individual points (since the overall error is the aggregate of these).
-
-As with all summary statistics, it is important to properly understand and apply the assumptions behind linear regression. See [Anscombe's quartet](https://medium.com/datadriveninvestor/anscombes-quartet-12649db7eac0) for a particularly infamous example of the improper application of Linear Regression.
-
-No matter the chosen method for data analysis, plotting the data you are trying to analyze is a critical part of the process. Scripting languages such as Python and especially R are useful for generating statistical plots.
-
-See: [Intro to R](/intro-to-R/)
 
 
 
@@ -124,6 +117,20 @@ Things to keep in mind:
 - Difficult (but important) to come up with an appropriate palette
     - Tip: use a very simple color palette (e.g. blue - white - red works well)
     - Tip: map low values to cool colors and high values to warm colors to make visualization intuitive
+
+**Scatter Plot Matrices**: construct all possible 2D scatter plots and display them together in matrix format
+- the scatter plot matrix is symmetric across the diagonal
+- a convenient way to get a quick overview and find pairings that deserve a closer look
+- unwieldly (hard to see anything) after about a half dozen variables
+- half of the graphs produced are redundant, so you could replace them with something else (e.g. KDE plots, histograms, etc)
+
+**Parallel Coordinate Plots**
+- show more variables
+- instead of putting coordinate plots perpendicular to one another, have them parallel
+- downside is that they are not that intuitive to someone who has never seen one before. After it is explained to the reader, however, they are quite nice.
+- main use of these is to find interesting clusters in high-dimensional data sets
+- Many times, you'll want to normalize the ranges of the results so that they are all on the same scale (e.g. between 0 and 1 is often useful)
+- the appearance of the plot is dependent on the order of the parallel axes. It's a good idea to use an interactive tool (like Plotly) or to manually reshuffle them to see if there is any significant impact.
 
 ## Trivariate Plot options
 - Surface Plots (3D contour plots)

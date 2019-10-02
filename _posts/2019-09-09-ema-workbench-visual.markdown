@@ -2,8 +2,9 @@
 layout: post
 title: "Open Exploration in EMA Workbench - Visualization Examples"
 date: 2019-09-09
-description: Visualization tips for open exploration of model objectives using EMA workbench # Add post description (optional)
-img: rotav_OE_title.png # Add image post (optional)
+description: Visualization tips for open exploration of model objectives using EMA workbench.
+img: rotav_OE_title.png
+fig-caption: Open exploration in EMA workbench. 
 ---
 This post is intended for readers with an intermediate to advanced knowledge of the [ema workbench](https://github.com/quaquel/EMAworkbench) by Jan Kwakkel at TU Delft. The ema workbench documentation and GitHub tutorials contain many examples of how to implement the module. Here, emphasis is placed on multidimensional visualization techniques for open exploration of the objective space.
 
@@ -89,7 +90,7 @@ plt.show()
 The result of this is something like the following:
 
 <br>
-![MOEAs](../assets/img/rotav_OE_para.png)
+![pairs plotting](../assets/img/rotav_OE_para.png)
 
 Readers should realize that each objective of the problem formulation is plotted against the other objectives, so the x- and y-axes are duplicated. These scatter plots are useful for providing visual insight into the relations between the different objectives.
 
@@ -114,7 +115,7 @@ plt.show()
 
 As expected, the resulting 3D plot shows the solution space of our three objectives (in this case, *Mortality*, *Morbidity* and *OpEx costs*). In some cases, 3D plots can be useful for identifying interesting clusters of the objective space. In other cases, however, it may be difficult to distinguish meaningful trends - 3D plots may even obfuscate important information if you're not careful.
 
-![MOEAs](../assets/img/rotav_OE_3d.png)
+![3D plotting python](../assets/img/rotav_OE_3d.png)
 
 <br>
 
@@ -160,7 +161,7 @@ plt.show()
 Each line represents a possible policy option, with lines closest to the bottom of the y-axis being performing more favorably in terms of the decision maker’s objectives. The result of the previous code resembles the following:
 
 <br>
-![MOEAs](../assets/img/rotav_OE_paraplot.png)
+![parallel axis plot](../assets/img/rotav_OE_paraplot.png)
 
 
 <br>
@@ -187,7 +188,7 @@ The resulting heatmap shows features that have relatively higher/lower levels of
 
 <br>
 
-![MOEAs](../assets/img/rotav_OE_fs.png)
+![feature scoring](../assets/img/rotav_OE_fs.png)
 
 <br>
 

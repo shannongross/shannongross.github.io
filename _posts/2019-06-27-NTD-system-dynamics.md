@@ -2,36 +2,42 @@
 layout: post
 title: "System Dynamics Modeling for Neglected Tropical Diseases"
 date: 2019-06-27
-description: For beginners to system dynamics modeling
-img: ascaris_sfd.png # Add image post (optional)
-fig-caption: # Add figcaption (optional)
+description: Application of system dynamics modeling to an understudied public health problem.
+img: ascaris_sfd.png
+fig-caption: stock flow diagram for a neglected tropical disease
 tags: [modeling, python]
 ---
 
 # Problem description
-It is estimated that 24% of the global population is infected by the parasitic worm *Ascaris lumbricoides*. A common risk factor for this infection is living in an environment with poor levels of sanitation and hygiene. *A. lumbricoides* leads to anemia, stunting, cognitive defects, and malnutrition. However, because infection does not generally lead to mortality, it is widely overlooked by policymakers and understudied by academics.
+It is estimated that up to 24% of the global population is infected by the parasitic worm *Ascaris lumbricoides*. Take a moment to let that sink in - that's nearly **one in four human beings** on planet earth today.
 
-Previous attempts by development agencies have been unsuccessful at interrupting *A. lumbricoides* transmission because of: a) the difficulty of providing sanitation coverage and b) high rates of re-infection. Intervention strategies against the parasite typically focus on improving water, sanitation, and hygiene (WASH) conditions or on delivering a Mass Drug Administration (MDA) program. In order to reduce *A. lumbricoides* prevalence, MDA programs must be designed carefully. Many intervention strategies have only targeted kids (SAC and PreSAC) because they are hit hardest, and generally the programs are only funded for about 4-6 years.
+The mind-boggling prevalence of many Neglected Tropical Diseases has to do with the unhygenic conditions of poverty. People who live in areas with poor sanitation and hygiene conditions are at the highest risk of acquiring *A. lumbricoides* infection. *A. lumbricoides* leads to anemia, stunting, cognitive defects, and malnutrition. However, because infection does not generally lead to mortality, it is widely overlooked by policymakers and academics alike.
+
+Global development organizations and public health agencies have struggled to alleviate the burden of *A. lumbricoides* in low-income areas. Intervention attempts are complicated by the nature of the parasite and because of:
+- the difficulty of providing sanitation coverage
+- high rates of reinfection after de-worming programs
+
+Intervention strategies against the parasite typically focus on improving water, sanitation, and hygiene (WASH) conditions or on delivering albendazole through a Mass Drug Administration (MDA) program. In order to reduce *A. lumbricoides* prevalence, MDA programs must be designed carefully. Many intervention strategies have only targeted kids (SAC and PreSAC) because they are hit hardest, and generally the programs are only funded for about 4-6 years.
 
 ## Goal of this modeling
-* Find strategies to break the cycle of Ascaris lumbricoides transmission in Nigeria and India, whether through sanitation or mass drug administration.
+* Find strategies to break the cycle of *A. lumbricoides* transmission in Nigeria and India, whether through sanitation or mass drug administration.
 * Compare sanitation and mass drug administration policies in terms of: cost, DALY reduction, and “bounce back” over time.
 
 ## Conceptual model
 <br>
-![ascariasis](../assets/img/ascaris.png)
+![ascariasis feedback loop](../assets/img/ascaris.png)
 <br>
 The main feedback loop in this model highlights the significance of having an infectious soil reservoir, which contributes to disease transmission unless interrupted (shown in blue below). Expanded versions of this model should incorporate feedback effects of GDP and improved sanitation (shown in grey).
 
 
 ## Key Performance Indicators
-* Disability-Adjusted Life Years (DALYs): Successful interventions should see a significant decline in DALYs.
-* Infected Population: Turning on the “Treatment SWITCH” for different age groups will sharply reduce the number of infected. Altering “Frequency” and “Duration” of treatment changes the outcome of the Mass Drug Administration program. Alternatively, turning on the “Sanitation SWITCH” adds a hypothetical number of “newly constructed toilets,” which also reduces the number of affected persons.
-* Cost: Comparing the costs of mass drug administration (“Total cost of MDA”) to the cost of constructing new sanitation facilities (“Annual WASH construction budget”), facilitates program design and budget allocation.
-* Mean Worm Burden: The average intensity of infection per AgeGroup. For example, a Pre-SAC worm burden of “10” means that the average infected pre-school aged child in that country hosts 10 adult worms. Due to higher soil contact rates, Pre-SAC and SAC populations generally have the highest-intensity infections.
+* **Disability-Adjusted Life Years (DALYs)**: Successful interventions should see a significant decline in DALYs.
+* **Infected Population**: Turning on the “Treatment SWITCH” for different age groups will sharply reduce the number of infected. Altering “Frequency” and “Duration” of treatment changes the outcome of the Mass Drug Administration program. Alternatively, turning on the “Sanitation SWITCH” adds a hypothetical number of “newly constructed toilets,” which also reduces the number of affected persons.
+* **Cost**: Comparing the costs of mass drug administration (“Total cost of MDA”) to the cost of constructing new sanitation facilities (“Annual WASH construction budget”), facilitates program design and budget allocation.
+* **Mean Worm Burden**: The average intensity of infection per AgeGroup. For example, a Pre-SAC worm burden of “10” means that the average infected pre-school aged child in that country hosts 10 adult worms. Due to higher soil contact rates, Pre-SAC and SAC populations generally have the highest-intensity infections.
 
 <br>
-![ascariasis](../assets/img/ascaris_sfd.png)
+![stock flow diagram](../assets/img/ascaris_sfd.png)
 
 
 ## Critical assumptions
@@ -57,7 +63,7 @@ A very small portion of the population become “heavily infected” and may die
 
 <br>
 
-![infection sub model](../assets/img/ascaris_inf_sub.png)
+![ascaris lumbricoides infection](../assets/img/ascaris_inf_sub.png)
 
 <br>
 
@@ -84,7 +90,7 @@ Current treatment policy, India: Entire population treated, 1x per year for 6 ye
 
 <br>
 
-![current policy](../assets/img/ascaris_bounce_back.png)
+![ascaris current policy](../assets/img/ascaris_bounce_back.png)
 
 <br>
 

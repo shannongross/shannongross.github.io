@@ -33,6 +33,7 @@ plugins:
   - jemoji
   - jekyll-gist
   #- jekyll-twitter-plugin
+  - jekyll-seo-tag
 highlighter: rouge
 
 collections:

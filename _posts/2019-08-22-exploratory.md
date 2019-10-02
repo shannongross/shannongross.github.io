@@ -2,9 +2,9 @@
 layout: post
 title: Using Exploratory Modeling to Support Public Health Policy
 date: 2019-08-22
-description: Justification for greater use of exploratory modeling in public health policymaking.
+description: Justification for greater use of exploratory modeling in public health policymaking. #Add your keyword at the beginning of the description so that users can easily find it on google search results. This usually gets more click through rates.
 img:  public-health.jpg
-fig-caption: # Add figcaption (optional)
+fig-caption: Evidence-based public health policymaking.
 tags: [public health, systems thinking, deep uncertainty, exploratory modeling, multi-disease modeling]
 ---
 <br>
@@ -19,7 +19,7 @@ Policymakers are rarely interested in a single pathogen under narrowly-defined c
 Infectious diseases do not spread in isolation. Instead, pathogens are transmitted through complex mechanisms involving human behaviors and external conditions in the environment. This is one reason for incorporating a range of expertise in policy discussions. Additionally, not all decisions related to public health are performed by those with medical expertise. For instance, financial institutions, donor agencies, or water and sanitation engineers are all examples of influential actors on community health who may not have epidemiological backgrounds. Models that incorporate non-medical domains (or at least, are interpretable by those lacking clinical experience) may be useful in multi-actor policy situations.
 
 <br>
-![microscopes](../assets/img/scopes.jpg)
+![systems thinking in medicine](../assets/img/scopes.jpg)
 <br>
 
 To account for complexity and interdisciplinarity, a growing number of researchers are advocating for the application of **systems thinking** to public health issues. Systems approaches account for the complex interrelationships between connected sub-systems and encourage the integration of cross-disciplinary knowledge. Such methods move beyond the traditional methods used in disease epidemiology because they work to account for factors such as: economic mechanisms, community effects, social interactions, ecological factors, and other interdependent elements.
@@ -33,7 +33,7 @@ Modelling assumptions are necessary in cases of uncertainty. Uncertain parameter
 [Deep uncertainty](https://www.sciencedirect.com/science/article/pii/S1364815212003131) refers to a situation where the various parties to a decision do not know or cannot agree on how the system works; how likely various possible future states of the world are; and how important the various outcomes of interest are. Accordingly, deep uncertainty problems are often contentious. From a  modeler’s perspective, this means that there are many plausible model structures that could be used; a variety of perspectives on how to formulate the main objectives; and different ideas about what the optimal solution sets are. In situations of deep uncertainty, traditional decision analysis methods may be insufficient to assist decision makers in coming up with strategies to achieve their objectives.
 
 <br>
-![exploratory](../assets/img/exp.png)
+![exploratory versus predictive modeling](../assets/img/exp.png)
 <br>
 
 The classic use of modelling to support decision making tries to predict future outcomes with computational simulation, but such approaches are ill-equipped to handle [deep uncertainty](https://www.sciencedirect.com/science/article/pii/S1364815217301251). If even forming a “best-guess” probability distribution of a particular uncertainty is unsuitable or impossible, then traditional models may be unable to support decision-making. Thus, rather than falsely trying to reduce an irreducible uncertainty – or avoiding creating a model about the topic at all – modelling techniques that are able to systematically explore deep uncertainty values are needed.

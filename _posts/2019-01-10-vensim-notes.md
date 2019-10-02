@@ -4,7 +4,7 @@ title: "Vensim and EMA Workbench"
 date: 2019-06-27
 description: Tips and tricks for the intermediate to advanced Vensim user. Covers connecting quantitative models to the exploratory modeling analysis (EMA workbench) tool
 img: SD.jpg
-fig-caption: # Add figcaption (optional)
+fig-caption: Vensim versus EMA
 tags: [Modeling, EMA, programming, python, Vensim, system dynamics]
 
 ---
