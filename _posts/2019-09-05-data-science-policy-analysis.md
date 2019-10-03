@@ -40,6 +40,7 @@ Table X: Pros and Cons of the Classical Histogram
 | --- | --- |
 | Easy to generate | Does not handle outliers well |
 | --- | --- |
+| Histograms are useful because they make the most frequent values immediately apparent | But they are not the best choice for comparing two distributions.|
 
 
 ### Kernel Density Estimates (KDEs)
@@ -68,7 +69,13 @@ The experienced data analyst should have enough familiarity with statistical con
 When you think your data is not symmetric and/or has significant outliers, it is better to use **median and percentile** instead of **mean and standard deviation**. While mean and variance has historically been more popular because of how simple it is to calculate by hand, the rise in computing availability today means that it is often more practical and useful to work with percentiles.
 
 - *variation* describes the behavior within a variable
+  - its usually a bit harder to interpret than standard deviation, because the result of variance is in units squared (e.g. weeks^2, mph^2), which doesn't make a lot of sense. Thus it's not a great summary statistic.
 - *covariation* describes the behavior between variables
+- *central tendency* when values tend to cluster around a point (use *modes* if there is more than one cluster)
+- *spread* how much variability exists
+- *tails* do the probabilities drop off
+- *outliers* extreme values far away from the mean
+- *mean* be careful - this value is misleading when there is no "typical" instance (i.e. a lot of variance or spread)
 
 ### Box and Whisker Plots
 The popularity of box and whisker plots lies in its ability to convey a lot of statistical information in one compact visualization.
@@ -145,7 +152,9 @@ Things to keep in mind:
 Whenever we are doing statistics, we have the following:
 - a **population**, or the set of all possible outcomes
 - a **sample** of the entire population, because it is easier to work with a subset than the entire (very large) full set.
-- **statistical inference** inferring characteristics of the entire population based on results from the sample set
+- **statistical inference** inferring characteristics of the entire population based on results from the sample set.
+
+Thus, whenever we are performing **hypothesis testing**, the thing we are interested to know is *is the effect we observe in the sample likely to occur in the population?*
 
 Classical statistics is primarily interested in the following two procedures:
 1. Estimation
@@ -200,3 +209,19 @@ When the probability distribution function (Z) is discrete, then the distributio
 
 ### Continuous
 When Z is continuous, use a **probability density function** (e.g. exponential density)
+
+# Probability Mass Functions (PMF)
+A **PMF** maps from each value to its probability.
+- CON: as the number of values you have goes up, the probability of each value decreases. Thus, the effects of random noise grows stronger
+
+# Cumulative distribution functions (CDFs)
+- the *percentile* is the fraction of people who scored the same or lower than you.
+- the *cdf* is a function that maps from a value to a percentile rank. This function is the fraction of that is less than or equal to x
+  - PRO: especially good for comparing distributions
+
+# Analytic distributions
+### The exponential distribution
+- occurs when we look at interarrival times (the time between events)
+
+### the Gaussian (normal) distribution
+- characterized by the mean and SD
