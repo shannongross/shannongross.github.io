@@ -444,8 +444,8 @@ template {
 }
 
 .highlighter-rouge {
-  color: #6e1212;
-  background-color: #f7e6e6;
+  color: #e87902;
+  background-color: #fff9f0; /*#f7e6e6;*/
   font-weight: 400;
   /* border: 1px solid #607D8B; */
   -webkit-border-radius: 3px;

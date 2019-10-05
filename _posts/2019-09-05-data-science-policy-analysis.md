@@ -148,39 +148,6 @@ Things to keep in mind:
 
 
 
-# Hypothesis Testing
-Whenever we are doing statistics, we have the following:
-- a **population**, or the set of all possible outcomes
-- a **sample** of the entire population, because it is easier to work with a subset than the entire (very large) full set.
-- **statistical inference** inferring characteristics of the entire population based on results from the sample set.
-
-Thus, whenever we are performing **hypothesis testing**, the thing we are interested to know is *is the effect we observe in the sample likely to occur in the population?*
-
-Classical statistics is primarily interested in the following two procedures:
-1. Estimation
- - assume that the population is described by some distribution (e.g. Gaussian) and try to estimate parameters (e.g. mean, standard deviation) based on the sample set
-  - *point estimation* yields a specific value for a single parameter
-  - *interval estimation* yields a range of values that the parameter is supposed to lie within
-2. Hypothesis testing
-- the purpose of hypothesis testing is to help us reach a conclusion about the universe by testing a sample of that universe.
-- does not try to measure the size of an effect, it *merely tries to determine whether an effect exists*
-- helps us decide if a relationship is **statistically significant**
-- suppose we have a new drug to treat a particular illness and we want to know if it is effective. We divide the population in two and give the treatment to one half of the population. Is the application of the new drug statistically significant or just the result of random noise?
-- the **null hypothesis** (Boring finding) in this case would be that the drug has no effect - there is no difference between the two populations. If the drug has no effect, then we "fail to reject the null hypothesis". This double negative statement is important because we can never truly *prove* that the treatment worked, only to show that *it is not true that a relationship does not exist*.
-- the **alternate hypothesis** (interesting finding) is that there is a difference between the two populations that is statistically significant. In this scenario, we have enough information to "reject the null hypothesis".
-  - one of the shortcomings of hypothesis testing is that interpreting the results requires this non-intuitive line of reasoning.
-  - a second drawback is that that *the resulting statement has almost no practical meaning!*  Dividing the choice into either "significant" or "not significant" is not true to reality, where results do not usually fall into a dichotomy but lie along a continuum.
-
-### Flaws and Classical Traps of Hypothesis Testing
-(1) A result lies *just* outside the level of statistical significance. Thus, the outcome is categorized in a misleading manner. This problem is enhanced by the **arbitrariness of the statistical significance level**, which is commonly set at 5 percent (but why not 3 percent or 4.999 percent?). Thus, the process is fundamentally troubling - on the one hand we introduce a strict cutoff to divide between significant or not, and yet that very cutoff is arbitrarily chosen.
-(2) **Data dredging** refers to the case where you run enough tests to draw whatever conclusion you want to.
-(3) In real applications, the size of a statistical significance relationship is so much more valuable than a description of whether it exists or not.
-
-Because of these flaws, hypothesis testing may often be better suited to theoretical and academic studies, for instance when trying to highlight the existence of some phenomenon. In many real world applications, seeking out the confidence interval to determine the size of some statistical relationship may be more insightful than hypothesis testing.
-
-### P-Value Controversy
-Increasingly, more and more statisticians are becoming uneasy with the routine use of such statistical tests, especially in [medicine](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3016704/).
-
 **The Four Sampling Distributions**
 - *The Gaussian Distribution* - describes the distribution of averages, requiring you to know the variance upfront. It's for the distribution of a sum of "independent, symmetric, random variables"
 - *The chi-square Distribution* - describes the sum of squares of Gaussian variables. Is used to describe the distribution of variances. Requires us to know the number of degrees of freedom to evaluate it.
