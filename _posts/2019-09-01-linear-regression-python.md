@@ -10,7 +10,7 @@ fig-caption: single and multivariate linear regression
 tags: [python, linear regression, statistics, mathematics, tutorial, data science, machine learning]
 ---
 
-Perhaps the most commonly applied supervised machine learning technique is **linear regression**. Linear Regression is when you have a set of input values and want to try to predict the output (response) of another variable. The aim is to try and determine a linear function that describes the control variable with the least amount of error. This method is commonly used by data scientists to predict values from a set of input data.
+Perhaps the most commonly applied supervised machine learning technique is **linear regression**. Linear Regression is when you have a set of input values and want to try to predict the output (response) of another variable. The aim is to try and determine a linear function that describes the control variable with the least amount of error. This method is commonly used by data scientists to predict (continuous) values from a set of input data.
 
 #### General structure of linear regression:
 - y : response variable
@@ -36,7 +36,7 @@ There are five main steps to performing linear regression:
 
 Here, I'll use some data I compiled from the United Nations and World Bank to make an example where we predict a country's **Life Expectancy** from features such as "Births per woman" and "Percent of children <5 with anemia". We'll analyze these features using [sklearn](https://scikit-learn.org/) in python, which makes performing the regression much easier.  
 
-You can follow along with this example by downloading the data and full Jupyter notebook from [this repository](https://github.com/shannongross/code_support/tree/master/regression_tutorial)!
+You can follow along with this example by downloading the data and full Jupyter notebook from [this repository](https://github.com/shannongross/code_support/tree/master/regression_tutorial).
 
 <br>
 
@@ -148,10 +148,8 @@ Check how good the model can predict new data, by inserting the 'X_test' data we
 y_pred = regressor.predict(X_test)
 {% endhighlight %}
 
-Check how good the model can predict new data, by inserting the 'X_test' data we set aside earlier.
-
 {% highlight ruby %}
-# get a datafrrame of actual versus predicted y values
+# get a dataframe of actual versus predicted y values
 df_output = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
 df_output.head()
 {% endhighlight %}

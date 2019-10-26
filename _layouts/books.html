@@ -23,21 +23,26 @@ layout: main
 
 {{ content }}
 
+<br>
+
+
 {% assign books=site.books %}
 {% if books.size > 0 %}
     <h2 class="post-list-heading">{{ page.list_title | default: "Latest reviews" }}</h2>
-    <ul class="post-list">
+    <ul class="post-list" style="list-style-type:none;">
+      <div class="book-review-container">
         {% for book in books reversed %}
             <li>
-                <span class="post-meta"><time datetime="{{ book.date | date_to_xmlschema }}">{{ book.date | date_to_long_string }}</time></span>
-                <h3>
-                    <a class="post-link" href="{{ book.url | relative_url }}">{{ book.title }} — {{ book.author }}</a>
-                </h3>
+              <div class="book-review-img-list">
+                <img src={{ "/assets/img/" | prepend: site.baseurl | append : book.img}} alt="{{ book.title }}"
+                 width="width" height="height";" />
+                <p><a class="post-link" href="{{ book.url | relative_url }}">{{ book.title }} — {{ book.author }}</a></p>
+               </div>
             </li>
         {% endfor %}
     </ul>
 {% endif %}
-
+</div>
 
 <div class="page-footer">
   <div class="page-share">

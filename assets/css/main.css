@@ -1239,11 +1239,11 @@ a.newer-posts:hover {
 
 .page-cover-image figcaption {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
   padding-left: 20px;
-  color: rgba(255, 255, 255, 0.7);
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  color: rgba(0,0,0, 0.8);
+  text-shadow: 0 1px 5px rgba(255, 255, 255, 0.1);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 10px;
@@ -1607,4 +1607,28 @@ a.newer-posts:hover {
   padding-left: 100px;
   padding-top: 50px;
   padding-bottom: 0px;
+}
+
+div.book-review-img-list img {
+  width: 100%;
+  height: auto;
+}
+
+.book-review-img-list{
+  max-width: 225px;
+  text-align: center;
+  padding: .2em;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 1px;
+}
+div.book-review-img-list:hover {
+  border: 1px solid #777;
+}
+
+.book-review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start
 }
