@@ -7,6 +7,8 @@ img: ascaris_sfd.png
 fig-caption: stock flow diagram for a neglected tropical disease
 tags: [modeling, python]
 ---
+- TOC
+{:toc}
 
 # Problem description
 It is estimated that up to 24% of the global population is infected by the parasitic worm *Ascaris lumbricoides*. Take a moment to let that sink in - that's nearly **one in four human beings** on planet earth today.
@@ -51,10 +53,10 @@ Flow loops occur inside the Infection sub-model because Nigeria is endemic for A
 
 ## Base case behavior
 Fig 1a. Nigeria Status Quo (No intervention)
-![Status Quo Nigeria](../assets/img/ascaris_nigeria_base.png)
+![Status Quo Nigeria](../assets/img/ascaris_nigeria_base.png){:.post-img-large}
 <br>
 Fig 1b. India Status Quo (No intervention)
-![Status Quo India](../assets/img/ascaris_india_base.png)
+![Status Quo India](../assets/img/ascaris_india_base.png){:.post-img-large}
 
 ## Explanation of Infection Sub-model
 In areas that are endemic for a. lumbricoides, most people are essentially “living with a mild infection” because they are constantly being re-infected and/or accumulating parasites. Therefore, the bulk of the infected population is contained in this “recurring infection” loop.
@@ -78,7 +80,7 @@ The variable “soil contact rate” was an educated estimate. This is a highly 
 
 <br>
 
-![sensitivity analysis](../assets/img/ascaris_SA.jpg)
+![sensitivity analysis](../assets/img/ascaris_SA.jpg){:.post-img-large}
 Note: figure shows sensitivity for Nigerian Pre-School Aged Children only for readability.
 
 <br>
@@ -90,7 +92,7 @@ Current treatment policy, India: Entire population treated, 1x per year for 6 ye
 
 <br>
 
-![ascaris current policy](../assets/img/ascaris_bounce_back.png)
+![ascaris current policy](../assets/img/ascaris_bounce_back.png){:.post-img-large}
 
 <br>
 

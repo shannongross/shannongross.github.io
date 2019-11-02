@@ -9,6 +9,13 @@ img: hypoth_testing_cover.jpg
 fig-caption:
 tags: [statistics, policy, mathematics, programming, science, big data]
 ---
+**Article contents:**
+- TOC
+{:toc}
+
+<br>
+
+### Using Classical Statistics
 In statistics, we have the following:
 - A **population**, or the set of all possible outcomes.
 - A **sample** of the entire population, because it is easier to work with a subset than the whole (very large) set.
@@ -16,6 +23,7 @@ In statistics, we have the following:
 Whenever we are performing hypothesis testing, we are concerned with the question: *is the effect we observe in the sample likely to occur in the population?*  In other words, we use hypothesis testing to help reach a conclusion about the universe by testing a sample of that universe. Doing this is known as **statistical inference**, where we infer characteristics of the entire population based on results from the sample set.
 
 Hypothesis testing is a central technique of classical statistics. Most often it is used to decide if a relationship is statistically significant. Importantly however, it does not try to measure the size of an effect, it merely tries to determine whether an effect *exists*.
+
 
 ### Why Use Hypothesis Testing in the Real World?
 Suppose that the mayor of a small community has come up with a new policy for policing crime in his district. After putting the policing policy into effect for awhile, the mayor feels like the new method has worked pretty well to reduce crime in the area. But is the reduction in crime statistically significant, or just the result of random noise? To test this, the mayor differentiates between:
@@ -27,6 +35,15 @@ Suppose that the mayor of a small community has come up with a new policy for po
 If you're scratching your head about the weird logic we use when describing the results of these hypotheses, you're not alone! One of the biggest drawbacks of hypothesis testing is that interpreting the results requires some seriously non-intuitive line of reasoning.
 
 A second shortcoming is that the resulting statement has almost no *practical* meaning. In the real world, the effects of a new policing policy cannot easily be divided strictly into either "significant" or "not significant". Instead, the effects of the policy probably lie somewhere along a continuum instead of completely in one bucket or the other. This opens up the discussion to some of the classical traps of hypothesis testing.
+
+<br>
+![hypothesis testing pitfalls](../assets/img/hypoth_testing_cartoon.png){:.post-img-smallest}
+
+<div class ="post-img-caption">
+https://xkcd.com/archive/
+</div>
+<br>
+
 
 ### Flaws and Classical Traps of Hypothesis Testing
 Let's say that to make things simple, the mayor wants to be able to use classical statistics to distinguish between a "significant" or a "not significant" policy. This will make things a lot easier for him when we has to defend his new policy to the community or against his political opponent. As is often done in statistics, he creates the division between "significant" and "not" by setting the **statistical significance level** at 5 percent. The level 0.05 is commonly chosen out of convention, tradition, or laziness - however you want to look at it - but take a moment to think of how arbitrary that barrier really is (i.e. why not 3 percent or 4.999 percent?). In fact, our mayor is dismayed to find that when the numbers are crunched the result lies just *barely* outside the level of statistical significance. If the police had just caught one or two more bad guys, it would have been enough for him to confidently declare that the results of his new crime policy made the streets **significantly** safer. Instead, his own experimental design - which centers around an arbitrarily chosen threshold and a strict, dichotomous classification system - forces him to say that the new crime policy did not have a "significant" effect (even if many more criminals were caught then before).

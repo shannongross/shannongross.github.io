@@ -20,7 +20,7 @@ This is a simple example of modeling population growth in Uganda using system dy
 Having a reliable population model is a useful foundation for many public health and policy applications. For instance, I used a version of this population model to estimate the number of Ugandans affected by various gastroenteric pathogens. After projecting those numbers into the future, I could test how different intervention strategies may plausibly affect overall morbidity and mortality rates based on this initial population model.
 
 <br>
-![Total number infected](../assets/img/TLL.png)
+![Total number infected](../assets/img/TLL.png){:.post-img-smaller}
 
 If you are beginner in continuous modeling and/or Vensim, this example may be helpful launching point for your own studies.
 

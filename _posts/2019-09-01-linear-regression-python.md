@@ -9,6 +9,8 @@ img: linear.jpg
 fig-caption: single and multivariate linear regression
 tags: [python, linear regression, statistics, mathematics, tutorial, data science, machine learning]
 ---
+- TOC
+{:toc}
 
 Perhaps the most commonly applied supervised machine learning technique is **linear regression**. Linear Regression is when you have a set of input values and want to try to predict the output (response) of another variable. The aim is to try and determine a linear function that describes the control variable with the least amount of error. This method is commonly used by data scientists to predict (continuous) values from a set of input data.
 
@@ -78,7 +80,7 @@ sns.regplot(x='Life expectancy', y='Births per woman', data=df1)
 {% endhighlight %}
 
 <br>
-![Linear relationship check](../assets/img/births_vs_lifeexp.png)
+![Linear relationship check](../assets/img/births_vs_lifeexp.png){:.post-img-smallest}
 <br>
 
 Another option is to use a **join plot** to get a better feel for the distribution of points.
@@ -89,7 +91,7 @@ sns.jointplot(x='Life expectancy', y='Births per woman', data=df1, kind="reg");
 {% endhighlight %}
 
 <br>
-![Linear relationship join plot](../assets/img/linear_reg_join_plot.png)
+![Linear relationship join plot](../assets/img/linear_reg_join_plot.png){:.post-img-smallest}
 <br>
 
 From the shape of these initial plotting exercises, we can be pretty sure that a linear relationship exists between our independent and dependent variables.
@@ -99,13 +101,11 @@ And now we're ready to begin with the actual regression.
 ## Linear Regression Step 2: Categorize into attributes and labels
 
 | Attributes     | Labels     |
-| :------------- | :------------- |
+| :-------------: | :-------------: |
 | These are our inputs      | This is the thing we're trying to predict      |
-| :------------- | :------------- |
 | Independent variable     | Dependent variable     |
-| :------------- | :------------- |
 | Also known as the input   | Also known as the target, output, or response   |
-| :------------- | :------------- |
+{: .post-table-med}
 
 Fortunately for us, sklearn makes the Split-Train-Test process painless:
 {% highlight ruby %}
@@ -168,7 +168,7 @@ plt.show()
 {% endhighlight %}
 
 <br>
-![actual vs predicted regression](../assets/img/lin_pred_actual_barchart.png)
+![actual vs predicted regression](../assets/img/lin_pred_actual_barchart.png){:.post-img-smaller}
 <br>
 
 Alternatively, we might wish to look at these results using a scatter plot, so that we can overlay the linear model with the test data.
@@ -185,7 +185,7 @@ plt.grid(True)
 plt.show()
 {% endhighlight %}
 <br>
-![linear model scatter](../assets/img/lin_model_scatter.png)
+![linear model scatter](../assets/img/lin_model_scatter.png){:.post-img-smaller}
 <br>
 
 

@@ -4,8 +4,14 @@ title: "Open Exploration in EMA Workbench - Visualization Examples"
 date: 2019-09-09
 description: Visualization tips for open exploration of model objectives using EMA workbench.
 img: rotav_OE_title.png
-fig-caption: Open exploration in EMA workbench. 
+fig-caption: Open exploration in EMA workbench.
 ---
+**Article contents:**
+- TOC
+{:toc}
+<br>
+
+# Exploratory Modeling
 This post is intended for readers with an intermediate to advanced knowledge of the [ema workbench](https://github.com/quaquel/EMAworkbench) by Jan Kwakkel at TU Delft. The ema workbench documentation and GitHub tutorials contain many examples of how to implement the module. Here, emphasis is placed on multidimensional visualization techniques for open exploration of the objective space.
 
 In this example, I am using a model that simulates the burden of disease caused by four different infectious pathogens in a community. Here, users are interested in finding combinations of public health policy levers (e.g. providing clean water, sanitation, vaccination, medical treatment) that reduce the burden of disease. The model was created in Vensim (although you can substitute your own model made in python, Netlogo, etc). Readers interested in this multi-disease model can find more details [here](https://github.com/shannongross/multi_disease_model).
@@ -39,7 +45,7 @@ from disease_model_problems import get_model_for_problem_formulation
  Once we have the model and necessary packages imported into our environment, we can move on to the next section where we perform some investigative experiments. This open exploration will allow us to gain an initial understanding of the solution space.
 
 <br>
-# Open Exploration in EMA workbench
+# Visualization Examples
 {% highlight ruby %}
 # First, retrieve the model. Here, I have more than one way of formulating the model, but we will just use problem formulation 1 in this example.
 disease_model = get_model_for_problem_formulation(1)
@@ -191,6 +197,9 @@ The resulting heatmap shows features that have relatively higher/lower levels of
 ![feature scoring](../assets/img/rotav_OE_fs.png)
 
 <br>
+
+# Conclusion
+Where information is deeply uncertain or there are severe data gaps, traditional methods of quantitative modeling that focus on probability or risk are impracticable. Exploratory modeling techniques can be used to build models that would be questionable using predictive methods. Exploratory models are more appropriate for helping decision makers learn about the system and different strategic options, rather than models that use big assumptions to prescribe a single solution.
 
 In an upcoming blog post, I'll dive deeper into the pros and cons of different visualization methods. I'll also discuss the use of multiple problem formulations.
 

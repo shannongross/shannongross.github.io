@@ -1,0 +1,88 @@
+---
+published: false
+
+layout: post
+title: "UML"
+date: 2018-04-04
+description: Introduction to UML # Add post description (optional)
+img:  diseaseUML.png # Add image post (optional)
+---
+## Unified Modelling Language (UML) Class Diagram
+Object Class: description of a set of objects with similar properties (attributes, operations, relationships, constraints, and semantics)
+* Abbreviation "class"
+* A model is an abstraction. So the rationale for introducing classes is that it provides a means for abstraction
+* Warning: UML has several other types of diagrams. Here, I am only discussing class diagrams.
+
+Class Name |
+---|
+\+AttributeName: Data Type |
+---|
+\+OperationName |
+---|
+{:.post-UML}
+
+
+# Object-oriented information modelling
+* **Object**: Think of an object as basically an agent. Objects have things they know (attributes) and things they can do (behaviors or operations). The values of an object's attributes determine its state. An object is an instance of a class
+* **Class**: the "blueprint" of an objects
+* **Class Diagram**: gives an overview of a system by showing its classes and the
+relationships among them. Class diagrams are static -- they display what interacts but not
+what happens when they do interact. You should think of methods as the object-oriented equivalent of functions and procedures.
+* **Inheritance**: Inheritance models “is a” and “is like” relationships, enabling you to reuse existing
+data and code easily. When A inherits from B, we say A is the subclass of B and B is the
+superclass of A. Furthermore, we say we have “pure inheritance” when A inherits all the attributes
+and methods of B. The UML modeling notation for inheritance is a line with a closed arrowhead
+pointing from the subclass to the superclass.
+* **Abstract Class**: (e.g. Person) modeled with their names in italics, as opposed to concrete classes, classes from which objects are instantiated, whose names are in normal text. The Person class is abstract: objects are not created directly from it, and it captures the similarities between the students and professors. (An abstract class is non-instantiable)
+* **Attribute**: Attributes are the information stored about an object.
+* **Association**: a relationship between instances of the two classes. There is an association between two classes if an instance of one class must know about the other in order to perform its work. In a diagram, an association is a link connecting two classes, such as:
+  * Binary (between two objects)
+  * Directional (should be read in a particular direction)
+  * Multiplicity
+    * Fixed
+    * Any
+    * Several
+    * Range
+  * [1..\*] means "one or more"
+  * \+ sign means public attribute
+  * \- Means its only visible to some
+
+* **Generalization**: an inheritance link indicating one class is a superclass of the other. A generalization has a triangle pointing to the superclass. By using inheritance/generalization, you are signaling a taxonomic relationship between a more general element and a more specific element.
+  * For example, cars, boats, and buses are subclasses of superclass *vehicle*
+  * Sharing similarities while preserving differences
+  * Abstract class: class without instance (written in italics)
+    * Means that there are no instances of *vehicle*, only cars, boats, and buses
+
+* **Aggregation**: an association in which one class belongs to a collection. An aggregation has an (open) diamond end pointing to the part containing the whole.
+  * Aggregation relationship between instances of a class and several instances of another class
+  * Ex: a country is an aggregation of regions. Each region belongs to exactly 1 country.
+  * Object is still useful if you disaggregate it
+
+* **Composition**: a strong association in which the part can belong to only one whole -- the part cannot exist without the whole. Composition is denoted by a filled diamond at the whole end.
+  * Composition relationship between instances of a class and several instances of another class (they cannot exist independently)
+  * Ex: a book is composed of at least two pages.
+  * Object is no longer useful if you disaggregate it
+  * Follow the "part of" sentence rule -- if it makes sense to say that something is part of something else then there's a good chance that composition makes sense. For example it makes sense to say that a room is part of a building, it doesn't make sense to say that an address is part of a person.
+  * UML 2 no longer supports the concept of aggregation, a weaker form of composition, which was depicted in UML 1.x using a hollow diamond. The reality is little difference exists among association and composition at the coding level.
+* **Multiplicity**: of an association end is the number of possible instances of the class associated with a single instance of the other end.
+* **Constraint**: a condition that every implementation of the design must satisfy. Constraints are written in curly braces { }.
+* **Package**: To simplify complex class diagrams, you can group classes into packages. A package is a
+collection of logically related UML elements, or a set of classes.
+  * Defined according to some needs of decompositions of UML models
+  * Packages squared off/grouped in packages
+
+<br>
+# How do you translate between SQL and UML?
+* In UML you have subclasses, tricky to translate into databases. Other than that, quite straightforward to translate.
+* Theory: relations are the hardest part. Need to try it out and experiment to verify it is working as intended.
+* In most applications, server side is hidden from you and you have to query to the server. In sample exercises, both client and server on your own laptop
+* Bear in mind that NULL means the salary is not known. 0 means he has no salary.
+* Normalization: Putting redundant data in a separate table
+
+
+
+
+<br>
+
+# Reference
+* Database Systems (Elmasri and Navathe)

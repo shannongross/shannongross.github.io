@@ -10,9 +10,8 @@ fig-caption: Data and Policy
 tags: [policy analysis, data science, statistics, python, visualizations]
 ---
 # Outline
-- A. How can data science help with policy analysis?
-- B. Basic Statistics for Data Science
-- C. Fundamental Visualizations for Data Analysis
+- TOC
+{:toc}
 
 # A. How can data science help with policy analysis?
 Policy analysis is an endeavor to understand the process through which governments develop different policies, and what impact those policy choices ultimately have. With ever-increasing data availability, data science provides a powerful aid to supporting the aims of policy analysis.

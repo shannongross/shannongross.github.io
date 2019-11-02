@@ -1,0 +1,35 @@
+---
+published: false
+
+layout: post
+title: MORDM
+date: 2018-04-04
+description: Easy intro to MORDM
+img:  
+---
+# Multi-Objective Robust Decision-Making (MORDM)
+The relationship between policy levers and performance outcomes depends on many uncertain factors beyond of the control of the policymaker. Traditionally, this uncertainty is accounted for by using an expected value from on an established probability distribution. However, this is difficult in situations of deep uncertainty, when stakeholders do not agree on the likelihood or impact of a particular uncertainty on the system. An alternative is to test policy performance against a wide range of values for these unknown parameters, thus stakeholders do not need to agree on the probabilities of these parameters upfront. That is one of the major advantages of the Many-Objective Decision Making (MORDM) approach used in the following chapter.
+
+The goal of this chapter is to find a set of Pareto optimal strategies that are robust against the various uncertainties and to understand tradeoffs between objectives. As shown in Figure 26, experimentation using MORDM contains four main steps: (1) formulating the problem statement in a way that the objectives can be evaluated quantitatively according to the needs of the decision maker; (2) generating a Pareto approximate set of initially promising strategies; (3) stress-testing the promising set of strategies by exploring their performance under a wide range of plausible futures; and (4) adjusting the most robust candidate strategies to guard against any vulnerabilities identified in scenario discovery. Optionally, the last step can be fed back into the beginning to incorporate decision-maker feedback and lessons learned.
+
+# Why use it?
+There are many different ways to computationally search for promising candidate policies in light of conflicting objectives. This thesis adopts the MORDM method proposed by Kasprzyk et al. (2013), which uses a many-objective evolutionary algorithm (MOEA) to find a set of policies close to the Pareto-optimal front. The notion of Pareto optimality means finding a set of multiple best solutions for the problem, where each solution is a compromise between different objectives. A clear estimate of the Pareto front can be highly useful in helping policymakers to select robust plans as well as to learn about the underlying dynamics of the system.
+
+MORDM is intended to be done in collaboration with decision makers, in order to incorporate lessons learned as part of the policy deliberation process (Kasprzyk et al., 2013). Since MORDM does not require assumptions about policymaker preferences before determining the Pareto front, this approach represents a posteriori decision support (Kasprzyk et al., 2013). MORDM was selected for this analysis because of this benefit of enabling the decision maker to gain an understanding of a larger set of superior solutions without the premature aggregation of performance measures. Ultimately, it is up to the decision maker to select the final policy once these trade-offs between different options are made clear. Though to the author’s knowledge MORDM has not been used so far to inform public health policymaking, the approach holds great potential for supporting experts in discovering, analyzing, and fine-tuning health development policies.
+
+# An easy intro to the steps of MORDM
+### 1. Operationalize
+### 2. Search
+### 3. Stress-Test
+### 4. Scenario Discovery
+
+
+## USING MANY-OBJECTIVE EVOLUTIONARY ALGORITHMS
+MORDM incorporates MOEA in the search phase in order to perform global optimization and discover high-performing policy options (Kasprzyk et al., 2013). Mimicking natural processes of evolution, MOEAs iteratively evaluate possible strategies across the many objectives until the best candidates are found. Using an MOEA is chosen over classical optimization methods for the following reasons:
+- Rather than handling a single solution, the population-based approach of MOEAs can be used to find a large number of solutions in a single run.
+- MOEAs are ideally suited to working in parallel systems, which can dramatically reduce computational expenses.
+- Because the algorithm’s evolutionary processes are separate from the issue it is applied to, MOEAs are easily applied to different problems.
+The application of MOEAs to many-objective policy problems is useful for keeping performance measure disaggregated while enabling the evaluation of trade-offs between various alternatives (Kasprzyk et al., 2013). In short, MOEAs provide an efficient way to determine the Pareto front and highlight potentially robust policy options.
+
+
+# Reference
