@@ -840,7 +840,10 @@ table {
   width: 100%;
   text-align: justify; /* center */
   border-collapse: collapse;
+  /* table-layout: fixed; */
+
 }
+
 
 table td, table.blueTable th {
   border: 1px solid #aaa;
@@ -1645,7 +1648,7 @@ div.book-review-img-list:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  max-width: 75%;
 }
 .post-img-smaller {
   display: block;
@@ -1676,6 +1679,8 @@ div.book-review-img-list:hover {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  table-layout: fixed;
+  padding: 5em;
 }
 
 .post-img-caption{
