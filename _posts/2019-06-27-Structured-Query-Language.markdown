@@ -129,7 +129,7 @@ WHERE firstname = 'Karen';
 >
 Use `UPDATE` to modify *existing* rows. Use `INSERT` for adding *new* rows.
 
-We can keep inserting (and updating) our table information in this manner. However, if we have a large volume of patient information, we may wish to import it for instance from a csv file. I have prepared an example csv of patient data, which you can copy from [my github](www.google.com).
+We can keep inserting (and updating) our table information in this manner. However, if we have a large volume of patient information, we may wish to import it for instance from a csv file. I have prepared an example csv of patient data, which you can copy from [my github](https://github.com/shannongross/code_support/tree/master/health-database).
 
 ### Add data from a .csv file
 {% highlight ruby %}
@@ -183,6 +183,7 @@ INSERT INTO visits values(106, “7-1-2019”, 4, “fever”);
 
 ![SQL populate table](../assets/img/sqlite3_populate_table.png)
 
+Again, you can use the example csv files from [my github](https://github.com/shannongross/code_support/tree/master/health-database) to practice with.
 <br>
 
 ### Natural Join
