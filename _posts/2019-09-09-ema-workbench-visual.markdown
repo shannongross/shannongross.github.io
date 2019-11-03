@@ -6,6 +6,8 @@ description: Visualization tips for open exploration of model objectives using E
 img: rotav_OE_title.png
 fig-caption: Open exploration in EMA workbench.
 ---
+As the availability of computational power grows, the potential of exploratory modeling continues to expand. Advancements have been made in fields such as: [water resources](https://doi.org/10.1111/j.1539-6924.2007.00940.x), [policy analysis](https://doi.org/10.1016/j.envsoft.2017.06.054), [ecosystem management](https://www.jstor.org/stable/26270230), and [operations research](https://doi.org/10.1287/opre.41.3.435). Open-source languages like python have supported powerful simulations in becoming more accessible than ever before. One of the most challenging frontiers, however, has been the ability of an analyst to visualize the results of an exploratory model. Visualization is difficult because the results of exploratory modeling are often in the form of high-dimensional information ensembles, making many traditional plotting methods ill-equipped. The following article contains some python visualization examples for exploratory modeling output. 
+
 **Article contents:**
 - TOC
 {:toc}

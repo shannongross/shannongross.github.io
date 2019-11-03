@@ -978,6 +978,19 @@ table tfoot td {
   -webkit-transform: scale3d(0.9, 0.9, 1);
           transform: scale3d(0.9, 0.9, 1);
 }
+.cover-resume-image{
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  overflow: visible;
+
+}
+.cover-resume-image img:hover {
+  -webkit-transform: scale3d(0.9, 0.9, 1);
+          transform: scale3d(0.9, 0.9, 1);
+}
 
 .about .author-name {
   font-family: 'PT Serif', serif;

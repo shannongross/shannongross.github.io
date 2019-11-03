@@ -7,12 +7,13 @@ img: rob3.png #optimiz.jpg # Add image post (optional)
 fig-caption: optimization algorithm for high-dimensional datasets
 tags: [modeling, ema workbench, NSGA-II, optimization, programming, MOEA]
 ---
+If you've worked on a large-scale, challenging issue before, then you know that one of the reasons the problem was so tricky is because any strategy idea that performed well in one area (e.g. increasing product quality) had the unfortunate effect of harming another area (e.g. increasing production cost). In the real world, decisions are made up of multiple objectives that often conflict with each other. This is where the notion of *many-objective optimization (MOO)* comes in, which attempts to find satisfactory solutions in light of conflicting objectives.
+
+**Article Contents**
 - TOC
 {:toc}
 
-
-If you've worked on a large-scale, challenging issue before, then you know that one of the reasons the problem was so tricky is because any strategy idea that performed well in one area (e.g. increasing product quality) had the unfortunate effect of harming another area (e.g. increasing production cost). In the real world, decisions are made up of multiple objectives that often conflict with each other. This is where the notion of **many-objective optimization (MOO)** comes in, which attempts to find satisfactory solutions in light of conflicting objectives.
-
+<br>
 
 # Many Objective Optimization
 There are many different ways to computationally search for promising candidate policies in light of conflicting objectives. The notion of **Pareto optimality** means finding a set of multiple best solutions for the problem, where each solution is a compromise between different objectives. A clear estimate of the Pareto front can be highly useful in helping policymakers to select robust plans as well as to learn about the underlying dynamics of the system. Since the presence of multiple, conflicting objectives means that the analyst cannot present a single "best" solution to the decision-maker, highlighting the pareto front can highlight important tradeoffs in the objective space.
@@ -22,7 +23,9 @@ The mathematics behind MOO can be complex, so a variety of new and increasingly 
 By mimicking biological processes, genetic algorithms provide an efficient method for converging towards diverse and high-performing solution sets. For a deeper introduction into evolutionary algorithms, I recommend starting with [this video](https://youtu.be/1i8muvzZkPw).
 
 <br>
+
 ![multi objective evolutionary algorithm](../assets/img/rob2.jpg)
+
 <br>
 
 
