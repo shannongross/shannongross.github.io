@@ -6,6 +6,7 @@ title: Fundamentals of Discrete Modeling
 date: 2018-01-01
 description: discrete # Add post description (optional)
 img:  # Add image post (optional)
+fig-caption: 
 tags: [modeling, simulation, discrete]
 ---
 **Article contents:**
@@ -129,3 +130,25 @@ Type I, II and III errors must be prevented.
 - Type I (**Model builder’s risk**): The simulation results are rejected when in fact they are sufficiently credible
 - Type II (**Model user’s risk**): Invalid simulation results are accepted as if they are sufficiently credible
 - Type III: The **wrong problem** is solved and committed when the problem formulated does not completely contain the actual problem
+
+
+<!--
+# Confidence intervals
+confidence intervals do not require a priori hypotheses and therefore avoid testing of trivial null hypotheses.
+Confidence intervals are easier to understand than significance tests and therefore have a definite instructional advantage over significance tests.
+
+
+A Thus, the outcome is categorized in a misleading manner. This problem is enhanced by the **arbitrariness of the statistical significance level**, which is commonly set at 5 percent . Thus, the process is fundamentally troubling - on the one hand we introduce a strict cutoff to divide between significant or not, and yet that very cutoff is arbitrarily chosen.
+
+
+### P-Value Controversy
+
+ -->
+
+<!--
+#Extra
+Classical statistics is primarily interested in the following two procedures:
+1. Estimation
+ - assume that the population is described by some distribution (e.g. Gaussian) and try to estimate parameters (e.g. mean, standard deviation) based on the sample set
+  - *point estimation* yields a specific value for a single parameter
+  - *interval estimation* yields a range of values that the parameter is supposed to lie within -->

@@ -2,12 +2,12 @@
 published: true
 
 layout: post
-title: A Primer in Probability Distributions
+title: "Understanding common probability distributions"
 date: 2019-08-23
-description: An introduction to common probability distributions and their visualization in Python using Seaborn.
-fig-cation: Beyond the Normal
+description: "An introduction to common probability distributions and their visualization in Python using Seaborn."
+fig-cation: Beyond the Normal (distribution)
 img: distribution-main.png
-tags: [statistics, python, sampling, scipy, machine learning]
+tags: [statistical distributions, python for policy analysis, random sampling, scipy.stats, beginner machine learning]
 ---
 The following article will cover common probability distributions, including: Uniform, Normal, Bernoulli, Binomial, Poisson and Gamma. I'll discuss the strengths and weaknesses of each distribution, as well as their key assumptions. I'll also use a Python function to show how each one can be plotted using the Seaborn library.
 
@@ -15,7 +15,7 @@ The following article will cover common probability distributions, including: Un
 - TOC
 {:toc}
 
-# Probability Distributions
+## Probability Distributions
 Probability theory is all about using mathematics to study uncertainty (or "stochasticity"). Probabilities help us to express the inherent stochasticity in our surroundings. A major part of making sense of this stochasticity involves the study of **randomness**, which is central to probability theory. More formally, a probability distribution **p(x)** indicates the likelihood that the random variables takes a particular value of **x**.
 
 If I ask you think of a random number, there are an infinite number of different values you might give me. But when applying the term "random" to solving real-world problems, our experience gives us an intuition that some values are more likely to occur than others. For instance, if you go to the pharmacy right now to pick up a prescription, we might not know the exact amount of time you'll end up having to wait in line. Instead, we could simulate this using a random value drawn from a probability distribution. This function makes use of our knowledge of past events to help us narrow down the range of an uncertain value. Thus, based on previous experiences at that pharmacy, you know that you typically wait in line eleven minutes, you've never gotten out in less than five minutes, and one particularly bad day you had to wait eighteen minutes. Under no circumstance would you expect to wait 300 minutes, for example. Probability distributions employ this information to gain a better understanding of what value the uncertain parameter is likely to take.
@@ -116,7 +116,7 @@ def plot_distribution(distribution, num=1000, mean=0, sd=1, **kwargs):
 
 # Common probability distributions
 
-## Uniform
+### Uniform
 In a uniform probability distribution, variables are evenly distributed over a given range. Thus, all possible outcomes have an equal chance (likelihood) of occurring. This distribution is useful for modeling multiple events that occur with the same probability. This distribution, which can be discrete or continuous, is also referred to as the *rectangular distribution* because of its shape.
 
 **Examples** of a uniform distribution include:
@@ -131,7 +131,7 @@ plot_distribution(uniform, num=10000, mean=0, sd=10)
 {% endhighlight %}
 ![uniform probability distribution](../assets/img/distribution-uniform.png)
 
-## Gaussian
+### Gaussian
 The Gaussian (Normal) distribution is the most famous continuous distribution - it's nice, familiar, and makes us happy to draw it. Just give the mean and standard deviation to create this bell-shaped curve. Because its only characterized by two parameters (the mean and variance) it's very easy to create. Real-world examples of the Gaussian distribution occur in:
 * Grades, such as SAT scores, tend to fall around a C average, with less students scoring a B or D, and even less students scoring an A or F.
 * How much money people make in an economy tends to fall around an average value with some variance for the very poor/wealthy.
@@ -143,7 +143,7 @@ plot_distribution(norm, num=10000, mean=0, sd=10)
 {% endhighlight %}
 ![normal probability distribution](../assets/img/distribution-normal.png)
 
-## Bernoulli
+### Bernoulli
 A Bernoulli trial is one of the most basic distributions, since the random variable can take on one of two values. When a random trial can only end in one of two outcomes (success or failure), it may be referred to as a **Bernoulli Trial**. Examples include:
   - Will it snow tomorrow? (Yes/No)
   - Will the Penguins win against the Capitals tonight? (Win/Lose)
@@ -156,7 +156,7 @@ plot_distribution(bernoulli, num=10000, p=0.3)
 {% endhighlight %}
 ![Bernoulli probability distribution](../assets/img/distribution-bernoulli.png)
 
-## Binomial
+### Binomial
 The Binomial distribution is used to model binary data (when only one of two possible outcomes can occur). It is applied to finding the probability that an event happens a certain number of times in a fixed number of trials. However, in order for a binomial distribution to be a good fit for the data, the following four assumptions must be met:
 
 **Binomial Assumptions**
@@ -174,7 +174,7 @@ plot_distribution(binom, n=5, p=0.2)
 {% endhighlight %}
 ![Binomial probability distribution](../assets/img/distribution-binomial.png)
 
-## Gamma
+### Gamma
 The Gamma distribution models the amount of waiting time between Poisson distributed events. This type of distribution is useful when you're working with *rates*, for instance the amount of waiting time in a line.  Many natural events happen randomly yet still have well-established averages. For instance, when a specific person will die is unknown, though the country's average life expectancy is known. Other examples of when the gamma distribution applies include:
 - Hunting. Suppose it is deer season and you expect to shoot a deer in one week. Calculate the probability that you'll have to wait between 3 and 5 weeks before you shoot a deer.
 - The flow of manufacturing products across an assembly line.
@@ -187,7 +187,7 @@ plot_distribution(gamma, a=3)
 {% endhighlight %}
 ![Gamma probability distribution](../assets/img/distribution-gamma.png)
 
-## Poisson
+### Poisson
 The Poisson distribution excels at working with *count* data. In other words, you can easily make a table containing the counts (1, 2, 3, etc.) along with the likelihood of each count. Often, this is used to determine the probability that a certain number of events will happen during a fixed time frame. The Poisson distribution is highly useful when you're working with the arrival of events because describes the probability of n events occurring during a set period of time. Therefore, a key parameter is the *average arrival rate (mu)*, which is important for determining the shape of the function.
 
 **Poisson Examples**
@@ -200,7 +200,7 @@ plot_distribution(poisson, num=10000, mu=5)
 ![Poisson probability distribution](../assets/img/distribution-poisson.png)
 
 
-# Probability Distributions - Conclusion
+### Probability Distributions - Conclusion
 How should uncertainty be handled when a system has some kind of randomness? Having a function that describes the dispersion of the values that a random variable can take is useful for many real-world problems. While the values of the unknown parameter still vary based on the underlying probability distribution, the function helps to reduce the uncertainty band around some output to its "typical" value.
 
 NOTE: Using a standard probability model may not work for all types of uncertainty, especially [deep uncertainty](/exploratory/).

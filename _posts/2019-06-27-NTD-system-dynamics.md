@@ -2,15 +2,15 @@
 layout: post
 title: "System Dynamics Modeling for Neglected Tropical Diseases"
 date: 2019-06-27
-description: Application of system dynamics modeling to an understudied public health problem.
+description: "Application of system dynamics modeling to an understudied public health problem."
 img: ascaris_sfd.png
 fig-caption: stock flow diagram for a neglected tropical disease
-tags: [modeling, python]
+tags: [system dynamics modeling, policy analysis with python, neglected tropical disease, Ascaris lumbricoides python ]
 ---
 - TOC
 {:toc}
 
-# Problem description
+## The Problem of Neglected Tropical Diseases (NTDs)
 It is estimated that up to 24% of the global population is infected by the parasitic worm *Ascaris lumbricoides*. Take a moment to let that sink in - that's nearly **one in four human beings** on planet earth today.
 
 The mind-boggling prevalence of many Neglected Tropical Diseases has to do with the unhygenic conditions of poverty. People who live in areas with poor sanitation and hygiene conditions are at the highest risk of acquiring *A. lumbricoides* infection. *A. lumbricoides* leads to anemia, stunting, cognitive defects, and malnutrition. However, because infection does not generally lead to mortality, it is widely overlooked by policymakers and academics alike.
@@ -104,6 +104,6 @@ Current treatment policy, India: Entire population treated, 1x per year for 6 ye
 
 <br>
 
-# References:
+## References:
 [View the full model here](https://github.com/shannongross/code_support/tree/master/vensim_population_model)
 (Note: Requires [Vensim](https://vensim.com/vensim-software/) to run).

@@ -2,11 +2,12 @@
 layout: post
 title: "Open Exploration in EMA Workbench - Visualization Examples"
 date: 2019-09-09
-description: Visualization tips for open exploration of model objectives using EMA workbench.
+description: "Visualization tips for open exploration of model objectives using EMA workbench."
 img: rotav_OE_title.png
-fig-caption: Open exploration in EMA workbench.
+fig-caption: Open exploration in EMA workbench
+tags: [ema workbench, exploratory model, policy analysis with python, deep uncertainty, python visualization]
 ---
-As the availability of computational power grows, the potential of exploratory modeling continues to expand. Advancements have been made in fields such as: [water resources](https://doi.org/10.1111/j.1539-6924.2007.00940.x), [policy analysis](https://doi.org/10.1016/j.envsoft.2017.06.054), [ecosystem management](https://www.jstor.org/stable/26270230), and [operations research](https://doi.org/10.1287/opre.41.3.435). Open-source languages like python have supported powerful simulations in becoming more accessible than ever before. One of the most challenging frontiers, however, has been the ability of an analyst to visualize the results of an exploratory model. Visualization is difficult because the results of exploratory modeling are often in the form of high-dimensional information ensembles, making many traditional plotting methods ill-equipped. The following article contains some python visualization examples for exploratory modeling output. 
+As the availability of computational power grows, the potential of exploratory modeling continues to expand. Advancements have been made in fields such as: [water resources](https://doi.org/10.1111/j.1539-6924.2007.00940.x), [policy analysis](https://doi.org/10.1016/j.envsoft.2017.06.054), [ecosystem management](https://www.jstor.org/stable/26270230), and [operations research](https://doi.org/10.1287/opre.41.3.435). Open-source languages like python have supported powerful simulations in becoming more accessible than ever before. One of the most challenging frontiers, however, has been the ability of an analyst to visualize the results of an exploratory model. Visualization is difficult because the results of exploratory modeling are often in the form of high-dimensional information ensembles, making many traditional plotting methods ill-equipped. The following article contains some python visualization examples for exploratory modeling output.
 
 **Article contents:**
 - TOC
@@ -47,7 +48,7 @@ from disease_model_problems import get_model_for_problem_formulation
  Once we have the model and necessary packages imported into our environment, we can move on to the next section where we perform some investigative experiments. This open exploration will allow us to gain an initial understanding of the solution space.
 
 <br>
-# Visualization Examples
+## Visualization Examples
 {% highlight ruby %}
 # First, retrieve the model. Here, I have more than one way of formulating the model, but we will just use problem formulation 1 in this example.
 disease_model = get_model_for_problem_formulation(1)
@@ -73,7 +74,7 @@ Using 20 scenarios and 6 policies, 120 experiments will be performed. Unless you
 
 Next, we can visualize the results using a [pairs plot](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/pairs_plotting.html) in order to gain a general first impression of the objective space. The ema workbench pairs plot functionality creates an R-style scatter multiplot, where each objective is paired against every other objective.
 
-## Visualization 1: Pairs Plotting
+### Visualization 1: Pairs Plotting
 
 {% highlight ruby %}
 # PAIRS PLOT EXAMPLE
@@ -103,7 +104,7 @@ The result of this is something like the following:
 Readers should realize that each objective of the problem formulation is plotted against the other objectives, so the x- and y-axes are duplicated. These scatter plots are useful for providing visual insight into the relations between the different objectives.
 
 <br>
-## Visualization 2: 3D Plots
+### Visualization 2: 3D Plots
 To look at more than one objective at a time
 
 {% highlight ruby %}
@@ -127,7 +128,7 @@ As expected, the resulting 3D plot shows the solution space of our three objecti
 
 <br>
 
-## Visualization 3: Parallel Coordinate Plots
+### Visualization 3: Parallel Coordinate Plots
 
 Sometimes, using 3D plotting may not be an effective visualization strategy for high-dimensional spaces. An alternative is to try using [parallel coordinate plotting](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/parcoords.html), which is often better equipped to handle 3+ objectives.
 
@@ -173,7 +174,7 @@ Each line represents a possible policy option, with lines closest to the bottom 
 
 
 <br>
-## Visualization 4: Feature Scoring
+### Visualization 4: Feature Scoring
 A final visualization strategy for open exploration is known as [feature scoring](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/feature_scoring.html#module-ema_workbench.analysis.feature_scoring). Feature scoring is a method for testing the effect that different regressors have on a target variable. It is a simple first pass function to help understand the data and to assist with feature selection.
 
 {% highlight ruby %}
@@ -200,7 +201,7 @@ The resulting heatmap shows features that have relatively higher/lower levels of
 
 <br>
 
-# Conclusion
+## Exploratory Modeling Visualization - Conclusion
 Where information is deeply uncertain or there are severe data gaps, traditional methods of quantitative modeling that focus on probability or risk are impracticable. Exploratory modeling techniques can be used to build models that would be questionable using predictive methods. Exploratory models are more appropriate for helping decision makers learn about the system and different strategic options, rather than models that use big assumptions to prescribe a single solution.
 
 In an upcoming blog post, I'll dive deeper into the pros and cons of different visualization methods. I'll also discuss the use of multiple problem formulations.

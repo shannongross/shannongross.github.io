@@ -1,29 +1,28 @@
-title: Shannon M. Gross
+title: Shannon M. Gross #Tech and Policy Analysis
 description: > # this means to ignore newlines until "baseurl:"
-  This site contains content related to data science, WASH, and public health
-  by Shannon M.Gross, a recent graduate of the Engingeering and Policy Analysis
-  program at TU Delft.
+  A tech and policy analysis blog written by an engineer
+  interested in addressing complex global challenges.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.shannonmgross.com" # the base hostname & protocol for your site, e.g. http://example.com
-# site-twitter: #if your site has a twitter account, enter it here
+site-twitter: shannonmgross #if your site has a twitter account, enter it here
 
-# Author Settings
-author: Shannon M. Gross # add your name
-author-img: shannon-gross.png # add your photo
-about-author: Hi, I'm Shannon, an engineer and computer science enthusiast. This site contains my thoughts on using technology to overcome large-scale societal challenges. <br>Read more <a href="/about">About me</a>.
+author: Shannon M. Gross
+author-img: shannon-gross.png
+about-author: Hi, I'm Shannon, an engineer and computer science enthusiast.
+ This site contains my thoughts on using technology to overcome large-scale
+  societal challenges. <br>Read more <a href="/about">About me</a>.
 social-twitter: shannonmgross
-social-facebook: https://www.shannonmgross.com/cv/ # add your Facebook handle #CV INSTEAD
-social-github: shannongross # add your Github handle
-social-linkedin: shannonmgross # add your Linkedin handle
-social-email: shannon-gross@outlook.com # add your Email address
+social-facebook: https://www.shannonmgross.com/cv/
+social-github: shannongross
+social-linkedin: shannonmgross
+social-email: shannon-gross@outlook.com
 
 # Disqus
 # discus-identifier: shannongrss # add your discus identifier
 
-# Tracker
-analytics: UA-146671307-1 # Google Analytics
 
+analytics: UA-146671307-1 # Google Analytics
 
 # Build Settings
 markdown: kramdown
@@ -32,15 +31,14 @@ plugins:
   - jekyll-paginate
   - jemoji
   - jekyll-gist
-  #- jekyll-twitter-plugin
   - jekyll-seo-tag
 highlighter: rouge
 
 collections:
-  vectors:
-    output: true
-  diseases:
-    output: true
+  # vectors:
+  #   output: true
+  # diseases:
+  #   output: true
   books:
     output: true
     permalink: /:collection/:title/

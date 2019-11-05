@@ -3,12 +3,10 @@ published: false
 
 layout: post
 title: Monte Carlo notes
-#permalink: /science-books/
 date: 2019-09-08
 description:
 fig-cation:
-img: #books.jpg
-#list_title: Math and Science Book Reviews
+img:
 tags: []
 ---
 - TOC

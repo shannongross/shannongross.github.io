@@ -2,10 +2,10 @@
 layout: post
 title: Many-Objective Evolutionary Algorithms
 date: 2019-08-28
-description: An easy introduction to many-objective evolutionary algorithms and what they mean for policy analysis.
-img: rob3.png #optimiz.jpg # Add image post (optional)
+description: "An easy introduction to many-objective evolutionary algorithms and what they mean for policy analysis."
+img: rob3.png
 fig-caption: optimization algorithm for high-dimensional datasets
-tags: [modeling, ema workbench, NSGA-II, optimization, programming, MOEA]
+tags: [exploratory modeling, ema workbench, NSGA-II, many objective optimization, genetic algorithms]
 ---
 If you've worked on a large-scale, challenging issue before, then you know that one of the reasons the problem was so tricky is because any strategy idea that performed well in one area (e.g. increasing product quality) had the unfortunate effect of harming another area (e.g. increasing production cost). In the real world, decisions are made up of multiple objectives that often conflict with each other. This is where the notion of *many-objective optimization (MOO)* comes in, which attempts to find satisfactory solutions in light of conflicting objectives.
 
@@ -15,7 +15,7 @@ If you've worked on a large-scale, challenging issue before, then you know that 
 
 <br>
 
-# Many Objective Optimization
+## Many Objective Optimization
 There are many different ways to computationally search for promising candidate policies in light of conflicting objectives. The notion of **Pareto optimality** means finding a set of multiple best solutions for the problem, where each solution is a compromise between different objectives. A clear estimate of the Pareto front can be highly useful in helping policymakers to select robust plans as well as to learn about the underlying dynamics of the system. Since the presence of multiple, conflicting objectives means that the analyst cannot present a single "best" solution to the decision-maker, highlighting the pareto front can highlight important tradeoffs in the objective space.
 
 The mathematics behind MOO can be complex, so a variety of new and increasingly innovative algorithms have been developed to handle the computations. Some of the most promising computational strategies in recent years are a part of the family of **evolutionary algorithms**, which mimic the processes of Darwinian evolution in order to find high-performing solution sets.  
@@ -40,7 +40,7 @@ The application of MOEAs to many-objective policy problems is useful for keeping
 ![pareto optimality](../assets/img/pareto.jpg){:.post-img-smaller}
 <br>
 
-# Which MOEA to use?
+## Which MOEA to use?
 One popular algorithm for policy search is the **Nondominated Sorting Genetic Algorithm II (NSGAII)**, which was introduced by Deb in 2002. In many applications, NSGAII has been found to converge better than alternative algorithms and is capable of preserving a good level of diversity, thus avoiding getting stuck in a local minimum. The algorithm excels at obtaining a variety of solutions. NSGA-II uses an elitist strategy that allows it to find a better spread in the non-dominated front than other algorithms and get better solutions with less computational complexity. NSGAII is based on a non-dominated sort of the population in each iteration.
 
 * The algorithm begins by generating a random population of policy levers.

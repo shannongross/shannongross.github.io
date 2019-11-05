@@ -7,7 +7,7 @@ date: 2019-09-01
 description: Applying single and multivariate linear regression using python to a global policy problem.
 img: linear.jpg
 fig-caption: single and multivariate linear regression
-tags: [python, linear regression, statistics, mathematics, tutorial, data science, machine learning]
+tags: [policy analysis with python, understanding linear regression, statistics for data science, beginner machine learning]
 ---
 - TOC
 {:toc}
@@ -208,7 +208,7 @@ A useful characteristic of RMSE is that the result is in the **same units as the
 
 Your overall goal is to **achieve the lowest value for RMSE** that you can. When the RMSE is sufficiently low, you can say that the model is useful for predicting the response.
 
-## Closing Remarks
+### Closing Remarks
 No matter the chosen method for data analysis, plotting the data you are trying to analyze is a critical part of the process. Scripting languages such as Python and especially R are useful for generating statistical plots.
 
 See: [Intro to R](/intro-to-R/) (Note: link in progress)

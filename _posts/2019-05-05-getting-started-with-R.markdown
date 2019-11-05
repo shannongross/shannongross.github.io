@@ -5,9 +5,9 @@ layout: post
 title: "A Python Lover's Guide for Getting Started with R"
 date: 2019-05-05
 description: A python lover's guide for getting started with R
-img:  R-intro.jpg # Add image post (optional)
+img:  R-intro.jpg
 fig-caption: Introduction to R programming
-tags: [R, python, data science, machine learning, jupyter notebook, caret]
+tags: [R for policy analysis, statistics for data science, beginner machine learning, jupyter notebook, caret]
 ---
 
 - TOC
@@ -174,9 +174,9 @@ df_stops_subset %>%
 
 We're starting to get some more interesting values from the original data, but what do these numbers look like? Let's try generating some figures using R's powerful `ggplot2` library.
 
-# Visualization using `ggplot2`
+## Visualization using `ggplot2`
 {% highlight ruby %}
-##Bar plot 1
+### Bar plot 1
 barplot1 <- ggplot(df_stops_subset, aes(y = Min, x = ethnic))+
   geom_bar(
     aes(fill = sex), stat = "identity",
@@ -190,7 +190,7 @@ barplot1 + ggtitle("Duration of traffic stop by gender and ethnicity")
 Interesting. Non-Hispanic women seem to have longer traffic stops. What if we look at gender across races, instead of ethnicity?
 
 {% highlight ruby %}
-##Bar plot 2
+### Bar plot 2
 barplot2 <- ggplot(df_stops_subset, aes(y = Min, x = race))+
   geom_bar(
     aes(fill = sex), stat = "identity",
@@ -203,7 +203,7 @@ barplot2 + ggtitle("Duration of traffic stop by gender and race")
 Again the graph is interesting. For all races except W, the total amount of minutes women are pulled over is much less than men. But is the *total* amount of minutes an appropriate way to look at it? Wouldn't the *average* length of the traffic stop be a better indicator?
 
 {% highlight ruby %}
-##Bar plot 3
+### Bar plot 3
 barplot3 <- ggplot(df_stops_subset, aes(y = Min, x = race))+
   geom_bar(
     aes(fill = sex), stat = "summary", fun.y = "mean",

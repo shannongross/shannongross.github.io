@@ -4,10 +4,10 @@ published: true
 layout: post
 title: "Introduction to Database Management Systems"
 date: 2019-06-27
-description: Basic SQLite3 commands and DBMS concepts
+description: "Basic SQLite3 commands and relational database management concepts."
 img: db.jpg  
 fig-caption: Database Management Systems
-tags: [SQL, programming, database, big data, model]
+tags: [SQLite3, big data management, health database, relational model]
 ---
 A database is an organized collection of data that can be queried to retrieve information as needed. Structured Query Language or SQL (generally pronounced "sequel"), is a popular method for managing databases. Based on the relational model, SQL codifies a series of data tables and relations between them. In the following article, I'll show you how to quickly get started with your own database management system.
 
@@ -152,7 +152,7 @@ SELECT * FROM patients;
 
 ![command line read text file](../assets/img/sqlite3_cli_read.png)
 
-# More Complex Operations & Join Types
+## More Complex Operations & Join Types
 Database management systems frequently involve more than one table, therefore more complex operations like [joins](https://www.sqlitetutorial.net/sqlite-join/) are necessary. Keep in mind that there are different possible types of joins for combining columns across related tables.
 
 Let's create a second table so that we can test more complex queries.
@@ -269,8 +269,8 @@ STRENGTHS |Better for complex queries |	Better for big data
 
 <br>
 
-# Conclusion
+## Conclusion - Database Management Systems
 With the advent of [Big Data](/big-data/), more and more systems are increasingly using databases to manage the high volume, variety and velocity of information.
 
-# Reference
+## Reference
 * Database Systems (Elmasri and Navathe)

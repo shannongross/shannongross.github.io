@@ -835,19 +835,33 @@ pre code {
 }
 
 table {
-  border: 1px solid #aaa;
-  background-color: #eee;
+  border: 1px solid white;
+  border-radius: 25px;
+  /* #aaa; */
+  background-color: white;
+  /* #eee; */
   width: 100%;
+  font-size: 14px;
   text-align: justify; /* center */
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   /* table-layout: fixed; */
 
 }
 
+.table-normal-noheader {
+  border: 1px solid white;
+  text-align: right;
+
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
 
 table td, table.blueTable th {
-  border: 1px solid #aaa;
+  border: 1px solid white;
+  /* #aaa; */
   padding: 3px 2px;
+  width: 50%;
 }
 
 table tbody td {
@@ -855,39 +869,44 @@ table tbody td {
 }
 
 table tr:nth-child(even) {
-  background: #adbecc;
+  background: #f7f9ff;
 }
 
 table thead {
-  background: #a9c4d1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bed3dc), color-stop(66%, #b1cad5), to(#A9C4D1));
+  background: #7c99f2;
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#bed3dc), color-stop(66%, #b1cad5), to(#A9C4D1));
   background: -webkit-linear-gradient(top, #bed3dc 0%, #b1cad5 66%, #A9C4D1 100%);
   background: -o-linear-gradient(top, #bed3dc 0%, #b1cad5 66%, #A9C4D1 100%);
-  background: linear-gradient(to bottom, #bed3dc 0%, #b1cad5 66%, #A9C4D1 100%);
-  border-bottom: 1px solid #8c8c8c;
+  background: linear-gradient(to bottom, #bed3dc 0%, #b1cad5 66%, #A9C4D1 100%); */
+  border-bottom: 1px solid white;/* #8c8c8c; */
 }
 
 table thead th {
   font-size: 14px;
   font-weight: bold;
   color: #fff;
-  border-left: 1px solid #d0e4f5;
+  border-left: 1px solid white;
 }
 
 table thead th:first-child {
   border-left: none;
+  border-radius: 6px 0 0 0;
+}
+
+table th:last-child {
+    border-radius: 0 6px 0 0;
 }
 
 table tfoot {
   font-size: 14px;
   font-weight: bold;
   color: #fff;
-  background: #d0e4f5;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dcebf7), color-stop(66%, #d4e6f6), to(#D0E4F5));
+  /* background: #d0e4f5; */
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#dcebf7), color-stop(66%, #d4e6f6), to(#D0E4F5));
   background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
   background: -o-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-  border-top: 2px solid #444;
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%); */
+  border-top: 2px solid white;
 }
 
 table tfoot td {
@@ -1689,11 +1708,11 @@ div.book-review-img-list:hover {
 }
 
 .post-table-med{
-  width: 70%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   table-layout: fixed;
-  padding: 5em;
+  padding: 1em;
 }
 
 .post-img-caption{
