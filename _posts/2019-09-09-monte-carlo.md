@@ -26,6 +26,8 @@ tags: []
 - characterized by the mean and SD
 - just give the mean and standard deviation to create this bell-shaped curve.
 - examples include: people's heights, energy prices?
+- *The Gaussian Distribution* - describes the distribution of averages, requiring you to know the variance upfront. It's for the distribution of a sum of "independent, symmetric, random variables"
+- you have measurements that are all independent and identically distributed
 
 ### Lognormal
 - not symmetric
@@ -56,6 +58,9 @@ tags: []
 When a random trial can only end in one of two outcomes (success or failure), it is a **Bernoulli Trial**.
 - Probability of success = p
 - Probability of failure = 1 - p
+
+
+
 
 
 

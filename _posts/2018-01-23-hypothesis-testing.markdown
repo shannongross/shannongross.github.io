@@ -3,7 +3,7 @@ published: true
 
 layout: post
 title: "Hypothesis Testing in Policy Analysis"
-date: 2017-10-03
+date: 2018-01-23
 description:
 img: hypoth_testing_cover.jpg
 fig-caption:

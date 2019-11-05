@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Many-Objective Evolutionary Algorithms
-date: 2019-08-23
+date: 2019-08-28
 description: An easy introduction to many-objective evolutionary algorithms and what they mean for policy analysis.
 img: rob3.png #optimiz.jpg # Add image post (optional)
 fig-caption: optimization algorithm for high-dimensional datasets

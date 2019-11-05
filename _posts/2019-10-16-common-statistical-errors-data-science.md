@@ -74,19 +74,50 @@ Is a sample similar to a population or not? Using classical statistics, the appr
 
 With all four, you have measurements that are all independent and identically distributed
 
-## Probability distributions
+
+<!--
+Since a distribution represents a range of possible outcomes, the simulation is run many different times. With each replication, a different possible value is drawn at random from the probability distribution. After a large number of replications, the result is another distribution representing the set of possible outcomes.
+
+
+
+### Lognormal
+- not symmetric
+- only positive values
+- values can't be negative but can extend infinitely in the positive direction
+- EX: real estate property values, stock prices, oil reserves
+
+
+
+### Triangular
+- define the minimum, maximum, and most likely value.
+- EX: past Christmas sales, inventory levels
+
 ### Discrete
-When the probability distribution function (Z) is discrete, then the distribution takes the form of P(Z = k), measuring the probability that Z takes on value k.
-- Popular **probability mass functions** that consistently appear (e.g. Poisson)
+- define the likelihood of different values
+- EX: 10% chance of getting an A, %25 chance of getting a B, %45 chance of getting a C, %20 chance of other grade.
 
-### Continuous
-When Z is continuous, use a **probability density function** (e.g. exponential density)
+### The exponential distribution
+- occurs when we look at interarrival times (the time between events)
 
-#### Probability Mass Functions (PMF)
-A **PMF** maps from each value to its probability.
-- CON: as the number of values you have goes up, the probability of each value decreases. Thus, the effects of random noise grows stronger
+- *The Gaussian Distribution* - describes the distribution of averages, requiring you to know the variance upfront. It's for the distribution of a sum of "independent, symmetric, random variables"
+- you have measurements that are all independent and identically distributed
 
-#### Cumulative distribution functions (CDFs)
-- the *percentile* is the fraction of people who scored the same or lower than you.
-- the *cdf* is a function that maps from a value to a percentile rank. This function is the fraction of that is less than or equal to x
-  - PRO: especially good for comparing distributions
+ -->
+
+
+ <!-- ## Probability distributions
+ ### Discrete
+     When the probability distribution function (Z) is discrete, then the distribution takes the form of P(Z = k), measuring the probability that Z takes on value k.
+     - Popular **probability mass functions**  (e.g. Poisson)
+     Note: A weakness of the probability mass function is that as the number of values you have goes up, the probability of each value decreases. Thus, the effects of random noise grows stronger
+     -Probability Mass Functions (PMF) A **PMF** maps from each value to its probability.
+
+ ### Continuous
+     When Z is continuous, use a **probability density function** (e.g. exponential density)
+     - if the variable can assume an infinite number of values between the max and min
+     - "distribution parameters are values that apply to entire populations. Unfortunately, its generally impossible to measure an entire population. So you can use random samples to calculate estimates of these parameters"
+
+ #### Cumulative distribution functions (CDFs)
+     - the *percentile* is the fraction of people who scored the same or lower than you.
+     - the *cdf* is a function that maps from a value to a percentile rank. This function is the fraction of that is less than or equal to x
+       - PRO: especially good for comparing distributions -->
