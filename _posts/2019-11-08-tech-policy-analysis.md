@@ -10,10 +10,10 @@ fig-caption: Evidence-based decisionmaking in an uncertain world.
 tags: [Evidence-based decisionmaking, uncertain policy problems]
 categories: [Policy]
 ---
-
+<!--
 Innovative new tech opportunities such as machine learning, big data analysis, and cloud computing are already disrupting a wide variety of global issues. To be a part of the cool shift towards advanced computing though, you'll have to master a lot of old-school things like [classical statistics](/hypothesis-testing/) and [probability distributions](/probability-distributions/), which is why I've included several tutorials in this blog. But you'll find no examples of coin flips and dice-rolling here, because you can find that in plenty of other textbooks and websites. Instead, my focus is on the messy and uncertain situations that surround real-world policymakers. While the people who craft our environmental regulations, disaster budgets, and health insurance policies certainly rely on mathematical and statistical information, there is (hopefully) more to their decision making than measuring and coin-flipping.
 
-**Article contents**
+##### Article contents
 - TOC
 {:toc}
 
@@ -43,7 +43,7 @@ Therefore, to the scientifically-inclined, the only excuse for a lack of policy 
 https://oxfamblogs.org/fp2p/how-can-politics-ever-serve-future-generations-on-climate-change-but-lots-of-other-stuff-too/
 </div>-->
 
-<br>
+<br> -->
 
 ## Recognizing that scientists make "political" choices too
 - When cause-and-effect relations are not simple or well-established, all uses of facts are selective. When scientists analyze data to support a policy decision, there are usually more "political" decisions to be made than in "normal" scientific data.
@@ -56,8 +56,8 @@ https://oxfamblogs.org/fp2p/how-can-politics-ever-serve-future-generations-on-cl
 ## Conclusion
 -  relates to wicked problems? There’s no one single way to frame the problem. You need a combination of scenarios, perspectives.
 
-### References
-Hoppe, Robert. (1999). Policy analysis, science and politics: From 'speaking truth to power' to 'making sense together'. Science & Public Policy - SCI PUBLIC POLICY. 26. 201-210. 10.3152/147154399781782482.
+<!-- ### References
+Hoppe, Robert. (1999). Policy analysis, science and politics: From 'speaking truth to power' to 'making sense together'. Science & Public Policy - SCI PUBLIC POLICY. 26. 201-210. 10.3152/147154399781782482. -->
 
 
 

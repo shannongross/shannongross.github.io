@@ -786,6 +786,22 @@ body {
 
 h1 {
   font-weight: 400;
+  font-family: 'PT Serif', serif;
+  margin-top: 50px;
+}
+h2 {
+  font-family: 'PT Serif', serif;
+  margin-top: 40px;
+}
+h3 {
+  /* font-weight: 100; */
+  font-family: 'PT Serif', serif;
+  /* margin-top: 20px; */
+}
+h4, h5 {
+  /* font-weight: 100; */
+  font-family: 'PT Serif', serif;
+  margin-top: 30px;
 }
 
 img {
