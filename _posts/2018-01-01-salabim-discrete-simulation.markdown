@@ -7,7 +7,7 @@ date: 2018-01-01
 description: discrete # Add post description (optional)
 img:  water-well-collection.webp # Add image post (optional)
 fig-caption: Using a DES model to simulate women queueing at a water collection point
-tags: [discrete modeling, Salabim, water well simulation, WASH model, water policy analysis]
+tags: [discrete modeling, Salabim, water well simulation, WASH, data analytics, tutorials]
 categories: [Modeling]
 ---
 Figuring out the best way to route components through a system is a complicated problem, with many real-world applications. For example, disaster responders may want to know the best way to distribute relief items after a hurricane. Or, hospital administrators may want to know the best way to set up their rooms to ensure patients are seen as quickly as possible. In either of these examples, the problems are too critical to just find the best way through trial-and-error. Instead, it can be highly useful to create a **simulation**, which models the transport of relief goods or patients through a process. In the following article, I'll cover some key points on simulations as well as how you can start building your own for free using the Salabim library in Python.

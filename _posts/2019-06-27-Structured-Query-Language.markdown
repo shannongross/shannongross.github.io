@@ -7,8 +7,8 @@ date: 2019-06-27
 description: "Basic SQLite3 commands and relational database management concepts."
 img: db.webp  
 fig-caption: Database Management Systems
-tags: [SQLite3, big data management, health database, relational model]
-categories: [Programming]
+tags: [SQLite3, big data management, health database, data analytics, tutorials]
+categories: [Tutorial]
 ---
 A database is an organized collection of data that can be queried to retrieve information as needed. Structured Query Language or SQL (generally pronounced "sequel"), is a popular method for managing databases. Based on the relational model, SQL codifies a series of data tables and relations between them. In the following article, I'll show you how to quickly get started with your own database management system.
 
@@ -255,13 +255,13 @@ OODBs initially seemed like they would be a major competitor to relational datab
 
 #### What's so different about NoSQL (Not Only SQL) databases?
 
-   """" |SQL |	NoSQL
+   _ |SQL |	NoSQL
 :---:|:---:|:---:
-TYPE | Relational Databases (RDBMS)	| Non-relational or distributed database
-BASIS| Table-based databases | Document-based, key-value pairs, graph databases or wide-column stores
-SCHEMA| Schema is predefined | Dynamic schema for unstructured data
-EXAMPLES |MySql, Oracle, Sqlite, Postgres	| MongoDB, Neo4j
-STRENGTHS |Better for complex queries |	Better for big data
+Type: | Relational Databases (RDBMS)	| Non-relational or distributed database
+Basis:| Table-based databases | Document-based, key-value pairs, graph databases or wide-column stores
+Schema:| Schema is predefined | Dynamic schema for unstructured data
+Examples: |MySql, Oracle, Sqlite, Postgres	| MongoDB, Neo4j
+Strengths: |Better for complex queries |	Better for big data
 {:.post-table-med}
 
 <br>
