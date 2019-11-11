@@ -3,9 +3,10 @@ layout: post
 title: "The Moral Obligation of Engineers to Fight Global Poverty"
 date: 2018-05-30
 description: "A critical reflection of technology in humanitarian and development work."
-img: poverty.jpg
+img: poverty.webp
 fig-caption: obligation versus free will
 tags: [engineering ethics, water and sanitation, deontology in engineering, morality and technology]
+categories: [Policy]
 ---
 __Written for the TU Delft Honors Program 2018__
 

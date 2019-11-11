@@ -8,6 +8,7 @@ description: Tips and tricks about learning data science for policy analysis pro
 img: numbers.jpg
 fig-caption: Data and Policy
 tags: [policy analysis, data science, statistics, python, visualizations]
+categories: [Policy]
 ---
 # Outline
 - TOC

@@ -11,7 +11,8 @@ author: Shannon M. Gross
 author-img: shannon-gross.png
 about-author: Hi, I'm Shannon, an engineer and computer science enthusiast.
  This site contains my thoughts on using technology to overcome large-scale
-  societal challenges. <br>Read more <a href="/about">About me</a>.
+  societal challenges.
+  # <br>Read more <a href="/about">About me</a>.
 social-twitter: shannonmgross
 social-facebook: https://www.shannonmgross.com/cv/
 social-github: shannongross

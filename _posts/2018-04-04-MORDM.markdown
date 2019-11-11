@@ -2,24 +2,38 @@
 published: false
 
 layout: post
-title: MORDM
+title: An introduction to Multi-Objective Robust Decision Making
 date: 2018-04-04
-description: Easy intro to MORDM
+description: An easy introduction to Multi-Objective Robust Decision Making in Python using EMA workbench.
 img:  
 fig-caption:
-tags: [multi-objective, robust decision making, exploratory modeling, policy analysis with python, genetic algorithms]
+tags: [multiobjective evolutionary algorithms, robust decision making, exploratory modeling, policy analysis with python, uncertainty analysis]
+categories: [Modeling]
 ---
+
+## What is MORDM?
+https://waterprogramming.wordpress.com/2013/04/16/robust-decision-making-rdm-concepts-and-methods/
+The general task of MORDM is to come up with a promising strategy to tackle a policy problem, and then to stress-test and refine that policy until it is "robust". MORDM combines two powerful concepts:
+1. Robust Decision Making (RDM)
+2. Many Objective Evolutionary Optimization (MOEA)
+
+## Decision Analysis
+The aim of decision analysis is to foster learning, rather than to dictate choice. As a policy analyst, it is not our job to make the decision, but instead to help support the negotiation space.
+
 - The role of open exploration: investigative mapping from uncertainties to outcomes. Identifying differences that make a difference. Iterative stress testing to reduce vulnerabilities.
-- Decision analysis is about learning to foster learning, rather than dictate choice. Not our job as analyst to make the decision, but to help support the negotiation space
-- the task of (Many objective) robust decision making: come up with an initial strategy, then stress-test and refine them
+
+
 
 | RDM | MORDM     |
 | :------------- | :------------- |
 | iterative stress testing using scenario discovery. Start with some pre-specified decision scenarios, figure out how these pre-specified alternatives fail or succeed. Presupposes that you have decision alternatives that you can start from        | use to find alternatives with which you can start from
 Worst case discovery: once you have a strategy you like, you can run this to determine what your worst case is going to be given this strategy is implemented
        |
+## The problem with "optimality"
+> Cognitive myopia arises when decision makers inadvertently ignore aspects of the problem (such as important decision alternatives or key planning objectives) by focusing on a limited number of a priori specified alternatives or a narrowly defined, highly aggregated definition of “optimality”
 
-
+# Robustness
+- Results suggest that including robustness as a decision criterion can dramatically change the formulation of complex environmental management problems as well as the negotiated selection of candidate alternatives to implement.
 
 # Multi-Objective Robust Decision-Making (MORDM)
 The relationship between policy levers and performance outcomes depends on many uncertain factors beyond of the control of the policymaker. Traditionally, this uncertainty is accounted for by using an expected value from on an established probability distribution. However, this is difficult in situations of deep uncertainty, when stakeholders do not agree on the likelihood or impact of a particular uncertainty on the system. An alternative is to test policy performance against a wide range of values for these unknown parameters, thus stakeholders do not need to agree on the probabilities of these parameters upfront. That is one of the major advantages of the Many-Objective Decision Making (MORDM) approach used in the following chapter.
@@ -32,18 +46,36 @@ There are many different ways to computationally search for promising candidate 
 MORDM is intended to be done in collaboration with decision makers, in order to incorporate lessons learned as part of the policy deliberation process (Kasprzyk et al., 2013). Since MORDM does not require assumptions about policymaker preferences before determining the Pareto front, this approach represents a posteriori decision support (Kasprzyk et al., 2013). MORDM was selected for this analysis because of this benefit of enabling the decision maker to gain an understanding of a larger set of superior solutions without the premature aggregation of performance measures. Ultimately, it is up to the decision maker to select the final policy once these trade-offs between different options are made clear. Though to the author’s knowledge MORDM has not been used so far to inform public health policymaking, the approach holds great potential for supporting experts in discovering, analyzing, and fine-tuning health development policies.
 
 # An easy intro to the steps of MORDM
-### 1. Operationalize
-### 2. Search
-### 3. Stress-Test
-### 4. Scenario Discovery
+### 1. Formulate the Problem
+- To think of a problem in terms of RDM, it is highly useful to use the XLRM framework
+- Tips for identifying X (paraphrased from waterprogramming blog):
+  - Consider variables that are *projected into the future*. Is there another way this future change could be modeled?
+  - Are there hidden *assumptions* in the model that other stakeholders may disagree with? In this case, it may be better to model such assumptions as X, so that different values can be tested.
+  - Are there variables that are not relevant now, but could *become* relevant later?
+### 2. Search for Promising Options
+Now that you have formulated the problem, you may have a few options in mind of how it could be handled. For instance, in the example **above**, you might think to: x, y, z. Coming up with strategies like this is known as *a priori* analysis, because you're coming up with them upfront, using your own intuition. However, the problem with creating options *a priori* is that your critics are likely to claim that they are biased or wrong. A different method is to create these options computationally, which is what is done in MORDM. But how can a computer tell you what a "good" option is? Enter: MOEAs.
 
-
-## USING MANY-OBJECTIVE EVOLUTIONARY ALGORITHMS
+#### USING MANY-OBJECTIVE EVOLUTIONARY ALGORITHMS
 MORDM incorporates MOEA in the search phase in order to perform global optimization and discover high-performing policy options (Kasprzyk et al., 2013). Mimicking natural processes of evolution, MOEAs iteratively evaluate possible strategies across the many objectives until the best candidates are found. Using an MOEA is chosen over classical optimization methods for the following reasons:
 - Rather than handling a single solution, the population-based approach of MOEAs can be used to find a large number of solutions in a single run.
 - MOEAs are ideally suited to working in parallel systems, which can dramatically reduce computational expenses.
 - Because the algorithm’s evolutionary processes are separate from the issue it is applied to, MOEAs are easily applied to different problems.
 The application of MOEAs to many-objective policy problems is useful for keeping performance measure disaggregated while enabling the evaluation of trade-offs between various alternatives (Kasprzyk et al., 2013). In short, MOEAs provide an efficient way to determine the Pareto front and highlight potentially robust policy options.
+
+### 3. Uncertainty Analysis
+The Uncertainty Analysis step is all about stress-testing the options you found in step 2. While your options from the previous step seem promising, you only analyzed them under one "state of the world". A state of the world, or *uncertainty ensemble*, is one possible set of values that your uncertain parameters could take. For instance, common states of the world are:
+- The best-guess scenario: When you assign each of your uncertain variables with their most likely value. Based on your intuition about the system, this is how you think the future will *probably* unfold (so of course you want a strategy that performs well in this case).
+- The worst-case scenario: This would be the case when every one of your uncertain parameters takes on their worst possible value. In the example of your wedding day, that would be weather="Thunderstorm"; guests_dancing=0; drinks_available=0. You don't think that all of these terrible things will actually happen, but just in case maybe its a good idea to have a rain tent prepared; to vet the DJ with some of your friends; and to order a few extra cases of wine.
+<!-- The old adage, "expect the worst, hope for the best" may be appropriate here, however bear in mind that you can't always afford the most conservative strategy to guard against the worst-case scenario. If your wedding is on a tight budget for instance, you'll have to pick between ordering the better DJ *or* the extra cases of wine.  -->
+- The best-case scenario: This would be when your wedding day has the most perfect weather and all of your guests are having an incredible time. You *hope* this is the future that comes to pass, but if you only make plans counting on this to happen then your plans will not be very resilient.
+- And many other in-between scenarios. On your wedding day, you may run out of wine but have beautiful weather. The guests may love the DJ you picked but get tired of the large number of speeches given. How can you guard against these uncertainties if it seems like there's an infinite number of scenarios you have to be prepared for?
+
+This is where uncertainty analysis using ensembles comes in. Each ensemble is a different plausible future state of the world, using
+
+### 4. Scenario Discovery
+
+
+
 
 
 ## Tips for doing MORDM w EMA workbench

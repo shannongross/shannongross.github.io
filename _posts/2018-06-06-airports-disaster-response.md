@@ -6,6 +6,7 @@ description: "This project focuses on using existing, publicly available databas
 img: airports.png
 fig-caption: Screen shot of interactive humanitarian airport dashboard
 tags: [airports in disasters, python for policy analysis, humanitarian aid, disaster response plotly]
+categories: [Modeling]
 ---
 
 # Assessing Airport Infrastructure for Disaster Response

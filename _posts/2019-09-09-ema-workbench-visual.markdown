@@ -6,16 +6,17 @@ description: "Visualization tips for open exploration of model objectives using 
 img: rotav_OE_title.png
 fig-caption: Open exploration in EMA workbench
 tags: [ema workbench, exploratory model, policy analysis with python, deep uncertainty, python visualization]
+categories: [Tutorial]
 ---
-As the availability of computational power grows, the potential of exploratory modeling continues to expand. Advancements have been made in fields such as: [water resources](https://doi.org/10.1111/j.1539-6924.2007.00940.x), [policy analysis](https://doi.org/10.1016/j.envsoft.2017.06.054), [ecosystem management](https://www.jstor.org/stable/26270230), and [operations research](https://doi.org/10.1287/opre.41.3.435). Open-source languages like python have supported powerful simulations in becoming more accessible than ever before. One of the most challenging frontiers, however, has been the ability of an analyst to visualize the results of an exploratory model. Visualization is difficult because the results of exploratory modeling are often in the form of high-dimensional information ensembles, making many traditional plotting methods ill-equipped. The following article contains some python visualization examples for exploratory modeling output.
+As the availability of computational power grows, the potential of exploratory modeling continues to expand. Advancements have been made in fields such as: [water resources](https://doi.org/10.1111/j.1539-6924.2007.00940.x), [policy analysis](https://doi.org/10.1016/j.envsoft.2017.06.054), [ecosystem management](https://www.jstor.org/stable/26270230), and [operations research](https://doi.org/10.1287/opre.41.3.435). Open-source languages like python have supported powerful simulations in becoming more accessible than ever before. One of the most challenging frontiers, however, has been the ability of an analyst to visualize the results of an exploratory model. Visualization is difficult because the results of exploratory modeling are often in the form of high-dimensional information ensembles, making many traditional plotting methods ill-equipped to handle the data. The following article contains some python visualization examples for high-dimensional exploratory modeling output.
 
 **Article contents:**
 - TOC
 {:toc}
 <br>
 
-# Exploratory Modeling
-This post is intended for readers with an intermediate to advanced knowledge of the [ema workbench](https://github.com/quaquel/EMAworkbench) by Jan Kwakkel at TU Delft. The ema workbench documentation and GitHub tutorials contain many examples of how to implement the module. Here, emphasis is placed on multidimensional visualization techniques for open exploration of the objective space.
+# Exploratory Modeling Workbench
+This post is intended for readers with an intermediate to advanced knowledge of the [EMA workbench](https://github.com/quaquel/EMAworkbench), created by Jan Kwakkel from TU Delft. The EMA workbench documentation and GitHub tutorials contain many examples of how to implement the module. For this article, emphasis is placed on multidimensional visualization techniques for open exploration of the objective space.
 
 In this example, I am using a model that simulates the burden of disease caused by four different infectious pathogens in a community. Here, users are interested in finding combinations of public health policy levers (e.g. providing clean water, sanitation, vaccination, medical treatment) that reduce the burden of disease. The model was created in Vensim (although you can substitute your own model made in python, Netlogo, etc). Readers interested in this multi-disease model can find more details [here](https://github.com/shannongross/multi_disease_model).
 
@@ -47,8 +48,7 @@ from disease_model_problems import get_model_for_problem_formulation
 
  Once we have the model and necessary packages imported into our environment, we can move on to the next section where we perform some investigative experiments. This open exploration will allow us to gain an initial understanding of the solution space.
 
-<br>
-## Visualization Examples
+
 {% highlight ruby %}
 # First, retrieve the model. Here, I have more than one way of formulating the model, but we will just use problem formulation 1 in this example.
 disease_model = get_model_for_problem_formulation(1)
@@ -56,7 +56,11 @@ disease_model = get_model_for_problem_formulation(1)
 # Specify the number of different policies to generate and the number of scenarios to test them against.
 n_policies = 6
 n_scenarios = 20
+{% endhighlight %}
 
+Using 20 scenarios and 6 policies, 120 experiments will be performed. Unless your machine is extremely slow, this should not take more than few minutes. You should also liberally experiment with different numbers of scenario-policy combinations during this open exploration phase to get a better impression of your system's behavior.
+
+{% highlight ruby %}
 # Incorporate the 'time' module to understand how long the experimental design takes (some designs can take hours or days).
 start = time.time()
 with SequentialEvaluator(disease_model) as evaluator:
@@ -70,11 +74,12 @@ str(round((end - start)/60)) + ' minutes')
 print('Simulation time for Problem Formulation 1 is '+
 {% endhighlight %}
 
-Using 20 scenarios and 6 policies, 120 experiments will be performed. Unless your machine is extremely slow, this should not take more than few minutes.
 
-Next, we can visualize the results using a [pairs plot](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/pairs_plotting.html) in order to gain a general first impression of the objective space. The ema workbench pairs plot functionality creates an R-style scatter multiplot, where each objective is paired against every other objective.
+<br>
+## Visualization Examples
 
 ### Visualization 1: Pairs Plotting
+First, let's try visualizing the results using a [pairs plot](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/pairs_plotting.html) in order to gain a general first impression of the objective space. In a pairs plot, each objective is paired against every other objective (thus the x- and y-axis labels are duplicated). The EMA workbench includes a pairs plot functionality that creates an R-style scatter multiplot, although you can also use the Seaborn library to accomplish the same thing.
 
 {% highlight ruby %}
 # PAIRS PLOT EXAMPLE
@@ -101,11 +106,11 @@ The result of this is something like the following:
 <br>
 ![pairs plotting](../assets/img/rotav_OE_para.png)
 
-Readers should realize that each objective of the problem formulation is plotted against the other objectives, so the x- and y-axes are duplicated. These scatter plots are useful for providing visual insight into the relations between the different objectives.
+Readers should realize that each objective of the problem formulation is plotted against the other objectives, so the x- and y-axes mirror each other. These scatter plots are useful for providing visual insight into the relations between the different objectives.
 
 <br>
 ### Visualization 2: 3D Plots
-To look at more than one objective at a time
+If you have a three-dimensional objective space, you might consider making a 3D plot:
 
 {% highlight ruby %}
 ## 3D PLOT EXAMPLE
@@ -122,7 +127,7 @@ plt.title('Problem Formulation 1: {}'.format(disease_model.name), fontsize=16)
 plt.show()
 {% endhighlight %}
 
-As expected, the resulting 3D plot shows the solution space of our three objectives (in this case, *Mortality*, *Morbidity* and *OpEx costs*). In some cases, 3D plots can be useful for identifying interesting clusters of the objective space. In other cases, however, it may be difficult to distinguish meaningful trends - 3D plots may even obfuscate important information if you're not careful.
+As expected, the resulting 3D plot shows the solution space of our three objectives (in this case, *Mortality*, *Morbidity* and *OpEx costs*). In some cases, 3D plots can be useful for identifying interesting clusters of the objective space. In other cases, however, it may be difficult to distinguish meaningful trends. If you don't take care, 3D plots may even obfuscate important information.
 
 ![3D plotting python](../assets/img/rotav_OE_3d.png)
 
@@ -175,7 +180,7 @@ Each line represents a possible policy option, with lines closest to the bottom 
 
 <br>
 ### Visualization 4: Feature Scoring
-A final visualization strategy for open exploration is known as [feature scoring](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/feature_scoring.html#module-ema_workbench.analysis.feature_scoring). Feature scoring is a method for testing the effect that different regressors have on a target variable. It is a simple first pass function to help understand the data and to assist with feature selection.
+A final visualization strategy relevant to the open exploration process is known as [feature scoring](https://emaworkbench.readthedocs.io/en/latest/ema_documentation/analysis/feature_scoring.html#module-ema_workbench.analysis.feature_scoring). Feature scoring is a method for testing the effect that different regressors have on a target variable. It is a simple first pass function to help understand the data and to assist with feature selection.
 
 {% highlight ruby %}
 # FEATURE SCORES EXAMPLE
@@ -201,9 +206,7 @@ The resulting heatmap shows features that have relatively higher/lower levels of
 
 <br>
 
-## Exploratory Modeling Visualization - Conclusion
-Where information is deeply uncertain or there are severe data gaps, traditional methods of quantitative modeling that focus on probability or risk are impracticable. Exploratory modeling techniques can be used to build models that would be questionable using predictive methods. Exploratory models are more appropriate for helping decision makers learn about the system and different strategic options, rather than models that use big assumptions to prescribe a single solution.
+## Visualizing Open Exploration - Conclusion
+Exploratory modeling and analysis is a powerful tool that is growing in popularity for many complex policy problems. Open Exploration is a crucial first step towards achieving the goal of "understanding the factors that make the biggest difference" on policy objectives. Especially in situations where information is deeply uncertain or there are severe data gaps, traditional methods of quantitative modeling that focus on probability or risk are impracticable. Exploratory models are more appropriate for helping decision makers learn about the system and different strategic options, rather than models that use big assumptions to prescribe a single solution.
 
-In an upcoming blog post, I'll dive deeper into the pros and cons of different visualization methods. I'll also discuss the use of multiple problem formulations.
-
-You can view the full Jupyter notebook containing this code at: [link](https://github.com/shannongross/code_support/blob/master/OE_Visualization_Example.ipynb)
+ In an upcoming blog post, I'll dive deeper into the pros and cons of different visualization methods. I'll also discuss the use of multiple problem formulations. You can view the full Jupyter notebook containing this code <a href="https://github.com/shannongross/code_support/blob/master/OE_Visualization_Example.ipynb" target="_blank">here</a>.

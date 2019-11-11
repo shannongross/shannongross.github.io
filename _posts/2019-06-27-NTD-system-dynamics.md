@@ -6,6 +6,7 @@ description: "Application of system dynamics modeling to an understudied public 
 img: ascaris_sfd.png
 fig-caption: stock flow diagram for a neglected tropical disease
 tags: [system dynamics modeling, policy analysis with python, neglected tropical disease, Ascaris lumbricoides python ]
+categories: [Modeling]
 ---
 - TOC
 {:toc}

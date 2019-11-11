@@ -6,6 +6,7 @@ description: "An easy introduction to many-objective evolutionary algorithms and
 img: rob3.png
 fig-caption: optimization algorithm for high-dimensional datasets
 tags: [exploratory modeling, ema workbench, NSGA-II, many objective optimization, genetic algorithms]
+categories: [Tutorial]
 ---
 If you've worked on a large-scale, challenging issue before, then you know that one of the reasons the problem was so tricky is because any strategy idea that performed well in one area (e.g. increasing product quality) had the unfortunate effect of harming another area (e.g. increasing production cost). In the real world, decisions are made up of multiple objectives that often conflict with each other. This is where the notion of *many-objective optimization (MOO)* comes in, which attempts to find satisfactory solutions in light of conflicting objectives.
 
@@ -37,7 +38,7 @@ Many-Objective Evolutionary Algorithms (MOEAs) are particularly useful in their 
 The application of MOEAs to many-objective policy problems is useful for keeping performance measure disaggregated while enabling the evaluation of [trade-offs between various alternatives](https://www.sciencedirect.com/science/article/pii/S1364815212003131). In short, MOEAs provide an efficient way to determine the Pareto front and highlight potentially robust policy options.
 
 <br>
-![pareto optimality](../assets/img/pareto.jpg){:.post-img-smaller}
+![pareto optimality](../assets/img/pareto.webp){:.post-img-smaller}
 <br>
 
 ## Which MOEA to use?

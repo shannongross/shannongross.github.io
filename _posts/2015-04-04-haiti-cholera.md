@@ -6,6 +6,7 @@ description: "Reflection on the United Nation's role in the cholera outbreak in 
 img: haiti.jpg
 fig-caption: cholera in Haiti
 tags: [water and sanitation policy, haiti cholera response, global public health, writing sample]
+categories: [Policy]
 
 ---
 

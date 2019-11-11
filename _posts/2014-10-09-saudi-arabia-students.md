@@ -6,6 +6,7 @@ description: "Student newspaper story discusses the rise in students from Saudi 
 img:  gannonuniversity.JPG
 fig-caption: Saudi student inclusion
 tags: [feature story, writing sample, foreign policy]
+categories: [Policy]
 
 ---
 

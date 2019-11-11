@@ -8,7 +8,7 @@ description: Introduction to UML # Add post description (optional)
 img:  diseaseUML.png # Add image post (optional)
 fig-caption:
 tags: []
-
+categories: [Modeling]
 ---
 ## Unified Modelling Language (UML) Class Diagram
 Object Class: description of a set of objects with similar properties (attributes, operations, relationships, constraints, and semantics)

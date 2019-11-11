@@ -6,6 +6,7 @@ description: A reflection on Rittel and Webber's "Wicked Problems" (1973) applie
 img: ebola.JPG
 fig-caption: wicked problems in humanitarian aid
 tags: [water and sanitation policymaking, engineering ethics, development in conflict, governance of epidemic response, wicked problems]
+categories: [Policy]
 ---
 
 A B S T R A C T

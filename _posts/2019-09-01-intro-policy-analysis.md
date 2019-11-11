@@ -8,6 +8,7 @@ description:
 img:
 fig-caption:
 tags: [policy analysis]
+categories: [Policy]
 ---
 - TOC
 {:toc}

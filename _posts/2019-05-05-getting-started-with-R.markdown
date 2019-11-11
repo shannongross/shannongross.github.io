@@ -8,6 +8,7 @@ description: A python lover's guide for getting started with R
 img:  R-intro.jpg
 fig-caption: Introduction to R programming
 tags: [R for policy analysis, statistics for data science, beginner machine learning, jupyter notebook, caret]
+categories: [Tutorial]
 ---
 
 - TOC

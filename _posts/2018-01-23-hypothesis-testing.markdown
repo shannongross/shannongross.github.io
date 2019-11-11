@@ -5,9 +5,10 @@ layout: post
 title: "Hypothesis Testing in Policy Analysis"
 date: 2018-01-23
 description: "A discussion of the appropriateness of classical statistics including hypothesis testing in complex policy analysis problems."
-img: hypoth_testing_cover.jpg
+img: hypoth_testing_cover.webp
 fig-caption: Classic uses of hypothesis testing
 tags: [frequentist statistics, hypothesis testing in policymaking, big data decision-making]
+categories: [Tutorial]
 ---
 **Article contents:**
 - TOC

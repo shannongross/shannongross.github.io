@@ -1,11 +1,14 @@
 ---
+published: true
+
 layout: post
 title: "The Politicization of Big Data"
 date: 2019-09-05
 description: "How subjective preferences and subtle politics influences the success of a big data analysis project."
-img: divide2.jpg  
+img: divide2.webp
 fig-caption: Big data in policy analysis
 tags: [big data problems, policy analysis, uncertainty, data analytics]
+categories: [Policy]
 ---
 - TOC
 {:toc}

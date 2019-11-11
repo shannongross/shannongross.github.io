@@ -6,6 +6,7 @@ description: "For beginners to system dynamics modelling and/or Vensim, this is 
 img: pop_model.png
 fig-caption: system dynamics population model example
 tags: [exploratory modeling, policy analysis with python, system dynamics, population growth]
+categories: [Modeling]
 ---
 
 # Population Growth in Uganda

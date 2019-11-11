@@ -8,6 +8,7 @@ description: "An introduction to common probability distributions and their visu
 fig-cation: Beyond the Normal (distribution)
 img: distribution-main.png
 tags: [statistical distributions, python for policy analysis, random sampling, scipy.stats, beginner machine learning]
+categories: [Tutorial]
 ---
 The following article will cover common probability distributions, including: Uniform, Normal, Bernoulli, Binomial, Poisson and Gamma. I'll discuss the strengths and weaknesses of each distribution, as well as their key assumptions. I'll also use a Python function to show how each one can be plotted using the Seaborn library.
 
@@ -18,7 +19,7 @@ The following article will cover common probability distributions, including: Un
 ## Probability Distributions
 Probability theory is all about using mathematics to study uncertainty (or "stochasticity"). Probabilities help us to express the inherent stochasticity in our surroundings. A major part of making sense of this stochasticity involves the study of **randomness**, which is central to probability theory. More formally, a probability distribution **p(x)** indicates the likelihood that the random variables takes a particular value of **x**.
 
-If I ask you think of a random number, there are an infinite number of different values you might give me. But when applying the term "random" to solving real-world problems, our experience gives us an intuition that some values are more likely to occur than others. For instance, if you go to the pharmacy right now to pick up a prescription, we might not know the exact amount of time you'll end up having to wait in line. Instead, we could simulate this using a random value drawn from a probability distribution. This function makes use of our knowledge of past events to help us narrow down the range of an uncertain value. Thus, based on previous experiences at that pharmacy, you know that you typically wait in line eleven minutes, you've never gotten out in less than five minutes, and one particularly bad day you had to wait eighteen minutes. Under no circumstance would you expect to wait 300 minutes, for example. Probability distributions employ this information to gain a better understanding of what value the uncertain parameter is likely to take.
+If I ask you think of a random number, there are an infinite number of different values you might give me. But when applying the term "random" to solving real-world problems, our experience gives us an intuition that some values are more likely to occur than others. For instance, if you go to the pharmacy right now to pick up a prescription, we might not know the exact amount of time you'll end up having to wait in line. Instead, we could simulate this using a random value drawn from a probability distribution. This function makes use of our knowledge of past events to help us narrow down the range of an uncertain value. Based on previous experiences at that pharmacy, you know that you typically wait in line eleven minutes, you've never gotten out in less than five minutes, and one particularly bad day you had to wait eighteen minutes. Under no circumstance would you expect to wait 300 minutes, for example. Probability distributions employ this information to gain a better understanding of what value the uncertain parameter is likely to take.
 
 Before going any further, we should make a distinction between the two main classes of probability distributions.
 
@@ -27,7 +28,7 @@ Before going any further, we should make a distinction between the two main clas
 
 ## Two classes of probability distributions
 1. **Discrete probability distributions**.
-Also known as *probability mass functions*, this distribution class is used for variables that can assume a discrete number of values. Discrete numbers are finite and "whole" in the sense that they do not accept in-between values. For instance, if you are counting the number of patients a doctor sees per hour, that is a discrete value because she might see 11 or 12 patients, but nothing in between. With this type of distribution, each potential carries a particular probability value of it occurring. The sum of all probabilities must equal 1. Examples of popular discrete distributions that consistently appear are: Binary, Poisson, and Categorical.
+Also known as *probability mass functions*, this distribution class is used for variables that can assume a discrete number of values. Discrete numbers are finite and "whole" in the sense that they do not accept in-between values. For instance, if you are counting the number of patients a doctor sees per hour, that is a discrete value because she might see 11 or 12 patients, but nothing in between. With this type of distribution, each potential carries a particular probability value of it occurring (the sum of all probabilities must add up to 1). The Poisson and Binary distributions are examples of popular discrete distributions that often appear.
 
 
 2. **Continuous probability functions**.
@@ -37,7 +38,6 @@ The distinctions between different types of probability distributions are easily
 
 {% highlight ruby %}
 # Import SciPy distributions
-from scipy import stats
 from scipy.stats import uniform, norm, bernoulli, poisson, gamma, binom
 
 # Import plotting libraries
@@ -117,9 +117,7 @@ def plot_distribution(distribution, num=1000, mean=0, sd=1, **kwargs):
 # Common probability distributions
 
 ### Uniform
-In a uniform probability distribution, variables are evenly distributed over a given range. Thus, all possible outcomes have an equal chance (likelihood) of occurring. This distribution is useful for modeling multiple events that occur with the same probability. This distribution, which can be discrete or continuous, is also referred to as the *rectangular distribution* because of its shape.
-
-**Examples** of a uniform distribution include:
+In a uniform probability distribution, variables are evenly distributed over a given range. Thus, all possible outcomes have an equal chance (likelihood) of occurring. This distribution is useful for modeling multiple events that occur with the same probability. This distribution, which can be discrete or continuous, is also referred to as the *rectangular distribution* because of its shape. Examples of a uniform distribution include:
 * The number of patients seen by a physician in one hour are uniformly distributed between 10 and 20.
 * The last digit of the social security number of your postman is uniform because has an equal chance of being any number 0-9.
 * The day of the week that the rainiest day of the year occurs on is uniform because it is equally likely to be any of the seven days of the week.
@@ -203,7 +201,7 @@ plot_distribution(poisson, num=10000, mu=5)
 ### Probability Distributions - Conclusion
 How should uncertainty be handled when a system has some kind of randomness? Having a function that describes the dispersion of the values that a random variable can take is useful for many real-world problems. While the values of the unknown parameter still vary based on the underlying probability distribution, the function helps to reduce the uncertainty band around some output to its "typical" value.
 
-NOTE: Using a standard probability model may not work for all types of uncertainty, especially [deep uncertainty](/exploratory/).
+**Caution**: Using a standard probability model may not work for all types of uncertainty, especially [deep uncertainty](/exploratory-modeling-public-health/).
 
 <!-- # References
 https://statisticsbyjim.com/basics/normal-distribution/ -->

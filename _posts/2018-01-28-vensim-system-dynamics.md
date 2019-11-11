@@ -6,6 +6,7 @@ description: "Tips and tricks for the intermediate to advanced Vensim user. Cove
 img: SD.jpg
 fig-caption: Vensim and EMA
 tags: [exploratory modeling, EMA workbench, deep uncertainty, policy analysis with python, Vensim, system dynamics]
+categories: [Modeling]
 
 ---
 

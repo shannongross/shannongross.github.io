@@ -8,6 +8,7 @@ description:
 img:  
 fig-caption:
 tags: []
+categories: [Tutorial]
 ---
 # Overview
 - A. The trouble with Standard Deviation

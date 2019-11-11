@@ -6,6 +6,7 @@ description: Written at the beginning of the Islamic State's expansion, this pap
 img:  isil.png # Add image post (optional)
 fig-caption: water resources and American foreign policy objectives
 tags: [writing sample, foreign policy, water, strategy, policy analysis]
+categories: [Policy]
 ---
 __Winner of the 2014 [Peter C. Braeger Undergraduate Writing Award](https://www.gannon.edu/Academic-Offerings/Humanities-Education-and-Social-Sciences/Undergraduate/English/Writing-Contests/)__
 

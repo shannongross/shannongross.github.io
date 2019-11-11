@@ -5,9 +5,10 @@ layout: post
 title: "Introduction to Database Management Systems"
 date: 2019-06-27
 description: "Basic SQLite3 commands and relational database management concepts."
-img: db.jpg  
+img: db.webp  
 fig-caption: Database Management Systems
 tags: [SQLite3, big data management, health database, relational model]
+categories: [Programming]
 ---
 A database is an organized collection of data that can be queried to retrieve information as needed. Structured Query Language or SQL (generally pronounced "sequel"), is a popular method for managing databases. Based on the relational model, SQL codifies a series of data tables and relations between them. In the following article, I'll show you how to quickly get started with your own database management system.
 

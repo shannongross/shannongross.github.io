@@ -997,7 +997,9 @@ table tfoot td {
   -webkit-transform: scale3d(0.9, 0.9, 1);
           transform: scale3d(0.9, 0.9, 1);
 }
-.cover-resume-image{
+
+
+/* .cover-resume-image{
   width: 80px;
   height: 80px;
   margin: 0 auto 10px;
@@ -1009,18 +1011,55 @@ table tfoot td {
 .cover-resume-image img:hover {
   -webkit-transform: scale3d(0.9, 0.9, 1);
           transform: scale3d(0.9, 0.9, 1);
+} */
+
+.resume-name {
+  font-family: 'PT Serif', serif;
+  margin: 0 0 10px;
+  position: relative;
+  padding-bottom: 18px; /* 15px; */
+  font-size: 16px;
+  text-transform: uppercase;
+  /* color: #333030; */
+  font-weight: 700;
+}
+.resume-name a:link {
+  color: #333030;
+  text-decoration: none;}
+.resume-name a:visited {
+  color: grey;
+  text-decoration: none;}
+.resume-name a:hover {
+  color:hotpink;
+  text-decoration: none;
+}
+.about .resume-name::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #515151;
 }
 
 .about .author-name {
   font-family: 'PT Serif', serif;
   margin: 0 0 10px;
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 18px; /* 15px; */
   font-size: 16px;
   text-transform: uppercase;
   color: #333030;
   font-weight: 700;
 }
+
 
 .about .author-name::after {
   content: "";
@@ -1346,8 +1385,10 @@ a.newer-posts:hover {
 }
 
 .page-footer .page-tag a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  background-color: #b8c4db;
 }
+
 
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
 .blog-tags {
@@ -1670,17 +1711,30 @@ div.book-review-img-list:hover {
   justify-content: flex-start
 }
 
+
+.post-img-large {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
 .post-img-normal {
   display: block;
   margin-left: auto;
   margin-right: auto;
   /* width: 50%; */
 }
-.post-img-large {
+.post-img-med {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 75%;
+}
+.post-img-small {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 .post-img-smaller {
   display: block;
@@ -1724,4 +1778,65 @@ div.book-review-img-list:hover {
   font-size: 0.8em;
   color: #9c9c9c;
   font-style: italic;
+}
+
+.PageNavigation {
+  /* font-size: 14px; */
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .prev {
+  text-align: left;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
+.may-also-like-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* border: 3px; */
+
+}
+
+div.may-also-like img {
+  width: 100%;
+  /* height: auto; */
+  max-height: 180px;
+  /* max-width: 180px; */
+  overflow: hidden;
+
+}
+
+.may-also-like{
+  max-width: 230px;
+  /* max-height: 180px; */
+  text-align: center;
+  justify-content: center;
+  padding: .2em;
+  margin-top: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 1px;
+
+}
+div.may-also-like:hover {
+  border: 1px solid #777;
+}
+
+.you-might-like-header  {
+  text-align:center;
+  margin-top: 60px;
+  width:100%;
 }
