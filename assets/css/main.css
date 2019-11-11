@@ -1806,6 +1806,8 @@ div.book-review-img-list:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width:100%;
+  justify-content: center;
   /* border: 3px; */
 
 }
