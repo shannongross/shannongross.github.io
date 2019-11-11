@@ -3,7 +3,7 @@ layout: post
 title: "Exploratory Policy Modeling for Flood Management"
 date: 2019-01-15
 description: "This project uses advanced exploratory modeling techniques to provide policy support on a water management case study."
-img: ijssel.png
+img: ijssel.webp
 fig-caption: exploratory modeling for flood policy
 tags: [water management, python for policy analysis, computational decision support, ema workbench, exploratory model]
 categories: [Modeling]

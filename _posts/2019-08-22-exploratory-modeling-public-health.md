@@ -3,7 +3,7 @@ layout: post
 title: Using Exploratory Modeling to Support Public Health Policy
 date: 2019-08-22
 description: Justification for greater use of exploratory modeling in public health policymaking.
-img:  exp.png #public-health.jpg
+img:  exp.webp #public-health.jpg
 fig-caption: Evidence-based public health policymaking.
 tags: [public health, systems thinking, deep uncertainty, exploratory modeling, multi-disease modeling]
 categories: [Modeling]

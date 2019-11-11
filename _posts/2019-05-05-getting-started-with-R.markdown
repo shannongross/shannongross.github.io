@@ -5,7 +5,7 @@ layout: post
 title: "A Python Lover's Guide for Getting Started with R"
 date: 2019-05-05
 description: A python lover's guide for getting started with R
-img:  R-intro.jpg
+img:  R-intro.webp
 fig-caption: Introduction to R programming
 tags: [R for policy analysis, statistics for data science, beginner machine learning, jupyter notebook, caret]
 categories: [Tutorial]
