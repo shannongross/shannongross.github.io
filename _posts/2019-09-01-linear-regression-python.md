@@ -5,7 +5,7 @@ layout: post
 title: "Linear Regression in Python"
 date: 2019-09-01
 description: Applying single and multivariate linear regression using python to a global policy problem.
-img: linear.jpg
+img: linear.webp
 fig-caption: single and multivariate linear regression
 tags: [policy analysis with python, understanding linear regression, statistics for data science, beginner machine learning]
 categories: [Tutorial]

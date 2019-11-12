@@ -776,7 +776,8 @@ html {
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Serif', serif;
+  /* 'PT Sans', sans-serif; */
   /* 'Lato', sans-serif; */
   color: #515151;
   background-color: #fbfbfb;

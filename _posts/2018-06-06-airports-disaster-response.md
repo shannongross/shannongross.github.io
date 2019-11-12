@@ -3,7 +3,7 @@ layout: post
 title: "Airports in Disaster Response"
 date: 2018-06-06
 description: "This project focuses on using existing, publicly available databases to facilitate decisions regarding prioritization of airport preparedness resources."
-img: airports.png
+img: airports.webp
 fig-caption: Screen shot of interactive humanitarian airport dashboard
 tags: [airports in disasters, python for policy analysis, humanitarian aid, disaster response plotly]
 categories: [Modeling]
