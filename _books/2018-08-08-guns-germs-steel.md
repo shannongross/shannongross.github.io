@@ -7,7 +7,8 @@ author: Jared Diamond
 link: "https://www.goodreads.com/book/show/1842.Guns_Germs_and_Steel"
 year: 2005
 fig-caption: Winner of the Pulitzer Prize
-tags: [book, globalization, history, development]
+categories: [Review]
+tags: [book review, globalization, history, global development, economics]
 ---
 > A history focused on western Eurasian societies completely bypasses the obvious big question. Why were those societies the ones that became disproportionally powerful and innovative? The usual answers to that question invoke proximate forces, such as the rise of capitalism, mercantilism, scientific inquiry, technology, and nasty germs that killed peoples of other continents when they came into contact with western Eurasians. But why did all these ingredients of conquest arise in western Eurasian and arise elsewhere only to a lesser degree or not at all?
 <br>
