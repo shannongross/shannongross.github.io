@@ -11,8 +11,9 @@ tags: [R for policy analysis, statistics for data science, beginner machine lear
 categories: [Tutorial]
 ---
 
-- TOC
+1. TOC
 {:toc}
+{:.toc-styling}
 
 # Setting up an R-environment using Anaconda
 Online, you'll find lots of R Intro courses that will tell you the first thing to do is to download RStudio. [RStudio](https://rstudio.com/) is a powerful, interactive IDE for R development - and there are many sources that will show you how to download it so I won't cover that here. Instead, I'll show you how to use R in Jupyter notebook, which is an alternative interactive interface that may be more familiar to anyone coming from a python background. While not the "typical" way of getting started with R, I find it to be a comfortable alternative. It is easy enough to use Anaconda to manage virtual environments and packages for R, and to write R-scripts in Jupyter.

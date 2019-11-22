@@ -12,8 +12,9 @@ categories: [Tutorial]
 ---
 The following article will cover common probability distributions, including: Uniform, Normal, Bernoulli, Binomial, Poisson and Gamma. I'll discuss the strengths and weaknesses of each distribution, as well as their key assumptions. I'll also use a Python function to show how each one can be plotted using the Seaborn library.
 
-- TOC
+1. TOC
 {:toc}
+{:.toc-styling}
 
 ## Probability Distributions
 Probability theory is all about using mathematics to study uncertainty (or "stochasticity"). Probabilities help us to express the inherent stochasticity in our surroundings. A major part of making sense of this stochasticity involves the study of **randomness**, which is central to probability theory. More formally, a probability distribution **p(x)** indicates the likelihood that the random variables takes a particular value of **x**.

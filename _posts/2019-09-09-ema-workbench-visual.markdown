@@ -10,8 +10,9 @@ categories: [Tutorial]
 ---
 As the availability of computational power grows, the potential of exploratory modeling continues to expand. Advancements have been made in fields such as: [water resources](https://doi.org/10.1111/j.1539-6924.2007.00940.x), [policy analysis](https://doi.org/10.1016/j.envsoft.2017.06.054), [ecosystem management](https://www.jstor.org/stable/26270230), and [operations research](https://doi.org/10.1287/opre.41.3.435). Open-source languages like python have supported powerful simulations in becoming more accessible than ever before. One of the most challenging frontiers, however, has been the ability of an analyst to visualize the results of an exploratory model. Visualization is difficult because the results of exploratory modeling are often in the form of high-dimensional information ensembles, making many traditional plotting methods ill-equipped to handle the data. The following article contains some python visualization examples for high-dimensional exploratory modeling output.
 
-* TOC
+1. TOC
 {:toc}
+{:.toc-styling}
 
 
 # Exploratory Modeling Workbench
@@ -206,6 +207,7 @@ The resulting heatmap shows features that have relatively higher/lower levels of
 <br>
 
 ## Visualizing Open Exploration - Conclusion
+{: .no_toc}
 Exploratory modeling and analysis is a powerful tool that is growing in popularity for many complex policy problems. Open Exploration is a crucial first step towards achieving the goal of "understanding the factors that make the biggest difference" on policy objectives. Especially in situations where information is deeply uncertain or there are severe data gaps, traditional methods of quantitative modeling that focus on probability or risk are impracticable. Exploratory models are more appropriate for helping decision makers learn about the system and different strategic options, rather than models that use big assumptions to prescribe a single solution.
 
  In an upcoming blog post, I'll dive deeper into the pros and cons of different visualization methods. I'll also discuss the use of multiple problem formulations. You can view the full Jupyter notebook containing this code <a href="https://github.com/shannongross/code_support/blob/master/OE_Visualization_Example.ipynb" target="_blank">here</a>.

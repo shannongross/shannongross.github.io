@@ -12,8 +12,9 @@ It is estimated that up to 24% of the global population is infected by the paras
 
 The mind-boggling prevalence of many Neglected Tropical Diseases has to do with the unhygenic conditions of poverty. People who live in areas with poor sanitation and hygiene conditions are at the highest risk of acquiring *A. lumbricoides* infection. *A. lumbricoides* leads to anemia, stunting, cognitive defects, and malnutrition. However, because infection does not generally lead to mortality, it is widely overlooked by policymakers and academics alike.
 
-- TOC
+1. TOC
 {:toc}
+{:.toc-styling}
 
 ## The Problem of Neglected Tropical Diseases (NTDs)
 Global development organizations and public health agencies have struggled to alleviate the burden of *A. lumbricoides* in low-income areas. Intervention attempts are complicated by the nature of the parasite and because of:

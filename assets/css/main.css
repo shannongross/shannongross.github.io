@@ -877,7 +877,6 @@ table {
 .table-normal-noheader {
   border: 1px solid white;
   text-align: right;
-
   border-collapse: collapse;
   table-layout: fixed;
 }
@@ -891,7 +890,7 @@ table td, table.blueTable th {
 }
 
 table tbody td {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 table tr:nth-child(even) {
@@ -1049,12 +1048,12 @@ table tfoot td {
   /* color: #333030; */
   font-weight: 700;
 }
-.resume-name a:link {
+.resume-name a{
   color: #333030;
   text-decoration: none;}
-.resume-name a:visited {
+/* .resume-name a:visited {
   color: grey;
-  text-decoration: none;}
+  text-decoration: none;} */
 .resume-name a:hover {
   color:hotpink;
   text-decoration: none;
@@ -1085,6 +1084,16 @@ table tfoot td {
   text-transform: uppercase;
   color: #333030;
   font-weight: 700;
+}
+.author-name a{
+  color: #333030;
+  text-decoration: none;}
+/* .author-name a:visited {
+  color: grey;
+  text-decoration: none;} */
+.author-name a:hover {
+  color:hotpink;
+  text-decoration: none;
 }
 
 
@@ -1892,32 +1901,31 @@ div.may-also-like:hover {
 #markdown-toc::before {
     content: "Article Contents";
     font-weight: bold;
+    font-size: 14px;
 }
 
-/* doesnt work - changes all ul
-#markdown-toc ul, li {
-    list-style: decimal;
-    margin: 8px 0 8px;
-    line-height: 1;
-    font-size: 12px;
-    color: red;
-} */
 
-
-
-#markdown-toc {
-    border: 1px solid #aaa;
-    padding: 1.5em;
-    padding-left: 2.5em;
-    list-style: decimal;
-    display: inline-block;
-    margin-bottom: 30px;
-
-}
 
 /* this one below actually works */
 li {
-  /* padding-left: 1.3em;
-  margin-left: 20px; */
     font-size: 16px;
+    margin: 3px 0 3px;
+}
+
+.toc-styling {
+  /* font-size: 12px; */
+  border: 1px solid #aaa;
+  padding: 2.5em;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 1.5em;
+  padding-left: 2.5em;
+  display: inline-block;
+}
+
+.toc-styling li {
+  font-size: 14px;
+  margin: 5px 0 5px;
+  /* border: 1px solid #aaa;
+  margin-bottom: 30px; */
 }

@@ -13,8 +13,9 @@ Evidence-based public health policymaking is difficult. One reason for this diff
 
 Policymakers are rarely interested in a single pathogen under narrowly-defined conditions, being charged more broadly with the general health and welfare of their communities. In the real world, isolating one disease from another is difficult because any decision to invest in a particular intervention is also an implicit decision to not invest in a different strategy. In order to understand which intervention out of many is most worth investing in, policymakers would need to refer to a large number of different disease models. To meet policy concerns, there is a need for models that evaluate across a [wider landscape](https://github.com/shannongross/multi_disease_model/blob/master/report/Evaluating%20multi-disease%20interventions%20report.pdf) of public health issues.
 
-- TOC
+1. TOC
 {:toc}
+{:.toc-styling}
 
 
 ## Looking at the whole system

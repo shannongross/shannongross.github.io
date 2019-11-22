@@ -10,9 +10,9 @@ categories: [Modeling]
 ---
 The Netherlands has a history of major flood events. After the 1953 North Sea Flood, the Dutch government began implementing sophisticated flood management systems throughout the country and promised “Never Again” to its citizens. For policymakers today, combating the threat of flood events remains high on the political agenda, though it is complicated by the presence of multiple (sometimes conflicting) objectives and pressure caused by climate change. Inevitably, proposals for large-scale flood management measures involve trade-offs between risk and cost, and decisions must be made in the face of future uncertainty and emotional constituents. Decision-makers increasingly turn to advanced hydrological and simulation models to understand the positive and negative effects of proposed policy options.
 
-- TOC
+1. TOC
 {:toc}
-
+{:.toc-styling}
 
 
 ## The province of Gelderland along the River IJssel

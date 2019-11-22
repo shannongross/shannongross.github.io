@@ -10,10 +10,9 @@ categories: [Modeling]
 
 ---
 
-
-- TOC
+1. TOC
 {:toc}
-<br>
+{:.toc-styling}
 
 [![vensim software system dynamics](../assets/img/vensim.png)](https://vensim.com/download/){:.post-img-smallest}
 <br>

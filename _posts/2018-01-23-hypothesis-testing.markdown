@@ -11,9 +11,9 @@ tags: [frequentist statistics, hypothesis testing in policymaking, data analytic
 categories: [Tutorial]
 ---
 
-- TOC
+1. TOC
 {:toc}
-
+{:.toc-styling}
 
 ## Using Classical Statistics
 In statistics, we have the following:

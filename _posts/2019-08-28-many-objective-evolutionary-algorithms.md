@@ -20,9 +20,9 @@ In the policy realm, policymakers regularly face large-scale problems with more 
 
 For each of these examples, it's unlikely that policymakers will be able to come up with one strategy that perfectly achieves *all* of their goals. Instead, they'll likely have to compromise on one or more objectives. In the real world, decisions are made up of multiple objectives that often conflict with each other. This is where the notion of *many-objective optimization* comes in, which attempts to find satisfactory solutions in light of conflicting objectives.
 
-- TOC
+1. TOC
 {:toc}
-
+{:.toc-styling}
 
 ## Many Objective Optimization
 A multiobjective problem will rarely (likely never) result in a single, “best” solution. Instead, there will likely be a suite of solutions where the objectives are optimized differently. An important concept is that of **Pareto optimality**, which is used to compare the solutions of a MOP. Pareto optimality is concerned with finding a *set* of best solutions for the problem, where each solution is a compromise among objectives. Ultimately, no computer can make the final policy choice out of the pareto-approximate set, since this last part of the process is more a question of values and principles rather than numbers.
