@@ -12,11 +12,8 @@ categories: [Policy]
 ---
 Innovative new tech opportunities such as machine learning, big data analysis, and cloud computing are already disrupting a wide variety of global issues. To be a part of the cool shift towards advanced computing though, you'll have to master a lot of old-school things like [classical statistics](/hypothesis-testing/) and [probability distributions](/probability-distributions/), which is why I've included several tutorials in this blog. But you'll find no examples of coin flips and dice-rolling here, because you can find that in plenty of other textbooks and websites. Instead, my focus is on the messy and uncertain situations that surround real-world policymakers. While the political decisionmakers who craft our environmental regulations, disaster budgets, and health insurance policies certainly rely on mathematical and statistical information, there is (hopefully) more to their decision making than measuring and coin-flipping.
 
-**Article contents**
-- TOC
+* TOC
 {:toc}
-
-<br>
 
 
 # How do policymakers use scientific evidence?
@@ -24,11 +21,12 @@ The process of policymaking is probably never linear, although you'll find a num
 <!-- To be useful, scientific analysis must be conducted in the world as it really is, not how we wish it was. -->
 
 Those of us who are technically-inclined serve an important role in supporting those who are appointed to create large-scale policies. Whether you are:
-- an engineer advising on the safety of a new infrastructure project;
-- a data scientist making projections from census data;
-- an epidemiologist giving input on how government money should be spent against a novel disease;
-- an economists providing forecasts about a proposed tax incentive; or
-- an IT expert weighing in on a program to combat a cybersecurity threat.
+
+* an engineer advising on the safety of a new infrastructure project;
+* a data scientist making projections from census data;
+* an epidemiologist giving input on how government money should be spent against a novel disease;
+* an economists providing forecasts about a proposed tax incentive; or
+* an IT expert weighing in on a program to combat a cybersecurity threat.
 
 All of these technocrats play a role in the ability of policymakers to make evidence-informed decisions. However, it is misleading to think of the analyst's role merely as the "neutral advisor". Data is assumed to be objective because we have institutionalized its use, however, we must understand that no analysis is truly "objective" and all data collection and modelling captures just part of the story.
 
@@ -82,7 +80,7 @@ As an analyst working on policy-relevant concerns, it is important to consider t
 
 <br>
 
-### References
+## References
 Hoppe, Robert. (1999). Policy analysis, science and politics: From 'speaking truth to power' to 'making sense together'. Science & Public Policy - SCI PUBLIC POLICY. 26. 201-210. 10.3152/147154399781782482.
 
 <!-- <br>

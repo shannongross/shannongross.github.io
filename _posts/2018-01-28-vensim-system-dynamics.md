@@ -10,7 +10,7 @@ categories: [Modeling]
 
 ---
 
-**Article contents:**
+
 - TOC
 {:toc}
 <br>

@@ -3,17 +3,16 @@ layout: post
 title: "Open Exploration in EMA Workbench - Visualization Examples"
 date: 2019-09-09
 description: "Visualization tips for open exploration of model objectives using EMA workbench."
-img: rotav_OE_title.png
+img: rotav_OE_title.webp
 fig-caption: Open exploration in EMA workbench
 tags: [ema workbench, exploratory model, policy analysis with python, deep uncertainty, python visualization]
 categories: [Tutorial]
 ---
 As the availability of computational power grows, the potential of exploratory modeling continues to expand. Advancements have been made in fields such as: [water resources](https://doi.org/10.1111/j.1539-6924.2007.00940.x), [policy analysis](https://doi.org/10.1016/j.envsoft.2017.06.054), [ecosystem management](https://www.jstor.org/stable/26270230), and [operations research](https://doi.org/10.1287/opre.41.3.435). Open-source languages like python have supported powerful simulations in becoming more accessible than ever before. One of the most challenging frontiers, however, has been the ability of an analyst to visualize the results of an exploratory model. Visualization is difficult because the results of exploratory modeling are often in the form of high-dimensional information ensembles, making many traditional plotting methods ill-equipped to handle the data. The following article contains some python visualization examples for high-dimensional exploratory modeling output.
 
-**Article contents:**
-- TOC
+* TOC
 {:toc}
-<br>
+
 
 # Exploratory Modeling Workbench
 This post is intended for readers with an intermediate to advanced knowledge of the [EMA workbench](https://github.com/quaquel/EMAworkbench), created by Jan Kwakkel from TU Delft. The EMA workbench documentation and GitHub tutorials contain many examples of how to implement the module. For this article, emphasis is placed on multidimensional visualization techniques for open exploration of the objective space.

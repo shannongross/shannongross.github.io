@@ -12,11 +12,10 @@ categories: [Tutorial]
 ---
 A database is an organized collection of data that can be queried to retrieve information as needed. Structured Query Language or SQL (generally pronounced "sequel"), is a popular method for managing databases. Based on the relational model, SQL codifies a series of data tables and relations between them. In the following article, I'll show you how to quickly get started with your own database management system.
 
-**Article contents:**
-- TOC
+
+* TOC
 {:toc}
 
-<br>
 
 
 ## When to use (or not use) a DBMS

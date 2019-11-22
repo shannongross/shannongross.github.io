@@ -9,7 +9,7 @@ tags: [exploratory modeling, policy analysis with python, system dynamics, popul
 categories: [Modeling]
 ---
 
-# Population Growth in Uganda
+## Population Growth in Uganda
 This is a simple example of modeling population growth in Uganda using system dynamics techniques. System dynamics modeling is beneficial for studying feedback loops, time delays, and other nonlinearities. To create the model, the population is divided into a small number of compartments (e.g. by age). Here, the population is divided into\:
 * Infants
 * PreSACs (preschool-aged children)

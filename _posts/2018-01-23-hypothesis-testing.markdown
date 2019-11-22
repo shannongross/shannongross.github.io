@@ -10,11 +10,10 @@ fig-caption: Classic uses of hypothesis testing
 tags: [frequentist statistics, hypothesis testing in policymaking, data analytics, decisionmaking, tutorials]
 categories: [Tutorial]
 ---
-**Article contents:**
+
 - TOC
 {:toc}
 
-<br>
 
 ## Using Classical Statistics
 In statistics, we have the following:

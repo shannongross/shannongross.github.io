@@ -12,10 +12,9 @@ categories: [Modeling]
 ---
 Figuring out the best way to route components through a system is a complicated problem, with many real-world applications. For example, disaster responders may want to know the best way to distribute relief items after a hurricane. Or, hospital administrators may want to know the best way to set up their rooms to ensure patients are seen as quickly as possible. In either of these examples, the problems are too critical to just find the best way through trial-and-error. Instead, it can be highly useful to create a **simulation**, which models the transport of relief goods or patients through a process. In the following article, I'll cover some key points on simulations as well as how you can start building your own for free using the Salabim library in Python.
 
-**Article contents:**
 - TOC
 {:toc}
-<br>
+
 
 # Discrete Event Simulation (DES)
 A model helps to perform "what if?" analysis, where questions about the system are posed and tested in the simulation, helping decision makers prepare for different future scenarios. Injecting elements of stochasticity help reflect the uncertainty inherent in the real world and can provide a better understanding of the system. **Discrete event simulation** in particular, is well-suited to problems where components change at different points in time as a result of events. Between two consecutive events, the system is assumed to be steady-state, so the simulation effectively skips from one event to the following event. This is different than **continuous simulation**, where the dynamics of the system are tracked over time uninterrupted.

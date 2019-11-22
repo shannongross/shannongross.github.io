@@ -6,13 +6,12 @@ title: "Understanding common probability distributions"
 date: 2019-08-23
 description: "An introduction to common probability distributions and their visualization in Python using Seaborn."
 fig-cation: Beyond the Normal (distribution)
-img: distribution-main.png
+img: distribution-main.webp
 tags: [statistical distributions, python for policy analysis, random sampling, scipy.stats, beginner machine learning]
 categories: [Tutorial]
 ---
 The following article will cover common probability distributions, including: Uniform, Normal, Bernoulli, Binomial, Poisson and Gamma. I'll discuss the strengths and weaknesses of each distribution, as well as their key assumptions. I'll also use a Python function to show how each one can be plotted using the Seaborn library.
 
-**Article contents**:
 - TOC
 {:toc}
 

@@ -13,11 +13,8 @@ categories: [Tutorial]
 
 Linear regression is useful for evaluating the relationship between a dependent variable and a set of independent variables. A linear regression model produces a function in which each coefficient describes the relationship between a particular outcome of interest (e.g. mortality rate) and a set of explanatory variables (e.g. age, income, access to clean water). Once you have this equation, you can use it to make predictions about your data. For instance, how would a certain policy targeted at increasing access to clean water affect mortality rates? By changing the explanatory variables (e.g. increase clean water access), analysts can simulate a policy intervention and learn how it might affect the target variable of interest.
 
-**Article contents:**
 - TOC
 {:toc}
-
-<br>
 
 Linear Regression is commonly used when you have a set of input values and want to try to predict the output (response) of another variable of interest. The linear model is used to predict the outcome for cases we don't have data on, so it's an exciting technique. However, linear regression can't perfectly capture the relationship, so there is always an additive term that reflects all influences the model is not accounting for (called the "error term"). The aim is to try and determine a linear function that describes the control variable with the least amount of error. While regression can be used on categorical data, it is most often used by analysts to predict (continuous) values from a set of input data.
 

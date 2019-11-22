@@ -3,19 +3,19 @@ layout: post
 title: "System Dynamics Modeling for Neglected Tropical Diseases"
 date: 2019-06-27
 description: "Application of system dynamics modeling to an understudied public health problem."
-img: ascaris_sfd.png
+img: ascaris_sfd.webp
 fig-caption: stock flow diagram for a neglected tropical disease
 tags: [system dynamics modeling, policy analysis with python, neglected tropical disease, Ascaris lumbricoides python ]
 categories: [Modeling]
 ---
-- TOC
-{:toc}
-
-## The Problem of Neglected Tropical Diseases (NTDs)
 It is estimated that up to 24% of the global population is infected by the parasitic worm *Ascaris lumbricoides*. Take a moment to let that sink in - that's nearly **one in four human beings** on planet earth today.
 
 The mind-boggling prevalence of many Neglected Tropical Diseases has to do with the unhygenic conditions of poverty. People who live in areas with poor sanitation and hygiene conditions are at the highest risk of acquiring *A. lumbricoides* infection. *A. lumbricoides* leads to anemia, stunting, cognitive defects, and malnutrition. However, because infection does not generally lead to mortality, it is widely overlooked by policymakers and academics alike.
 
+- TOC
+{:toc}
+
+## The Problem of Neglected Tropical Diseases (NTDs)
 Global development organizations and public health agencies have struggled to alleviate the burden of *A. lumbricoides* in low-income areas. Intervention attempts are complicated by the nature of the parasite and because of:
 - the difficulty of providing sanitation coverage
 - high rates of reinfection after de-worming programs
@@ -40,7 +40,7 @@ The main feedback loop in this model highlights the significance of having an in
 * **Mean Worm Burden**: The average intensity of infection per AgeGroup. For example, a Pre-SAC worm burden of “10” means that the average infected pre-school aged child in that country hosts 10 adult worms. Due to higher soil contact rates, Pre-SAC and SAC populations generally have the highest-intensity infections.
 
 <br>
-![stock flow diagram](../assets/img/ascaris_sfd.png)
+![stock flow diagram](../assets/img/ascaris_sfd.webp)
 
 
 ## Critical assumptions

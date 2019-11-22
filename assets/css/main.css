@@ -440,8 +440,8 @@ template {
   background-color: #f5f5f5;
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  margin: 0;
-  font-size: 0.82em;
+  margin: 25px 0 ;
+  font-size: 0.88em;
 }
 
 .highlighter-rouge {
@@ -776,9 +776,11 @@ html {
 }
 
 body {
-  font-family: 'PT Serif', serif;
-  /* 'PT Sans', sans-serif; */
-  /* 'Lato', sans-serif; */
+  /* font: 14px 'Open Sans',Arial,sans-serif; */
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+
   color: #515151;
   background-color: #fbfbfb;
   margin: 0;
@@ -787,23 +789,30 @@ body {
 }
 
 h1 {
-  font-weight: 400;
-  font-family: 'PT Serif', serif;
+  /* font-weight: 400; */
+  font-family: sans-serif;
+    /* font-family: 'PT Serif', serif; */
   margin-top: 50px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #dde2eb; /* dotted #c03; */
+  width: 100%;
 }
 h2 {
-  font-family: 'PT Serif', serif;
+  font-family: sans-serif;;
   margin-top: 40px;
 }
 h3 {
-  /* font-weight: 100; */
-  font-family: 'PT Serif', serif;
-  /* margin-top: 20px; */
+  font-family: sans-serif;;
+  margin-top: 20px;
 }
 h4, h5 {
-  /* font-weight: 100; */
-  font-family: 'PT Serif', serif;
+  font-family: sans-serif;;
   margin-top: 30px;
+}
+
+ul, li {
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 img {
@@ -855,6 +864,7 @@ pre code {
 table {
   border: 1px solid white;
   border-radius: 25px;
+  line-height: 1.2;
   /* #aaa; */
   background-color: white;
   /* #eee; */
@@ -1032,7 +1042,7 @@ table tfoot td {
 } */
 
 .resume-name {
-  font-family: 'PT Serif', serif;
+  font-family: sans-serif;
   margin: 0 0 10px;
   position: relative;
   padding-bottom: 18px; /* 15px; */
@@ -1068,8 +1078,9 @@ table tfoot td {
 }
 
 .about .author-name {
-  font-family: 'PT Serif', serif;
-  margin: 0 0 10px;
+  /* font-family: 'PT Serif', serif; */
+  font-family: sans-serif;
+  margin: 20px 0 10px;
   position: relative;
   padding-bottom: 18px; /* 15px; */
   font-size: 16px;
@@ -1096,9 +1107,19 @@ table tfoot td {
 }
 
 .about p {
-  font-size: 16px;
-  margin: 0 0 10px;
+  font-size: 14px;
+  margin: 30px 0 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
+
+.cv-font-div p, li {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
 
 .content-box {
   padding: 20px;
@@ -1262,7 +1283,8 @@ footer .copyright {
 }
 
 .post .post-content .post-title a {
-  font-family: 'PT Serif', serif;
+  font-family: sans-serif;
+  /* font-family: 'PT Serif', serif; */
   text-decoration: none;
   color: #263959;
 }
@@ -1296,7 +1318,7 @@ a.newer-posts:hover {
 
 /* - - - - - - - - - - Post Page Styles - - - - - - - - - - */
 .wrap-content {
-  padding: 50px;
+  padding: 120px;
 }
 
 .header-page {
@@ -1699,10 +1721,11 @@ a.newer-posts:hover {
 
 }
 .review-wrap-content {
-  padding-right: 100px;
+  /* padding-right: 100px;
   padding-left: 100px;
   padding-top: 50px;
-  padding-bottom: 0px;
+  padding-bottom: 0px; */
+  padding: 120px;
 }
 
 div.book-review-img-list img {
@@ -1711,7 +1734,7 @@ div.book-review-img-list img {
 }
 
 .book-review-img-list{
-  max-width: 225px;
+  max-width: 200px;
   text-align: center;
   padding: .2em;
   margin-top: 25px;
@@ -1840,7 +1863,7 @@ div.may-also-like img {
 }
 
 .may-also-like{
-  max-width: 230px;
+  max-width: 200px;
   /* max-height: 180px; */
   text-align: center;
   justify-content: center;
@@ -1865,4 +1888,25 @@ div.may-also-like:hover {
   width:100%;
   text-align:left;
   margin-bottom: 10px;
+}
+
+
+#markdown-toc::before {
+    content: "Article Contents";
+    font-weight: bold;
+}
+
+/* #markdown-toc ul, li {
+    list-style: decimal;
+    margin: 8px 0 8px;
+    line-height: 1;
+} */
+
+#markdown-toc {
+    border: 1px solid #aaa;
+    padding: 1.5em;
+    padding-left: 2.5em;
+    list-style: decimal;
+    display: inline-block;
+    margin-bottom: 30px;
 }
