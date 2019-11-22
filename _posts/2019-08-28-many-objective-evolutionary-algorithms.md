@@ -20,11 +20,8 @@ In the policy realm, policymakers regularly face large-scale problems with more 
 
 For each of these examples, it's unlikely that policymakers will be able to come up with one strategy that perfectly achieves *all* of their goals. Instead, they'll likely have to compromise on one or more objectives. In the real world, decisions are made up of multiple objectives that often conflict with each other. This is where the notion of *many-objective optimization* comes in, which attempts to find satisfactory solutions in light of conflicting objectives.
 
-**Article Contents**
 - TOC
 {:toc}
-
-<br>
 
 
 ## Many Objective Optimization
@@ -56,7 +53,7 @@ One popular algorithm for policy search is the **Nondominated Sorting Genetic Al
 * Then, the values of the objective functions are evaluated and ranked. The ranking represents how close that policy option is to the current Pareto front (rank of 1=on the front).
 * Candidates are sorted based on their ranking (and then by **crowding distance**, which represents how far that solution is to other solutions in the same rank).
 
-Traditional NSGAII was extended in 2005 by Kollat & Reed into **epsilon-NSGAII**, which includes adaptive population-sizing and epsilon-dominance archiving for increased performance. Auto-adaptive population sizing means we change the population size over the course of the algorithm to ensure that superior solutions are found. Many other MOEAs exist (such as **BORG** by Hadka and Reed) that present powerful search alternatives for policy analysis. While BORG also includes epsilon dominance, it also has more advanced features (such as steady-state and co-evolution). In other words, the algorithm optimizes its search *while* its optimizing. 
+Traditional NSGAII was extended in 2005 by Kollat & Reed into **epsilon-NSGAII**, which includes adaptive population-sizing and epsilon-dominance archiving for increased performance. Auto-adaptive population sizing means we change the population size over the course of the algorithm to ensure that superior solutions are found. Many other MOEAs exist (such as **BORG** by Hadka and Reed) that present powerful search alternatives for policy analysis. While BORG also includes epsilon dominance, it also has more advanced features (such as steady-state and co-evolution). In other words, the algorithm optimizes its search *while* its optimizing.
 
 Tools such as the [exploratory modeling workbench](https://github.com/quaquel/EMAworkbench) by Jan Kwakkel can incorporate a variety of search algorithms. Notably, epsilon-NSGAII is the default search algorithm used by ema workbench, which provides a relatively thorough and efficient use for beginner to intermediate applications.  
 
