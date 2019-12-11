@@ -792,7 +792,6 @@ body {
 h1 {
   /* font-weight: 400; */
   font-family: sans-serif;
-    /* font-family: 'PT Serif', serif; */
   margin-top: 50px;
   padding-bottom: 10px;
   border-bottom: 5px solid #dde2eb; /* dotted #c03; */
@@ -868,7 +867,7 @@ table {
   /* #eee; */
   width: 100%;
   font-size: 14px;
-  text-align: justify; /* center */
+  text-align: left; /* center */
   /* border-collapse: collapse; */
   /* table-layout: fixed; */
 
@@ -1075,7 +1074,6 @@ table tfoot td {
 }
 
 .about .author-name {
-  /* font-family: 'PT Serif', serif; */
   font-family: sans-serif;
   margin: 20px 0 10px;
   position: relative;
@@ -1291,7 +1289,6 @@ footer .copyright {
 
 .post .post-content .post-title a {
   font-family: sans-serif;
-  /* font-family: 'PT Serif', serif; */
   text-decoration: none;
   color: #263959;
 }
@@ -1816,6 +1813,18 @@ div.book-review-img-list:hover {
   table-layout: fixed;
   padding: 1em;
 }
+table.post-table-med-unequal{
+  border-collapse: collapse;
+  table-layout: auto;
+  width: 100%;
+
+  /* padding: 1em; */
+
+}
+
+
+
+
 
 .post-img-caption{
   display: block;

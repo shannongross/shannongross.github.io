@@ -46,7 +46,7 @@ You can see how in these policy questions there might be some entanglement betwe
 ### Case study - global life expectancy
 <!-- Now I don't know about you, but I'm *SO TIRED* of looking at house pricing data. It seems like every big data tutorial has to do with real estate. (Andrew Ng's machine learning tutorials are great - but as a Millennial who will probably never buy a house the thought of studying 'square footage' by 'price' puts me to sleep every time). -->
 
-Here, I'll use some data I compiled from the United Nations and World Bank to make an example where we predict a country's **Life Expectancy** from features such as "Births per woman" and "Percent of children <5 with anemia". We'll analyze these features using [sklearn](https://scikit-learn.org/) in python, which makes performing the regression much easier. There are five main steps to performing linear regression:
+Here, I'll use some data I compiled from the United Nations and World Bank to make an example where we predict a country's Life Expectancy from features such as "Births per woman" and "Percent of children <5 with anemia". We'll analyze these features using [sklearn](https://scikit-learn.org/) in python, which makes performing the regression much easier. There are five main steps to performing linear regression:
 1. Prepare data/visualize it (make sure that a linear relationship exists!)
 2. Categorize the data into attributes and labels
 3. Split into 80% train and 20% test data
@@ -87,7 +87,7 @@ dataframe2 = df1.dropna(subset=['Life expectancy','Births per woman'])
 
 Now we have the data, but what does it look like? Use your standard pandas tools like `df.head()` and `df.describe()` to explore what the dataset contains.
 
-For this example, we'll use the **Life Expectancy** and **Births per woman**. But before we begin trying to create a predictive model based on the data, we should confirm that a linear relationship actually exists between the two variables.
+For this example, we'll use the columns **Life Expectancy** and **Births per woman**. But before we begin trying to create a predictive model based on the data, we should confirm that a linear relationship actually exists between the two variables.
 
 {% highlight ruby %}
 #Regression plot using seaborn library
@@ -209,7 +209,7 @@ Looking at these figures, it seems like our linear regression model is able to p
 In order to minimize the overall error of a linear regression function, you try to minimize the error of each of the individual points (since the overall error is the aggregate of these). There are three popular metrics (MAE, MSE, RMSE) for evaluating how well the algorithm fit the data. The choice of which metric to use depends on the particular application and your objectives - often, using more than one metric is useful.
 
 <h4>1. Mean Absolute Error (MAE)</h4>
-Take the absolute value of how far off each residual was and average them. This gives you the **Mean Absolute Error (MAE)**, which is probably the easiest of the regression error metrics to understand. If you have a MAE of 0, then your model is a perfect predictor (unlikely).
+Take the absolute value of how far off each residual was and average them. This gives you the *Mean Absolute Error (MAE)*, which is probably the easiest of the regression error metrics to understand. If you have a MAE of 0, then your model is a perfect predictor (unlikely).
 
 We use the absolute value so that negative and positive values do not cancel out during the calculation. A disadvantage of this technique is that because all of the residuals are weighted equally when taking the average, we can't distinguish between a case where all the model predictions are of by a tiny bit versus a model where only some points are off by a large amount.
 
@@ -217,15 +217,15 @@ We use the absolute value so that negative and positive values do not cancel out
 Mean Squared Error (MSE) is similar to MAE, except each residual is squared. Thus, MSE gives the variance of the error values (telling you how widely dispersed the errors are). By getting the square of the difference between predicted and actual, models with greater dispersion are penalized more.
 
 <h4>3. Root Mean Squared Error(RMSE)</h4>
-Like other metrics for assessing the performance of your linear regression model, RMSE measures how far the actual data points are from your regression line. What differentiates RMSE from MAE is that it is the **square root of the variance** of the residuals, which means that higher error values are penalized more. MAE weighs all the error the same, so a scenario where you have lots of data points off by a tiny bit could end up having the same MAE as a scenario where you have a just few data points off by a huge amount. Depending on your application, you may now want this (i.e. prefer to penalize the model with a few really large errors more) and so RMSE would be prefereable. By using RMSE, you can get an idea of how spread out your prediction errors are.
+Like other metrics for assessing the performance of your linear regression model, RMSE measures how far the actual data points are from your regression line. What differentiates RMSE from MAE is that it is the *square root of the variance* of the residuals, which means that higher error values are penalized more. MAE weighs all the error the same, so a scenario where you have lots of data points off by a tiny bit could end up having the same MAE as a scenario where you have a just few data points off by a huge amount. Depending on your application, you may now want this (i.e. prefer to penalize the model with a few really large errors more) and so RMSE would be prefereable. By using RMSE, you can get an idea of how spread out your prediction errors are.
 
-A useful characteristic of RMSE is that the result is in the **same units as the response variable**, unlike MSE which gives the result in response units squared.
+A useful characteristic of RMSE is that the result is in the same units as the response variable, unlike MSE which gives the result in response units squared.
 
-Your overall goal is to **achieve the lowest value for RMSE** that you can. When the RMSE is sufficiently low, you can say that the model is useful for predicting the response.
+Your overall goal is to *achieve the lowest value for RMSE* that you can. When the RMSE is sufficiently low, you can say that the model is useful for predicting the response.
 
 ## Linear Regression - Closing Remarks
 Linear regression is one of the most commonly applied supervised machine learning techniques and can be a useful tool for policy analysts . However, analysts should be aware that if the outcomes of interest appears highly sensitive to the way the model is specified, then care should be taken to test alternative specifications and to perform statistical tests. There are no hard and fast rules for the "right" way to specify the linear model, so specification can be challenging.
 
 Policymakers often want an answer to questions like: *"did policy x lead to outcome y?"* However, providing this kind of causal interpretation requires significant assumptions and can be difficult. Still, linear regression models often provide a quick starting point for more advanced analyses.
 
-No matter the chosen method for data analysis, plotting the data you are trying to analyze is a critical part of the process. Scripting languages such as Python and especially R are useful for generating statistical plots (see: [Intro to R](/getting-started-with-R/)). As with all summary statistics, it is important to properly understand and apply the assumptions behind linear regression. See [Anscombe's quartet](https://medium.com/datadriveninvestor/anscombes-quartet-12649db7eac0) for a particularly infamous example of the improper application of Linear Regression. In an upcoming blog post, I'll dive deeper into this topic and explain some features of **multivariate** linear regression.
+No matter the chosen method for data analysis, plotting the data you are trying to analyze is a critical part of the process. Scripting languages such as Python and especially R are useful for generating statistical plots (see: [Intro to R](/getting-started-with-R/)). As with all summary statistics, it is important to properly understand and apply the assumptions behind linear regression. See [Anscombe's quartet](https://medium.com/datadriveninvestor/anscombes-quartet-12649db7eac0) for a particularly infamous example of the improper application of Linear Regression. In an upcoming blog post, I'll dive deeper into this topic and explain some features of *multivariate* linear regression.

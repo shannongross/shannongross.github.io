@@ -77,6 +77,13 @@ Table X: Pros and Cons of the Classical Histogram
 | --- | --- |
 | Histograms are useful because they make the most frequent values immediately apparent | But they are not the best choice for comparing two distributions.|
 
+
+- main downside of histograms is that their graphical result is highly sensitive to the bin choices. With different interval widths, the same dataset can look very different.
+- good for getting an overall picture of the shape (e.g. is it symmetrical? how far is it skewed?) but is inappropriate for more fine-grained questions.
+- not good for when you have continuous data ( "such as streamflow or concentration") because you're forcing it into discrete bins that may hide things.
+- great graphical method when the data already has inherent categories/groups (e.g. "number of organisms found at a stream by species")
+- using multiple histograms is not that great, but if you're going to do that, then at least position them one on top of the other (instead of side-by-side), with the same values on the x-axis for comparison.
+
 ## 2. Kernel Density Estimates (KDEs)
 As opposed to classical histograms, you can't easily generate a KDE with a pen and paper - their popularity has risen with the increased availability of computational power.
 
@@ -93,7 +100,20 @@ Why use a CDF? They are useful for questions like: *what fraction of points fall
 
 While CDFs are generally less intuitive than the KDE - creating them can be an advantageous supplement to your data analysis process. For instance, CDFs may provide visual information that is less noisy and often more faithfully represented.
 
+Quantile plots are estimations of the CDF "of a continuous random variable. As sample size increases, the quantile plot will more closely mimic the underlying population cdf."
+
+Advantages of quantile plots:
+- subjective groupings are not needing (unlike histograms)
+- each data "point has a distinct position without overlap"
+
 ## 4. Scatter Plots
+- the 2D scatter is a very common method
+- usually, you want to be able to look at it and see what kind of relationship appears (liner? curved? clustered? spread out?)
+- add a "smooth" to a scatter plot so that your eye is not tricked by outliers
+- the smooth doesn't take any assumptions going into it, it derives its shape from the data.
+- A smooth an exploratory tool for understanding the relationship between dependent and independent variables.
+- Smooths should be used when presenting data to others, especially when you have large amounts of data
+
 
 ### Jitter Plots
 When your data is coarse-grained or integer-valued, many of the data points may lie on top of one another on a plot. **Jittering** is a technique where you shift every value by a small random value in order to better visually identify interesting clusters.
@@ -103,6 +123,12 @@ The popularity of box and whisker plots lies in its ability to convey a lot of s
 
 When should you use a box and whisker plot? It's best when you are comparing multiple distributions to one another. If you only have one data set, it is probably better to just quote the summary statistics in tabular or numeric form, rather than making a box plot. On the other hand, when you have several distributions to look at box plots can help compare the structures underlying the different data sets.
 
+- give you a useful summary of the center (median), variation (IQR), skew (quartiles), and the presence or absence of outliers (beyond the whiskers)
+- note that there are some stylistic differences in how to present the whiskers
+- what makes boxplots useful for a single dataset make them even more useful for comparing multiple datasets
+- can help you see how much the summary statistics vary between groups of data
+- can help test assumptions of normality
+- concise, lots of information in small display
 
 ## 6. Logarithmic Plots
 Rather than graphing raw data, a popular method is to plot the logarithm of the data. This is most useful with data sets that span multiple orders of magnitude.
@@ -140,6 +166,8 @@ Things to keep in mind:
 - a convenient way to get a quick overview and find pairings that deserve a closer look
 - unwieldly (hard to see anything) after about a half dozen variables
 - half of the graphs produced are redundant, so you could replace them with something else (e.g. KDE plots, histograms, etc)
+- downside is that you can't get that much detail from any single plot within the matrix
+
 
 **Parallel Coordinate Plots**
 - show more variables
@@ -150,9 +178,22 @@ Things to keep in mind:
 - the appearance of the plot is dependent on the order of the parallel axes. It's a good idea to use an interactive tool (like Plotly) or to manually reshuffle them to see if there is any significant impact.
 
 
+# Visual Data Analysis
+- just performing statistics calculations without ever looking at the data is a good way to go down the wrong path
+- visuals are quicker and easier for your audience to digest key information
+- graphs can give you essential insight during exploratory data analysis
+- they are essential for showing important findings to others
+- exploratory data analysis is getting an initial understanding of your data
+- EDA is a first step that guides you to how the rest of your analysis should proceed
 
 
+### Probability Plots
+- for finding out how well your data matches some theoretical distribution. You could do this by comparing a histogram of your sample data to many different theoretical distributions to see which one is the closest match. But because you're dealing with two curvy lines, this is pretty hard for your eye to do. Instead, probability plots are used to display the theoretical distribution as a straight line, so then its easier for you to study.
+- if the data do not follow the straight-line version of the theoretical distribution, it may be because: the data is skewed or not symmetric, it contains outliers, or it has a heavy tail.
 
+
+# References - graphical analysis
+https://pubs.usgs.gov/twri/twri4a3/pdf/chapter2new.pdf
 
 
 # Tools for Data Science in Policy Analysis

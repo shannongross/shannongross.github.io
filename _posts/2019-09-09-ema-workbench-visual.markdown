@@ -75,7 +75,6 @@ print('Simulation time for Problem Formulation 1 is '+
 {% endhighlight %}
 
 
-<br>
 ## Visualization Examples
 
 ### Visualization 1: Pairs Plotting

@@ -52,22 +52,22 @@ Create a new R notebook and start testing.
 For this example, we'll use the open data set provided by the City of Boulder, CO concerning police traffic stops. You can follow along by downloading the full dataset [here](https://bouldercolorado.gov/open-data/police-stop-demographics/). It contains the following features:
 
 
-|Name|	Description
+|Name|	Description |
 |:--|:--|
-|stopdate|	Date of the stop
-|stoptime|	Time (in 24 hour format) when the stop began.
-|streetnbr|	Street number where stop occurred
-|streetdir|	Direction of street. Not currently used by Boulder Police Department officers.
-|street|	Street or intersection where stop occurred
-|Min|	Duration of the stop, in minutes. Rounded to 5 minute intervals.
-|sex|	Sex of the individual stopped. In most cases, this is collected from the individual's driver's license or identification card. M= male, F= female.
-|race|	Race of the individual stopped. Identified by the police officer; see Methods document for more details on this process. A=Asian, B=Black or African American, I=American Indian or Alaskan Native, U= Unknown, W=White.
-|ethnic|	Ethnicity of the individual stopped. Identified by the police officer; see Methods document for more details on this process. H=Hispanic, N=Non-Hispanic.
-|Year of birth|	Year of birth of the individual stopped. In most cases, this is collected from the individual's driver's license or identification card. Typos may be present due to manual entry of this field.
-|enfaction|	Whether the individual is a city of Boulder resident. Y= yes, Boulder resident. N=no, Non-Boulder resident. This may be collected from the individual's driver's license or identification card, or reported by the individual.
-|rpmainid|	Unique identifier for the stop. Use this field to merge with "appid" in the Results dataset.
-|appkey	| Type of Police activity as part of the stop. RPT1=Type of Stop, RPT2=Stop Reason, RPT3=Search Conducted, RPT4=Search Authority, RPT5=Contraband Found, RPT6=Result of Stop, RPT7=Charge.
-|appid|	Unique identifier for the stop. Use this field to merge with "rpmainid" in the Main dataset.
+|stopdate|	Date of the stop |
+|stoptime|	Time (in 24 hour format) when the stop began |
+|streetnbr|	Street number where stop occurred |
+|streetdir|	Direction of street |
+|street|	Street or intersection where stop occurred |
+|Min|	Duration of the stop, in minutes |
+|sex|	Sex of the individual stopped |
+|race|	A=Asian, B=Black or African American, I=American Indian or Alaskan Native, U= Unknown, W=White |
+|ethnic| Ethnicity of the individual stopped. H=Hispanic, N=Non-Hispanic |
+|Year of birth|	Year of birth of the individual stopped. Typos may be present due to manual entry of this field. |
+|enfaction|	Whether the individual is a city of Boulder resident|
+|rpmainid|	Unique identifier for the stop |
+|appkey	| Type of Police activity as part of the stop |
+|appid|	Unique identifier for the stop |
 
 
 First, begin by importing the dataset and essential R packages:
@@ -82,7 +82,6 @@ data_file <- "police_data/police_stop_data_main_2018.csv"
 df_stops <- read.csv(data_file, , na.strings="")
 {% endhighlight %}
 
-<br>
 
 ## Inspect the traffic stop data
 We can inspect the traffic stop dataframe using any of the following commands: `colnames(df_stops)`, `str(df_stops)`, `head(df_stops)`. Another option (which I prefer) is to use the `skimr` library, which we can import and then use to get a nice overview table of the traffic stop data:

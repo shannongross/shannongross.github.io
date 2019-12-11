@@ -59,7 +59,7 @@ In the following block of code, I define a function to easily plot multiple comm
 
 {% highlight ruby %}
 #Define a function to generate probability distribution
-def plot_distribution(distribution, num=1000, mean=0, sd=1, **kwargs):
+def plot_distribution(distribution, num=1000, mean=0, sd=1, \**kwargs):
 
     """
     name: name of distribution

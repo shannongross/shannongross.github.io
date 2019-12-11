@@ -10,13 +10,57 @@ fig-caption:
 tags: []
 categories: [Tutorial]
 ---
-# Overview
-- A. The trouble with Standard Deviation
-- B. Using Least Squares methods
-- C. P-values and Z-scores
-- D. What to know about the main distributions
-- E.
 
+
+
+1. TOC
+{:toc}
+{:.toc-styling}
+
+# Summary Statistics
+- your analysis is not going to give you meaningful results if you start by assuming that the data possesses characteristics that it doesn't have (such as being normally-distributed).
+- some summary statistics are more robust than others, meaning that they are resilient against outliers in the data. This can help you answer the question, should I use the median instead of the mean?
+  - the **median** is less affected by single outliers, which is often a useful characteristic. If you have an analysis where you don't want your results to be skewed by a single outlier, then using the median may be preferable over the **mean**.
+  - because the **standard deviation** uses the square of the mean in its calculation, it's even more affected by outliers. A single, weird data point can cause you to think that the data is much more spread out than most of the points actually are. A more robust alterative is the **interquartile range**, which measures the spread in the middle 50% of the data, so it is not skewed by very high and low outliers.
+  - when data are skewed to one side or the other (having a leading/trailing tail), using the mean and standard deviation are of much less value, inflating the role of outliers and unlikely to paint a fair picture of the data. If you have skewed data, having summary tables that include median and interquartile range are more appropriate.
+  - Skewed data also means that your data is not normally-distributed and thus you should not use other statistical methods which require this distribution, such as hypothesis/parametric tests. There are many real-world cases where you are unlikely to obtain normal (or even symmetric) data distributions.
+
+## Outliers
+- don't be too scared of your outliers, or too quick to throw them away so that you can perform a hypothesis test
+- these are important data points
+- don't discard them simply because they're weird
+- first, you need to verify that it was not some kind of data-entry error
+- graphical/visualization methods are highly useful for recognizing outliers
+- let the data lead you to the correct statistical method to use, rather than throwing away some values to force it to fit e.g. the normal distribution
+
+## Sampling
+The **population** is the entire set of things that you're making a statement about. For instance, this could be all the people in a country who lie below the designated poverty level. Or, the concentrations of a toxic pollutant in the blood of animals living in a catchment area. It is exceptionally rare for the analyst to have a data point for every single person/animal/etc. in the entire population, since it would be crazy expensive, invasive and time-consuming to collect. Instead, scientists work with a **sample** of the population, which is a subset that represents the whole population and is easier to work with.
+
+### Transformations
+- some believe that by transforming data, you're tweaking it to match your own preconceived notions. But transformation can be useful to get a dataset to yield symmetry and linearity.  
+
+> "One unit of measurement is no more valid a priori than any other. For example, the negative logarithm of hydrogen ion concentration, pH, is as valid a measurement system as hydrogen ion concentration itself. Transformations like the square root of depth to water at a well, or cube root of precipitation volume, should bear no more stigma than does pH. These measurement scales may be more appropriate for data analysis than are the original units." ~USGS
+
+- if you want to make a symmetric distribution out of an asymmetric one, you can transform or re-express values in different units. Different units can change the distances between how the values look when plotted.
+- The logarithm is a commonly used transformation. "Logs of water discharge, hydraulic conductivity, or concentration are often taken before statistical analyses are performed."
+
+
+## Point vs Interval Estimates
+- point estimate: mean and median. on their own, don't give you any indication of how reliable they are.
+- interval estimate: range that has a stated probability of containing the true population value. They give you the following information:
+  - confidence intervals: the likelihood that the interval contains the true value (aka its reliability)
+  - prediction intervals: "A statement of the likelihood that a single data point with specified magnitude comes from the population under study. "
+
+Confidence and prediction intervals are not the same thing, even though they are related, and you can't use them for the same purposes. How to interpret a 90% confidence interval: "The true mean will be inside of this interval an average of 90% of the time"
+- confidence level: probability that the interval contains the true value
+- alpha level: probability that the interval will **not** contain the true value (alpha = 1- CI)
+
+
+#### Confidence Intervals For The Mean
+"For large sample sizes a symmetric interval adequately describes the variation of the mean, regardless of the shape of the data distribution. This is because the distribution of the sample mean will be closely approximated by a normal distribution as sample sizes get larger, even though the data may not be normally distributed. For smaller sample sizes, however, the mean will not be normally distributed unless the data themselves are normally distributed. As data increase in skewness, more data are required before the distribution of the mean can be adequately approximated by a normal distribution. For highly skewed distributions or data containing outliers, it may take more than 100 observations before the mean will be sufficiently unaffected by the largest values to assume that its distribution will be symmetric. 
+
+- This property is called the Central Limit Theorem (Conover, 1980). It holds for data which follow a distribution
+having finite variance, and so includes most distributions of interest in water resources."
 
 # A. Standard Deviation
 Everybody knows that 1SD contains 68% of data, 2SD contains 95% of the data, and 99.7% within 3SD. The SD is easy to calculate and use for a discussion about the spread of data.
