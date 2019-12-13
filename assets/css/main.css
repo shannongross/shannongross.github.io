@@ -1119,12 +1119,21 @@ table tfoot td {
   text-align: center;
 }
 
-.cv-font-div p, li {
+.cv-font-div h3 {
+  font-size: 16px;
+  /* line-height: 1.5;
+  margin: 10px 0; */
+}
+.cv-font-div li {
   font-size: 14px;
   line-height: 1.5;
   margin: 10px 0;
 }
-
+.cv-font-div p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
 
 .content-box {
   padding: 20px;

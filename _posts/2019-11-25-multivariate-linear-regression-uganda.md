@@ -227,11 +227,11 @@ multivariate_y = smaller_dataset['%HHs_wSanAccess'].values
 {% endhighlight %}
 
 ## Step 3. Split into 80% train and 20% test data
-An easy way for machine learning projects to go awry is by using training data to test how good a model's predictions were. This is analogous to student's learning from teachers who "teach to the test". Of course if a teacher drills test answers into students' heads, they'll do pretty well when asked the same exact question during an examination. But just because the entire class has earned A's, doesn't really mean that these students have learned the material and would be able to apply the lessons to new material they'd never seen before.
+An easy way for machine learning projects to go awry is by using training data to test how good a model's predictions were. This is analogous to students learning from teachers who "teach to the test". Of course if a teacher drills test answers into students' heads, they'll do pretty well when asked the same exact question during an examination. But just because the entire class has earned A's, doesn't really mean that these students have learned the material and would be able to apply the lessons to new material they'd never seen before.
 
-This is exactly why analysts set aside a certain portion of the data to use later for testing. It is important that the model hasn't seen this data before, else the test will not be true.
+This is exactly why analysts set aside a certain portion of the data to use later for testing. It is important that the model hasn't seen this data before, else the test will not be truly representative.
 
-The Train-Test-Split process is extremely easy to conduct with the help of Scikit-Learn (make sure you understand the mathematics behind this though!). Failure to appropriately split the data for training can quickly lead to *poor generalization*, where model is over-trained to a particular dataset and functions poorly on new (unseen) data.
+The Train-Test-Split process is extremely easy to conduct with the help of Scikit-Learn (make sure you understand the mathematics behind this though!). Failure to appropriately split the data for training can quickly lead to **poor generalization**, where model is over-trained to a particular dataset and functions poorly on new (unseen) data.
 
 
 {% highlight ruby %}
